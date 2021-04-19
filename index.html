@@ -4,68 +4,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kodvet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <h1>Kodvet</h1>
-    </header>
-    <nav>
-        <a href="">Om oss</a>
-        <a href="">Projekt</a>
-        <a href="">Medlemmar</a>
-        <a href="">Kontakt</a>
-    </nav>
-    <section>
-        <h1>Om oss</h1>
-        <p> Vi är Kodvet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
-        Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden. 
-        I samband att vi gör dettta nödvändiga arbete har vi även som mål att lära oss om webbutveckling 
-        och interaktionsdesign i en härlig grupp.
-        </p>
-    </section>
-    <section>
-        <h1>Projekt</h1>
-        <article>
-            <h2>Nappn</h2>
-            <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
-            På denna app får den nya studenten information om den kåranordnade mottagningen. 
-            Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
-            med viktiga platser så den nya studenten hittar rätt.
+        <header>
+            <img src="images/logo.svg" alt="Kodvet">        
+        </header>
+        <nav>
+            <a href="javascript:ChangeSection('about')" ><button type="button">[om oss]</button></a>
+            <a href="javascript:ChangeSection('projects')" ><button type="button">[projekt]</button></a>
+            <a href="javascript:ChangeSection('members')" ><button type="button">[medlemmar]</button></a>
+            <a href="javascript:ChangeSection('contact')" ><button type="button">[kontakt]</button></a>
+        </nav>
+        <section id = "about">
+            <h1>&lt;h1&gt;Om oss&lt;/h1&gt;</h1>
+            <p> Vi är Kodvet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
+            Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden som rör Kogvet. 
+            I samband att vi gör dettta nödvändiga arbete har vi även som mål att lära oss om webbutveckling 
+            och interaktionsdesign i en härlig grupp.
             </p>
-        </article>
-        <article>
-            <h2>Kognivote</h2>
-            <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
-                Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
-                efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
+        </section>
+        <section id = "projects">
+            <h1>Projekt</h1>
+            <article>
+                <h2>Nappn</h2>
+                <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
+                På denna app får den nya studenten information om den kåranordnade mottagningen. 
+                Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
+                med viktiga platser så den nya studenten hittar rätt.
+                </p>
+            </article>
+            <article>
+                <h2>Kognivote</h2>
+                <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
+                    Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
+                    efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
+                </p>
+            </article>
+        </section>
+        <section id = "members">
+            <h1>Medlemmar</h1>
+            <p>Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
+                Bland annat ska det alltid finnas en sekreterare i kärngruppen. Här följer lite info om medlemmarna i den nuvarande kärngruppen
             </p>
-        </article>
-    </section>
-    <section>
-        <h1>Medlemmar</h1>
-        <p>Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
-            Bland annat ska det alltid finnas en sekreterare i kärngruppen. Här följer lite info om medlemmarna i den nuvarande kärngruppen
-        </p>
-        <div>
-            <h2>Alex</h2>
-            <ul>
-                <li>Roll: Webmaster</li>
-                <li>Medlem sedan: 2019</li>
-                <li>Stan för: Charli XCX</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Matilda</h2>
-            <ul>
-                <li>Roll: Projektledare</li>
-                <li>Medlem sedan: 2019</li>
-                <li>Favoritdjur: Enhörning</li>
-            </ul>
-        </div>
-    </section>  
-    <section>
-        <h1>Kontakt</h1>
-        <p>Du kan nå oss via messenger på <a href="https://www.facebook.com/kodvet">Facebook</a> eller våran <a href="mailto:webmaster@example.com"> mail</a>. Gå gärna med i våran <a href="https://discord.gg/t5ax74jV"> häng-discord</a> för mer sociala sammanhang.</p>
-    </section>
+            <div>
+                <h2>Alex</h2>
+                <ul>
+                    <li>Roll: Webmaster</li>
+                    <li>Medlem sedan: 2019</li>
+                    <li>Stan för: Charli XCX</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Matilda</h2>
+                <ul>
+                    <li>Roll: Projektledare</li>
+                    <li>Medlem sedan: 2019</li>
+                    <li>Bästa personlighetsdrag: Fäller ner toalocket ibland</li>
+                </ul>
+                <img src="images/Johannes.png" alt="">
+            </div>
+        </section>  
+        <section id= "contact">
+            <h1>Kontakt</h1>
+            <p>Du kan nå oss via messenger på <a href="https://www.facebook.com/kodvet">Facebook</a> eller vår <a href="mailto:webmaster@example.com"> mail</a>. Gå gärna med i vår <a href="https://discord.gg/t5ax74jV"> häng-discord</a> för mer sociala sammanhang.</p>
+        </section>
+        <script src="main.js"></script> 
 </body>
 </html>
