@@ -76,24 +76,37 @@ a {
     left: 518px;
     top: 375px;
     background: #C4C4C4;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     
 }
 
 #rectangle::-webkit-scrollbar {
-    width: 1em;
+    width: 12px;
 }
  
-#rectangle:::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+#rectangle::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
 }
  
-#rectangle:::-webkit-scrollbar-thumb {
-    background-color: rgb(7, 255, 119);
-    outline: 1px solid slategrey;
+#rectangle::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 #text{
     margin: 1em;
     padding: 1em;
 } 
+
+/* .box {
+    position: relative;
+    background-position: right;
+    background-size: 2px;
+    float: right;
+    width: 1em;
+    display: flex; */
+}
+
+
