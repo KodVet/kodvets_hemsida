@@ -1,40 +1,24 @@
 html {
     height: 100%;
-    background: linear-gradient(180deg, #35D8BA 0%, #23C2C6 100%) no-repeat fixed;
-
-    
+    background: linear-gradient(180deg, #35D8BA 0%, #23C2C6 100%) no-repeat fixed; 
 }
 body{
     color: white;
     font-family: 'Roboto', sans-serif;
-    width: 40%;  
     margin: auto;
     text-align: justify;
+   
 }
 
 header {
     text-align: center;
     margin-bottom: 4%;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
-/*
-
-}
-
-nav a {
-    padding: 2%;
-}
-
-nav a:hover {
-    width: 10%;
-    height: 10%;
-    background-color: aquamarine;
-}
-*/
 nav {
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 }
 button{
     text-align: center;
@@ -45,44 +29,41 @@ button{
     color:white;
     border:none;
     font-weight: bold;
-
+    text-decoration: none;
 }
 button:hover{
-    background-color:white;
-    color:black;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:rgb(3, 158, 132);
+    color:rgb(255, 255, 255);
+    box-shadow: 0 12px 16px 0 rgba(1, 85, 50, 0.24), 0 17px 50px 0 rgba(0, 71, 50, 0.19);
 }
 
+h1 {
+    font-size: 2rem;
+}
 h2 {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
-
-a {
-    text-decoration: none;
-    color: white;  
-    font-weight: bold;
+section {
+    margin: 1%;
+    size: stretch;
 }
-
 
 #members {
     display: none;
 }
 
 #rectangle {
-    position: absolute;
-    width: 835px;
-    height: 402px;
-    left: 518px;
-    top: 375px;
-    background: #C4C4C4;
+    width: 75%;
+    height: 83%;
+    background: #C4C4C4;    
     overflow-y: scroll;
     overflow-x: hidden;
-    
+    margin: auto;
 }
 
 #rectangle::-webkit-scrollbar {
-    width: 12px;
+    width: 1rem;
 }
  
 #rectangle::-webkit-scrollbar-track {
@@ -95,18 +76,36 @@ a {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
-#text{
-    margin: 1em;
-    padding: 1em;
+#text {
+    margin: auto;
+    padding: auto;
 } 
 
-/* .box {
+#container {
+    height: 60%;
+    display: flex;
+    justify-content: center; 
+}
+
+.bracket {
+    height: 100%;
+}
+
+.box {
     position: relative;
     background-position: right;
     background-size: 2px;
-    float: right;
     width: 1em;
-    display: flex; */
+    display: flex;
 }
 
+.imgBox {
+    max-width:50%;
+    height:auto;
+    width:600;
+    height:337;
+}
 
+.portrait {
+    width: 300px;
+}
