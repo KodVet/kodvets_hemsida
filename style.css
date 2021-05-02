@@ -13,8 +13,8 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 8%;
-  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-top: 3%;
 }
 
 nav {
@@ -51,11 +51,6 @@ h2 {
 
 section {
   margin: 1%;
-  size: stretch;
-}
-
-#members {
-  display: none;
 }
 
 #rectangle {
@@ -91,28 +86,27 @@ section {
           justify-content: center;
 }
 
+#member_cards {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .bracket {
   height: 100%;
 }
 
-.box {
-  position: relative;
-  background-position: right;
-  background-size: 2px;
-  width: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.imgBox {
-  max-width: 50%;
-  height: auto;
-  width: 600;
-  height: 337;
-}
-
 .portrait {
   width: 300px;
+}
+
+.member_card {
+  -ms-flex-preferred-size: 0 1 auto;
+      flex-basis: 0 1 auto;
 }
 /*# sourceMappingURL=style.css.map */
