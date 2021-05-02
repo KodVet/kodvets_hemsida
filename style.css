@@ -87,7 +87,9 @@ section {
 }
 
 #member_cards {
-  background-color: red;
+  background-color: green;
+  -ms-flex-item-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,11 +104,26 @@ section {
 }
 
 .portrait {
-  width: 300px;
+  margin: auto;
 }
 
 .member_card {
-  -ms-flex-preferred-size: 0 1 auto;
-      flex-basis: 0 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 content;
+          flex: 0 1 content;
+  max-width: 30%;
+  min-width: 25%;
 }
 /*# sourceMappingURL=style.css.map */
