@@ -13,8 +13,8 @@ body {
 }
 header {
 	text-align: center;
-	margin-bottom: 5%;
-	margin-top: 3%;
+	margin-bottom: 4%;
+	margin-top: 2%;
 }
 nav {
 	text-align: center;
@@ -73,7 +73,6 @@ section {
 }
 #member_cards {
 	background-color: green;
-	align-self: center;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -85,8 +84,7 @@ section {
 }
 
 .portrait {
-
-	margin: auto;
+	width: $portrait_width;
 	//padding: 2em;
 	
 
@@ -96,12 +94,18 @@ section {
 .member_card {
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
-	align-self: center;
-	flex: 0 1 content;
-	max-width: 30%;
-	min-width: 25%;
+	align-items: center;
+	
+	flex: 1 1 33%;
+
+	text-align: left;
 
 	// padding: 
-	//padding: 4em; 
+	//padding: 4em;
+	h2 {
+		width: $portrait_width;
+	}
+	ul {
+		width: $portrait_width;	
+	} 
  }

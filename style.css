@@ -13,8 +13,8 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 5%;
-  margin-top: 3%;
+  margin-bottom: 4%;
+  margin-top: 2%;
 }
 
 nav {
@@ -88,8 +88,6 @@ section {
 
 #member_cards {
   background-color: green;
-  -ms-flex-item-align: center;
-      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +102,7 @@ section {
 }
 
 .portrait {
-  margin: auto;
+  width: 300px;
 }
 
 .member_card {
@@ -115,15 +113,20 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 content;
-          flex: 0 1 content;
-  max-width: 30%;
-  min-width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+  text-align: left;
+}
+
+.member_card h2 {
+  width: 300px;
+}
+
+.member_card ul {
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
