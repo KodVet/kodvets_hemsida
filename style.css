@@ -25,7 +25,6 @@ nav {
 nav button {
   text-align: center;
   font-size: 1.7rem;
-  border-radius: 15px;
   background-color: transparent;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -33,12 +32,15 @@ nav button {
   border: none;
   font-weight: bold;
   text-decoration: none;
+  padding: 0;
+  margin: 8px;
+  line-height: 1.2rem;
+  padding-bottom: 0.4rem;
+  text-indent: 0;
 }
 
 nav button:hover {
-  background-color: #039e84;
-  -webkit-box-shadow: 0 16px 16px 0 rgba(1, 85, 50, 0.24), 0 17px 50px 0 rgba(0, 71, 50, 0.19);
-          box-shadow: 0 16px 16px 0 rgba(1, 85, 50, 0.24), 0 17px 50px 0 rgba(0, 71, 50, 0.19);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -53,9 +55,20 @@ section {
   margin: 1%;
 }
 
+main {
+  margin: auto;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #rectangle {
-  width: 75%;
-  height: 83%;
+  width: 70%;
+  height: 100%;
   background: #C4C4C4;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -76,14 +89,14 @@ section {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-#container {
-  height: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#border {
+  left: calc(15% - 0.9rem);
+  width: 70%;
+  height: calc(60% - 1.8rem);
+  position: absolute;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 0%, 95% 0%, 95% 100%, 5% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 0%, 95% 0%, 95% 100%, 5% 100%, 100% 100%, 100% 0%);
+  border: 0.9rem solid white;
 }
 
 #member_cards {
@@ -97,15 +110,11 @@ section {
       justify-content: space-around;
 }
 
-.bracket {
-  height: 100%;
-}
-
-.portrait {
+#member_cards .portrait {
   width: 300px;
 }
 
-.member_card {
+#member_cards .member_card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,11 +131,11 @@ section {
   text-align: left;
 }
 
-.member_card h2 {
+#member_cards .member_card h2 {
   width: 300px;
 }
 
-.member_card ul {
+#member_cards .member_card ul {
   width: 300px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -22,16 +22,20 @@ nav {
     button {
         text-align: center;
         font-size: 1.7rem;
-        border-radius: 15px;
         background-color: transparent;
         transition-duration: 0.4s;
         color: white;
         border: none;
         font-weight: bold;
         text-decoration: none;
+		padding: 0;
+		margin: 8px;
+		line-height: 1.2rem;
+		padding-bottom: 0.4rem;
+		text-indent: 0;
         &:hover {
-            background-color: rgb(3, 158, 132);
-            box-shadow: 0 16px 16px 0 rgba(1, 85, 50, 0.24), 0 17px 50px 0 rgba(0, 71, 50, 0.19);
+            background-color: rgba(0, 0, 0, 0.3);
+            // box-shadow: 0 10px 10px 0 rgba(1, 85, 50, 0.24), 0 17px 50px 0 rgba(0, 71, 50, 0.19);
         }
     }
 }
@@ -46,9 +50,18 @@ section {
 	margin: 1%;
 }
 
+
+main {
+	margin: auto;
+	// z-index: 1;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+}
+
 #rectangle {
-	width: 75%;
-	height: 83%;
+	width: 70%;
+	height: 100%;
 	background: $grey;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -66,11 +79,18 @@ section {
 	}
 }
 
-#container {
-	height: 60%;
-	display: flex;
-	justify-content: center;
-}
+
+#border{
+	left:calc(15% - 0.9rem);
+	width: 70%;
+	height:calc(60% - 1.8rem);
+	position: absolute;
+	clip-path: polygon(0% 0%,0% 100%,5% 100%,5% 0%,95% 0%,95% 100%,5% 100%,100% 100%,100% 0%);
+	border: 0.9rem solid white;
+	// background-color: red;
+ }
+
+
 #member_cards {
 	background-color: green;
     display: flex;
@@ -78,10 +98,6 @@ section {
 	justify-content: space-around;
 	// #align-content: center;
 
-}
-.bracket {
-	height: 100%;
-}
 
 .portrait {
 	width: $portrait_width;
@@ -100,8 +116,6 @@ section {
 
 	text-align: left;
 
-	// padding: 
-	//padding: 4em;
 	h2 {
 		width: $portrait_width;
 	}
@@ -109,3 +123,5 @@ section {
 		width: $portrait_width;	
 	} 
  }
+
+}
