@@ -43,18 +43,6 @@ nav button:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.3rem;
-}
-
-section {
-  margin: 1%;
-}
-
 main {
   margin: auto;
   height: 60%;
@@ -66,10 +54,22 @@ main {
           justify-content: center;
 }
 
+main h1 {
+  font-size: 2rem;
+}
+
+main h2 {
+  font-size: 1.3rem;
+}
+
+main section {
+  margin: 1%;
+}
+
 #rectangle {
   width: 70%;
   height: 100%;
-  background: #C4C4C4;
+  background: #c4c4c4;
   overflow-y: scroll;
   overflow-x: hidden;
   margin: auto;
@@ -99,22 +99,47 @@ main {
   border: 0.9rem solid white;
 }
 
-#member_cards {
-  background-color: green;
+#about {
+  font-size: 1em;
+}
+
+#projects {
+  font-size: 1em;
+}
+
+#members #member_cards {
+  background-color: #a6a6a6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#member_cards .portrait {
-  width: 300px;
+#members .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+  min-width: 350px;
 }
 
-#member_cards .member_card {
+#members .member_card {
+  min-width: 0;
+  max-width: 300px;
+  border: 2px solid black;
+  background-color: darkolivegreen;
+  border-radius: 6px;
+  padding: 6px;
+  margin: auto;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,17 +150,20 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33%;
-          flex: 1 1 33%;
   text-align: left;
 }
 
-#member_cards .member_card h2 {
-  width: 300px;
+#members .member_card * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-#member_cards .member_card ul {
-  width: 300px;
+#members .member_card ul {
+  word-break: break-all;
+}
+
+#contact {
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-$grey: #C4C4C4;
+$grey: hsl(0, 0%, 77%);
 $portrait_width: 300px;
 
 html {
@@ -40,23 +40,21 @@ nav {
     }
 }
 
-h1 {
-	font-size: 2rem;
-}
-h2 {
-	font-size: 1.3rem;
-}
-section {
-	margin: 1%;
-}
-
-
 main {
 	margin: auto;
 	// z-index: 1;
 	height: 60%;
 	display: flex;
 	justify-content: center;
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.3rem;
+	}
+	section {
+		margin: 1%;
+	}
 }
 
 #rectangle {
@@ -90,38 +88,58 @@ main {
 	// background-color: red;
  }
 
-
-#member_cards {
-	background-color: green;
+#about {
+	font-size: 1em;
+}
+#projects {
+	font-size: 1em;
+}
+#members {
+	#member_cards {
+	background-color: hsl(0, 0%, 65%);
     display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	// #align-content: center;
-
-
-.portrait {
-	width: $portrait_width;
-	//padding: 2em;
-	
-
-}
-
-
-.member_card {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	
-	flex: 1 1 33%;
-
-	text-align: left;
-
-	h2 {
-		width: $portrait_width;
 	}
-	ul {
-		width: $portrait_width;	
-	} 
- }
+	.container {
+		display: flex;
+		text-align: center;
+		flex: 1 1 33%;
+		min-width: 350px;
+	}
+	.member_card {
+		min-width: 0;
+		max-width: 300px;
+		border: 2px solid black;
+		background-color: darkolivegreen;
+		border-radius: 6px;
+		padding: 6px;
+		margin: auto;
+		flex-shrink: 1;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		text-align: left;
 
+		* {
+			flex-grow: 1;
+		}
+		ul {
+			word-break: break-all;
+		}
+		// h2 {
+		// 	width: $portrait_width;
+		// }
+		// ul {
+			
+	
+		// }
+		// .portrait {
+		// 	width: $portrait_width;
+ 		// }
+	}
+}
+#contact {
+	font-size: 1em;
 }
