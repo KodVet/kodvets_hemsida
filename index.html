@@ -1,137 +1,145 @@
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kodvet</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body>   
     <header>
-        <img src="images/logo.svg" alt="Kodvet">        
+        <img src="images/logo.svg" alt="Kodvet logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href='#about'>
+                        Om oss
+                    </a>
+                </li>
+                <li>
+                    <a href='#projects'>
+                        Projekt   
+                    </a>      
+                </li>
+                <li>
+                    <a href='#members'>
+                        Medlemmar
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Kontakt
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="javascript:ChangeSection('about')" ><button type="button">[om oss]</button></a>
-        <a href="javascript:ChangeSection('projects')" ><button type="button">[projekt]</button></a>
-        <a href="javascript:ChangeSection('members')" ><button type="button">[medlemmar]</button></a>
-        <a href="javascript:ChangeSection('contact')" ><button type="button">[kontakt]</button></a>
-    </nav>
-    <div id = "border"></div>
     <main>
-            <!-- <img src="images/[.svg" id ="k_left" alt="" class="bracket"> -->
-            <div id="rectangle">
-                <section id = "about">
-                    <h1>Om oss</h1>
-                    <p> Vi är Kodvet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
-                    Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden som rör Kogvet. 
-                    I samband att vi gör dettta nödvändiga arbete har vi även som mål att lära oss om webbutveckling 
-                    och interaktionsdesign i en härlig grupp.
-                    </p>
-                </section>
-                <section id = "projects">
-                    <h1>Projekt</h1>
-                    <article>
-                        <h2>Nappn</h2>
-                        <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
-                        På denna app får den nya studenten information om den kåranordnade mottagningen. 
-                        Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
-                        med viktiga platser så den nya studenten hittar rätt.
-                        </p>
-                    </article>
-                    <article>
-                        <h2>Kognivote</h2>
-                        <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
-                            Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
-                            efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
-                        </p>
-                    </article>
-                </section>
-                <section id = "members">
-                    <h1>Medlemmar</h1>
-                    <p>Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
-                        Bland annat ska det alltid finnas en sekreterare i kärngruppen. Här följer lite info om medlemmarna i den nuvarande kärngruppen
-                    </p>
-                    <div id="member_cards">
-                        <div class="container">
-                            <div class ="member_card alex">
-                                <h2>Alex</h2>
-                                <ul>
-                                    <li>Roll: Webbmaster</li>
-                                    <li>Medlem sedan: 2019</li>
-                                    <li>Stan för: Charli XCX</li>
-                                </ul>
-                                
-                                <img src="images/Untitled.png" alt="" class="portrait">
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class= "member_card matilda">
-                                <h2>Matilda</h2>
-                                <ul>
-                                    <li>Roll: Projektledare</li>
-                                    <li>Medlem sedan: 2019</li>
-                                    <li>Bästa personlighetsdrag: Pratar jättemycket</li>
-                                </ul>
-                                
-                                <img src="images/Untitled.png" alt="" class="portrait">
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="member_card johannes">
-                                <h2>Johannes</h2>
-                                <ul>
-                                    <li>Roll: Webbansvarig</li>
-                                    <li>Medlem sedan: 2020</li>
-                                    <li>Kosthållning: Enbart ägg</li>
-                                </ul>
-
-                                <img src="images/Untitled.png" alt="" class="portrait">
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="member_card thea">
-                            <h2>Thea</h2>
-                            <ul>
-                                <li>Roll: Sekreterare</li>
-                                <li>Medlem sedan: 2020</li>
-                                <li>Talang: otroligt opassande ordlekar</li>
-                            </ul>
-                                <img src="images/Untitled.png" alt="" class="portrait">
-                        </div>
-                        </div>
-                        <div class="container">
-                            <div class="member_card gustaf">
-                            <h2>Gustaf</h2>
-                            <ul>
-                                <li>Roll: Webbansvarig</li>
-                                <li>Medlem sedan: 2020</li>
-                                <li>Hotell: Trivago</li>
-                            </ul>
-                            <img src="images/Untitled.png" alt="" class="portrait">
-                        </div>
-                        </div>
+        <section id="about">
+            <h1>Om oss</h1>
+            <p> Vi är Kodvet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
+                Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden som rör Kogvet. 
+                I samband att vi gör dettta nödvändiga arbete har vi även som mål att lära oss om webbutveckling 
+                och interaktionsdesign i en härlig grupp.
+            </p>
+        </section>
+        <section id="members">
+            <h1>Medlemmar</h1>
+            <p>Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
+                Bland annat ska det alltid finnas en sekreterare i kärngruppen. Här följer lite info om medlemmarna i den nuvarande kärngruppen
+            </p>
+            <div id="member_cards">
+                <div class="container">
+                    <div class ="member_card alex">
+                        <h2>Alex</h2>
+                        <ul>
+                            <li>Roll: Webbmaster</li>
+                            <li>Medlem sedan: 2019</li>
+                            <li>Stan för: Charli XCX</li>
+                        </ul>
                         
+                        <img src="images/Untitled.png" alt="" class="portrait">
                     </div>
-                </section>  
-                <section id= "contact">
-                    <h1>Kontakt</h1>
-                    <p>Du kan nå oss via messenger på <a href="https://www.facebook.com/kodvet">Facebook</a> eller vår <a href="mailto:webmaster@example.com"> mail</a>. Gå gärna med i vår <a href="https://discord.gg/t5ax74jV"> häng-discord</a> för mer sociala sammanhang.</p>
-                    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-                        new Crate({
-                          server: '742408774568116234', // KodVet
-                          channel: '742408775071170745' // #general
-                        })
-                    </script>
-                </section> 
+                </div>
+                <div class="container">
+                    <div class= "member_card matilda">
+                        <h2>Matilda</h2>
+                        <ul>
+                            <li>Roll: Projektledare</li>
+                            <li>Medlem sedan: 2019</li>
+                            <li>Bästa personlighetsdrag: Pratar jättemycket</li>
+                        </ul>
+                        
+                        <img src="images/Untitled.png" alt="" class="portrait">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="member_card johannes">
+                        <h2>Johannes</h2>
+                        <ul>
+                            <li>Roll: Webbansvarig</li>
+                            <li>Medlem sedan: 2020</li>
+                            <li>Kosthållning: Enbart ägg</li>
+                        </ul>
+
+                        <img src="images/Untitled.png" alt="" class="portrait">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="member_card thea">
+                    <h2>Thea</h2>
+                    <ul>
+                        <li>Roll: Sekreterare</li>
+                        <li>Medlem sedan: 2020</li>
+                        <li>Talang: otroligt opassande ordlekar</li>
+                    </ul>
+                        <img src="images/Untitled.png" alt="" class="portrait">
+                </div>
+                </div>
+                <div class="container">
+                    <div class="member_card gustaf">
+                    <h2>Gustaf</h2>
+                    <ul>
+                        <li>Roll: Webbansvarig</li>
+                        <li>Medlem sedan: 2020</li>
+                        <li>Hotell: Trivago</li>
+                    </ul>
+                    <img src="images/Untitled.png" alt="" class="portrait">
+                </div>
+                </div>
+                
             </div>
-            <!-- <img src="images/].svg" id ="k_right" alt="" class="bracket"> -->
+        </section>    
+        <section id='projects'>
+            <h1>Projekt</h1>
+            <article>
+                <h2>Nappn</h2>
+                <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
+                På denna app får den nya studenten information om den kåranordnade mottagningen. 
+                Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
+                med viktiga platser så den nya studenten hittar rätt.
+                </p>
+            </article>
+            <article>
+                <h2>Kognivote</h2>
+                <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
+                    Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
+                    efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
+                </p>
+            </article>
+        </section>
+        <section id="contact">
+            <h1>Kontakt</h1>
+            <p>Du kan nå oss via messenger på <a href="https://www.facebook.com/kodvet">Facebook</a> eller vår <a href="mailto:webmaster@example.com"> mail</a>. Gå gärna med i vår <a href="https://discord.gg/t5ax74jV"> häng-discord</a> för mer sociala sammanhang.</p>
+            <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+                new Crate({
+                  server: '742408774568116234', // KodVet
+                  channel: '742408775071170745' // #general
+                })
+            </script>
+        </section>
     </main>
-    <script src="main.js"></script>
 </body>
 </html>
