@@ -7,10 +7,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">    
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </head>
 <body>   
     <header>
-        <img src="images/logo.svg" alt="Kodvet logo">
         <nav>
             <ul>
                 <li>
@@ -22,6 +25,9 @@
                     <a href='#projects'>
                         Projekt   
                     </a>      
+                </li>
+                <li>
+                    <img src="images/logo.svg" alt="Kodvet logo" id="logo">
                 </li>
                 <li>
                     <a href='#members'>
@@ -37,15 +43,57 @@
         </nav>
     </header>
     <main>
+        <section id="hero">
+        <div class="3wrapper">  
+            <h1 id ="hero-text"> Digitala lösningar som förbättrar och förenklar sektionsarbetet</h1>
+            <img src="kogvet.png" alt="kogvets logga">
+        </div>
+        </section>
         <section id="about">
+        <div class="wrapper">
             <h1>Om oss</h1>
+
             <p> Vi är Kodvet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
                 Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden som rör Kogvet. 
                 I samband att vi gör dettta nödvändiga arbete har vi även som mål att lära oss om webbutveckling 
                 och interaktionsdesign i en härlig grupp.
             </p>
+            <div class="row_of_pictures">
+                <div class="row_pic">
+                    <span class="iconify" data-icon="eos-icons:application-outlined" data-width="150" data-height="150"></span>
+                </div>
+                <div class="row_pic">
+                    <span class="iconify" data-icon="eos-icons:machine-learning-outlined" data-width="150" data-height="150"></span>
+                </div>
+                <div class="row_pic">
+                    <span class="iconify" data-icon="eos-icons:cluster-management" data-width="150" data-height="150"></span>
+                </div>
+            </div> 
+        </div> 
+        </section>
+         
+        <section id='projects'>
+        <div class="wrapper">
+            <h1>Projekt</h1>
+            <article>
+                <h2>Nappn</h2>
+                <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
+                På denna app får den nya studenten information om den kåranordnade mottagningen. 
+                Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
+                med viktiga platser så den nya studenten hittar rätt.
+                </p>
+            </article>
+            <article>
+                <h2>Kognivote</h2>
+                <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
+                    Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
+                    efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
+                </p>
+            </article>
+        </div>
         </section>
         <section id="members">
+        <div class="wrapper">
             <h1>Medlemmar</h1>
             <p>Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
                 Bland annat ska det alltid finnas en sekreterare i kärngruppen. Här följer lite info om medlemmarna i den nuvarande kärngruppen
@@ -111,26 +159,10 @@
                 </div>
                 
             </div>
-        </section>    
-        <section id='projects'>
-            <h1>Projekt</h1>
-            <article>
-                <h2>Nappn</h2>
-                <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
-                På denna app får den nya studenten information om den kåranordnade mottagningen. 
-                Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
-                med viktiga platser så den nya studenten hittar rätt.
-                </p>
-            </article>
-            <article>
-                <h2>Kognivote</h2>
-                <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
-                    Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
-                    efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
-                </p>
-            </article>
-        </section>
+        </div>
+        </section>   
         <section id="contact">
+        <div class="wrapper">
             <h1>Kontakt</h1>
             <p>Du kan nå oss via messenger på <a href="https://www.facebook.com/kodvet">Facebook</a> eller vår <a href="mailto:webmaster@example.com"> mail</a>. Gå gärna med i vår <a href="https://discord.gg/t5ax74jV"> häng-discord</a> för mer sociala sammanhang.</p>
             <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
@@ -139,6 +171,7 @@
                   channel: '742408775071170745' // #general
                 })
             </script>
+        </div>
         </section>
     </main>
 </body>
