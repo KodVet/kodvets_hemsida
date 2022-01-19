@@ -13,7 +13,7 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </head>
 <body>   
-    <header>
+    <header id='header'>
         <nav>
             <ul>
                 <li>
@@ -27,11 +27,13 @@
                     </a>      
                 </li>
                 <li>
-                    <img src="images/logo.svg" alt="Kodvet logo" id="logo">
+                    <a href='#hero'> 
+                    <img src="images/logo-center.png" alt="Kodvet logo" id="logo" >
+                    </a>
                 </li>
                 <li>
                     <a href='#members'>
-                        Medlemmar
+                        Medlem
                     </a>
                 </li>
                 <li>
@@ -44,51 +46,67 @@
     </header>
     <main>
         <section id="hero">
-        <div class="3wrapper">  
+        <div class="wrapper">  
             <h1 id ="hero-text"> Digitala lösningar som förbättrar och förenklar sektionsarbetet</h1>
-            <img src="kogvet.png" alt="kogvets logga">
+            <img src="images/kogvet.png" alt="kogvets logga"  width="210" id="kogvetlogga">
         </div>
         </section>
         <section id="about">
-        <div class="wrapper">
-            <h1>Om oss</h1>
+            <div class="wrapper">
+                <div class="about_text">
+                    <h1>Om oss</h1>
 
-            <p> Vi är Kodvet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
-                Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden som rör Kogvet. 
-                I samband att vi gör dettta nödvändiga arbete har vi även som mål att lära oss om webbutveckling 
-                och interaktionsdesign i en härlig grupp.
-            </p>
-            <div class="row_of_pictures">
-                <div class="row_pic">
-                    <span class="iconify" data-icon="eos-icons:application-outlined" data-width="150" data-height="150"></span>
+                    <p> 
+                        Vi är Kodvet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
+                        Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden som rör Kogvet.
+                    </p> 
+                    
+                    <p>
+                        I samband att vi gör detta nödvändiga arbete har vi även som mål att lära oss om webbutveckling och interaktionsdesign i ett härligt sällskap
+
+                    </p>
                 </div>
-                <div class="row_pic">
-                    <span class="iconify" data-icon="eos-icons:machine-learning-outlined" data-width="150" data-height="150"></span>
-                </div>
-                <div class="row_pic">
-                    <span class="iconify" data-icon="eos-icons:cluster-management" data-width="150" data-height="150"></span>
-                </div>
+                <div class="row_of_pictures">
+                    <div class="row_pic">
+                        <span class="iconify" data-icon="eos-icons:application-outlined" data-width="150" data-height="150"></span>
+                        <p>webbutveckling</p>
+                    </div>
+                    <div class="row_pic">
+                        <span class="iconify" data-icon="eos-icons:machine-learning-outlined" data-width="150" data-height="150"></span>
+                        <p>kompetensutveckling</p>
+                    </div>
+                    <div class="row_pic">
+                        <span class="iconify" data-icon="eos-icons:cluster-management" data-width="150" data-height="150"></span>
+                        <p>systemhantering</p>
+                    </div>
+                </div> 
             </div> 
-        </div> 
         </section>
-         
+            
         <section id='projects'>
         <div class="wrapper">
             <h1>Projekt</h1>
-            <article>
-                <h2>Nappn</h2>
-                <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
-                På denna app får den nya studenten information om den kåranordnade mottagningen. 
-                Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
-                med viktiga platser så den nya studenten hittar rätt.
-                </p>
+            <article id="nappn">
+                <div class="wrapper">
+                    <h2>Nappn</h2>   
+                    <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
+                    På denna app får den nya studenten information om den kåranordnade mottagningen. 
+                    Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
+                    med viktiga platser så den nya studenten hittar rätt.
+                    </p>
+                </div>
+                <img src="images\placeholder.png" alt="">
+                 
             </article>
-            <article>
-                <h2>Kognivote</h2>
-                <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
+            <article id="kognivote"> 
+                <div class="wrapper">
+                    <h2>Kognivote</h2>
+                    <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
                     Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
                     efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
-                </p>
+                    </p>
+                </div>
+                <img src="images\placeholder.png" alt="">
             </article>
         </div>
         </section>
@@ -96,7 +114,7 @@
         <div class="wrapper">
             <h1>Medlemmar</h1>
             <p>Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
-                Bland annat ska det alltid finnas en sekreterare i kärngruppen. Här följer lite info om medlemmarna i den nuvarande kärngruppen
+                Bland annat ska det alltid finnas en sekreterare i kärngruppen. Här följer lite info om medlemmar i den nuvarande kärngruppen
             </p>
             <div id="member_cards">
                 <div class="container">
@@ -132,7 +150,7 @@
                             <li>Kosthållning: Enbart ägg</li>
                         </ul>
 
-                        <img src="images/Untitled.png" alt="" class="portrait">
+                        <img src="images/Johannes.png" alt="" class="portrait" height="200">
                     </div>
                 </div>
                 <div class="container">
@@ -154,7 +172,7 @@
                         <li>Medlem sedan: 2020</li>
                         <li>Hotell: Trivago</li>
                     </ul>
-                    <img src="images/Untitled.png" alt="" class="portrait">
+                    <img src="images/gustaf_vect.png" alt="" class="portrait" height="200">
                 </div>
                 </div>
                 
@@ -165,14 +183,15 @@
         <div class="wrapper">
             <h1>Kontakt</h1>
             <p>Du kan nå oss via messenger på <a href="https://www.facebook.com/kodvet">Facebook</a> eller vår <a href="mailto:webmaster@example.com"> mail</a>. Gå gärna med i vår <a href="https://discord.gg/t5ax74jV"> häng-discord</a> för mer sociala sammanhang.</p>
-            <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+            <!-- <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
                 new Crate({
                   server: '742408774568116234', // KodVet
                   channel: '742408775071170745' // #general
                 })
-            </script>
+            </script> -->
         </div>
         </section>
     </main>
 </body>
+<script src = "javascript.js"></script>
 </html>

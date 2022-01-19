@@ -1,3 +1,5 @@
+
+
 html{
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
@@ -16,6 +18,11 @@ header{
     height: 120px;
     font-weight: 700;
     margin: 0;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    transition: 0.4s;
+
 }
 
 header img{
@@ -26,16 +33,20 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    justify-content: center;
     column-gap: 30px;
     align-items: center;
     max-width: 720px;
     min-width: 350px;
     list-style: none;
+    padding: 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    align-items: center;
+    
 }
 
 
@@ -54,11 +65,13 @@ section{
     margin: 0px;
     font-weight: 500;
     overflow: auto;
+
 }
 
 #about {
    background: linear-gradient(180deg, #FF9C41 0%, #FF7A00 100%);
-   color: white
+   color: white;
+   align-items: center;
 }
 
 #about h1{
@@ -70,12 +83,35 @@ section{
 }
 
 #projects {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(180deg, #55C159 0%, #00872E 100%);
+}
+#projects h1 {
+    align-self: flex-start;
+}
+#projects * {
+    display: flex;
+}
 
+#projects article {
+    display: flex;
+}
+#projects article .wrapper {
+    margin: 0;
+}
+#kognivote {
+    flex-direction: row-reverse;
+}
+
+#projects h2 {
+    align-self: flex-start;
 }
 
 #hero {
     background: linear-gradient(180deg, #35D8BA 0%, #34D7BB 0.01%, #32D5BC 15.62%, #31D3BD 23.44%, #23C2C6 100%, #23C2C6 100%);
+    justify-content: center;
+    text-shadow: 2px 2px 8px #000000;
 
 }
 
@@ -84,12 +120,25 @@ section{
     text-align: center;
     color: #FFFFFF;
 
+
+}
+
+#kogvetlogga {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper {
+    display: flex;
     margin: 60px;
     max-width: 1320px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
 }
+
 
 
 .row_of_pictures{
@@ -101,4 +150,9 @@ section{
     max-width: 720px;
     min-width: 350px;
 
+} 
+
+.row_pic{
+    text-align:center;
+    padding: 100px;
 }
