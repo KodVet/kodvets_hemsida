@@ -110,6 +110,12 @@ section{
 
 #members {
     background: linear-gradient(180deg, #BC4B4B 0%, #871800 100%);
+    display: flex;
+}
+
+.member_cards {
+    flex-wrap: wrap;
+
 }
 
 #projects h1 {
@@ -181,4 +187,27 @@ section{
 .row_pic{
     text-align:center;
     padding: 100px;
+}
+
+
+#contact{
+    background: linear-gradient(180deg, #AC4BBC 0%, #2B0087 100%);
+}
+
+a {
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#socials img {
+    width: 86px;
 }

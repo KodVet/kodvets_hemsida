@@ -3,6 +3,8 @@ window.onscroll = function() {scrollFunction()};
 //   console.log(window.scrollY); // Value of scroll Y in px
 // };
 
+
+
 function scrollFunction() {
   console.log(window.scrollY); // Value of scroll Y in px
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
@@ -15,3 +17,9 @@ function scrollFunction() {
     document.getElementById("header").style.opacity = 1;
   }
 }
+
+function appendYear(element) {
+  element.innerHTML += " " + new Date().getFullYear();
+}
+
+appendYear(document.querySelector(".copyright"))
