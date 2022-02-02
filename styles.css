@@ -1,4 +1,15 @@
+h1, h2, h3, h4, p{
+    margin: 0; 
+}
 
+h1{
+    margin-bottom: 36px;
+    font-size: 36px;
+}
+
+h2{
+    margin-bottom: 16px;
+}
 
 html{
     scroll-behavior: smooth;
@@ -26,7 +37,9 @@ header{
     width: 100%;
 	top: 0;
     transition: 0.4s;
+    z-index: 100;
 }
+
 
 .menu{
     height: 100%;
@@ -88,13 +101,18 @@ section{
 }
 
 #about {
-   background: linear-gradient(180deg, #FF9C41 0%, #FF7A00 100%);
-   align-items: center;
+    background: linear-gradient(180deg, #24C3C6 0%, #24C3C6 100%);
+    align-items: center;
 
 }
 
+.about_text{
+    max-width: 768px;
+}
+
 #about h1{
-    font-size: 2rem;
+
+    margin-bottom: 36px;
 }
 
 #about p{
@@ -104,22 +122,52 @@ section{
 #projects {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #55C159 0%, #00872E 100%);
-
+    background: linear-gradient(180deg, #24C3C6 0%, #7C83FD 100%);
 }
 
 #members {
-    background: linear-gradient(180deg, #BC4B4B 0%, #871800 100%);
+    background: linear-gradient(180deg, #7C83FD 0%, #AF2AEE 100%);
     display: flex;
 }
 
-.member_cards {
+#members p {
+    max-width: 60%;
+}
+#member_cards {
+    display: flex;
     flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    column-gap: 90px;
+    row-gap: 40px;
+    max-width: 900px;
+    margin-top: 50px;
 
 }
 
+
+
+.member_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 200px;
+
+}
+
+.member_card ul{
+    height: 100px;
+}
+  
+
+
+.member_card img {
+    width: 200px;
+    height: 200px; 
+}
 #projects h1 {
     align-self: flex-start;
+    margin-bottom: 72px;
 }
 
 #projects * {
@@ -128,12 +176,17 @@ section{
 
 #projects article {
     display: flex;
+    column-gap: 104px;
 }
+
+
 #projects article .wrapper {
     margin: 0;
+    max-width: 420px;
 }
 #kognivote {
     flex-direction: row-reverse;
+    margin-top: 88px;
 }
 
 #projects h2 {
@@ -141,7 +194,7 @@ section{
 }
 
 #hero {
-    background: linear-gradient(180deg, #35D8BA 0%, #34D7BB 0.01%, #32D5BC 15.62%, #31D3BD 23.44%, #23C2C6 100%, #23C2C6 100%);
+    background: linear-gradient(180deg, #35D8BA 0%, #34D7BB 0.01%, #23C2C6 100%, #23C2C6 100%);
     justify-content: center;
 
 
@@ -153,6 +206,22 @@ section{
     font-size: 36px;
     margin-bottom: 42px;
     max-width: 650px;
+}
+
+#hero h1{
+    margin-bottom: 72px;
+}
+
+#hero h2{
+    margin-top: 56px;
+    margin-bottom: 64px;
+}
+
+.heroSub{
+    font-weight: normal;
+    opacity: 90%;
+ 
+
 }
 
 #kogvetlogga {
@@ -189,9 +258,12 @@ section{
     padding: 100px;
 }
 
+.row_pic p{
+ margin-top: 40px;
+}
 
 #contact{
-    background: linear-gradient(180deg, #AC4BBC 0%, #2B0087 100%);
+    background: linear-gradient(180deg, #AF2AEE 0%, #420360 100%);
 }
 
 a {
@@ -203,11 +275,31 @@ a:hover{
 }
 
 #socials {
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
-
+    width: 50%;
+    justify-content: space-between;
 }
 
-#socials img {
-    width: 86px;
+#socials .iconify {
+    font-size: 100px;
 }
+
+footer{
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: left;
+    
+}
+
+
+.footer-row{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    max-width: 428px;
+    justify-content: space-around;
+    color: grey;
+}
+

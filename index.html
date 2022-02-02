@@ -30,7 +30,7 @@
                 </div>
                 <li>
                     <a href='#hero'> 
-                        <img src="images/logo-center.png" alt="Kodvet logo" id="logo" >
+                        <img src="images/logo.svg" alt="Kodvet logo" id="logo" >
                     </a>
                 </li>
                 <div class="menu right">
@@ -51,8 +51,9 @@
     <main>
         <section id="hero">
         <div class="wrapper">  
+            <h2 class="heroSub">VI TAR FRAM</h2>
             <h1 id ="hero-text"> Digitala lösningar som förbättrar och förenklar sektionsarbetet</h1>
-            <img src="images/kogvet.png" alt="kogvets logga"  width="210" id="kogvetlogga">
+            <img src="images/kogvet.png"  width="210" id="kogvetlogga">
         </div>
         </section>
         <section id="about">
@@ -77,7 +78,7 @@
                     </div>
                     <div class="row_pic">
                         <span class="iconify" data-icon="eos-icons:machine-learning-outlined" data-width="150" data-height="150"></span>
-                        <p>kompetensutveckling</p>
+                        <p>kompetensbyggande</p>
                     </div>
                     <div class="row_pic">
                         <span class="iconify" data-icon="eos-icons:cluster-management" data-width="150" data-height="150"></span>
@@ -91,7 +92,7 @@
         <div class="wrapper">
             <h1>Projekt</h1>
             <article id="nappn">
-                <div class="wrapper">
+                <div class="wrapper" id="nappn-text">
                     <h2>Nappn</h2>   
                     <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
                     På denna app får den nya studenten information om den kåranordnade mottagningen. 
@@ -99,18 +100,18 @@
                     med viktiga platser så den nya studenten hittar rätt.
                     </p>
                 </div>
-                <img src="images\placeholder.png" alt="">
+                <img src="images\nappn.png" alt="" height="350px">
                  
             </article>
             <article id="kognivote"> 
-                <div class="wrapper">
+                <div class="wrapper" id="kognivote-text">
                     <h2>Kognivote</h2>
                     <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
                     Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
                     efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
                     </p>
                 </div>
-                <img src="images\placeholder.png" alt="">
+                <img src="images\kognivote.png" alt="" height="350px">
             </article>
         </div>
         </section>
@@ -129,8 +130,10 @@
                             <li>Medlem sedan: 2019</li>
                             <li>Stan för: Charli XCX</li>
                         </ul>
-                        
-                        <img src="images/Untitled.png" alt="" class="portrait">
+                        <div class="img-container">
+                            <img src="images/Untitled.png" alt="" class="portrait">
+
+                        </div>
                     </div>
                 </div>
                 <div class="container">
@@ -142,7 +145,9 @@
                             <li>Bästa personlighetsdrag: Pratar jättemycket</li>
                         </ul>
                         
-                        <img src="images/Untitled.png" alt="" class="portrait">
+                        <div class="img-container">
+                            <img src="images/Untitled.png" alt="" class="portrait">
+                        </div>
                     </div>
                 </div>
                 <div class="container">
@@ -153,8 +158,9 @@
                             <li>Medlem sedan: 2020</li>
                             <li>Kosthållning: Enbart ägg</li>
                         </ul>
-
-                        <img src="images/Johannes.png" alt="" class="portrait" height="200">
+                        <div class="img-container">
+                            <img src="images/untitled.png" alt="" class="portrait" height="200">
+                        </div>
                     </div>
                 </div>
                 <div class="container">
@@ -165,7 +171,9 @@
                         <li>Medlem sedan: 2020</li>
                         <li>Talang: otroligt opassande ordlekar</li>
                     </ul>
-                        <img src="images/Untitled.png" alt="" class="portrait">
+                         <div class="img-container">
+                            <img src="images/Untitled.png" alt="" class="portrait">
+                        </div>
                 </div>
                 </div>
                 <div class="container">
@@ -176,7 +184,9 @@
                         <li>Medlem sedan: 2020</li>
                         <li>Hotell: Trivago</li>
                     </ul>
-                    <img src="images/gustaf_vect.png" alt="" class="portrait" height="200">
+                        <div class="img-container">
+                            <img src="images/untitled.png" alt="" class="portrait" height="200">
+                    </div>
                 </div>
                 </div>  
             </div>
@@ -187,9 +197,9 @@
             <h1>Kontakt</h1>
                 <p>Du kan nå oss via mess <a href="https://www.facebook.com/kodvet">Facebook</a> eller vår <a href="mailto:webmaster@example.com"> mail</a>. Gå gärna med i vår <a href="https://discord.gg/mmeG3FpW"> häng-discord</a> för mer sociala sammanhang.</p>
                 <div id="socials">
-                    <img src="images/facebook-icon.png" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <a href="https://www.facebook.com/kodvet"><span class="iconify" data-icon="bx:bxl-facebook-circle"></span></a>           
+                    <a href="webbgruppen.kogvet@gmail.com"><span class="iconify" data-icon="bx:bx-mail-send" ></span></a>
+                    <a href="https://discord.gg/mmeG3FpW"><span class="iconify" data-icon="bx:bxl-discord"></span></a>
                 </div>
                 <!-- <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
                     new Crate({
@@ -201,7 +211,10 @@
         </section>
     </main>
     <footer>
-       <span class="copyright">©Kodvet</span>
+        <span class="footer-row"> 
+            <span class="copyright">©Kodvet</span>
+            <span> <a href="https://www.kogvet.se">Kogvetsektionens</a> webbutskott</span>
+        </span>
     </footer>
 </body>
 <script src = "javascript.js"></script>
