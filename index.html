@@ -11,10 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">    
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>   
     <header id='header'>
         <nav>
+            <div class="navToggleButton">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul>
                 <div class="menu left">
                     <li>
@@ -30,7 +39,7 @@
                 </div>
                 <li>
                     <a href='#hero'> 
-                        <img src="images/logo.svg" alt="Kodvet logo" id="logo" >
+                        <img src="images/logo-center.png" alt="Kodvet logo" id="logo" >
                     </a>
                 </li>
                 <div class="menu right">
@@ -67,7 +76,7 @@
                     </p> 
                     
                     <p>
-                        I samband att vi gör detta nödvändiga arbete har vi även som mål att lära oss om webbutveckling och interaktionsdesign i ett härligt sällskap
+                        I samband med att vi gör detta nödvändiga arbete har vi även som mål att lära oss om webbutveckling och interaktionsdesign i ett härligt sällskap
 
                     </p>
                 </div>
@@ -105,10 +114,13 @@
             </article>
             <article id="kognivote"> 
                 <div class="wrapper" id="kognivote-text">
-                    <h2>Kognivote</h2>
-                    <p> Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
-                    Det är en hemsida varje student kommer åt via mobilen och man kan logga in med sitt student-id 
-                    efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
+                    <h2>
+                        Kognivote
+                    </h2>
+                    <p> 
+                        Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
+                        Det är en hemsida varje student kommer åt via mobilen där man kan logga in med sitt student-id 
+                        efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
                     </p>
                 </div>
                 <img src="images\kognivote.png" alt="" height="350px">
@@ -117,80 +129,177 @@
         </section>
         <section id="members">
         <div class="wrapper">
-            <h1>Medlemmar</h1>
-            <p>Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
+            <h1>
+                Medlemmar
+            </h1>
+            <p id="membertext">
+                Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
                 Bland annat ska det alltid finnas en sekreterare i kärngruppen. Här följer lite info om medlemmar i den nuvarande kärngruppen
             </p>
-            <div id="member_cards">
-                <div class="container">
-                    <div class ="member_card alex">
-                        <h2>Alex</h2>
-                        <ul>
-                            <li>Roll: Webbmaster</li>
-                            <li>Medlem sedan: 2019</li>
-                            <li>Stan för: Charli XCX</li>
-                        </ul>
-                        <div class="img-container">
-                            <img src="images/Untitled.png" alt="" class="portrait">
 
-                        </div>
+            <div class="container">
+                <div class="memberCard">
+                    <div class="hoverCard">
+                            <h1 class="name overlayText">
+                                Alexander
+                            </h1>
+                            <p class="post overlayText">
+                                ORDFÖRANDE
+                            </p>
+            
+                            <ul class="facts overlayText">
+                                <li>Medlem sedan: 2019</li>
+                                <li>Stan för: Charli XCX</li>
+                            </ul>
+                            <img class="memberImg" src="/images/members/alex.png"/>
                     </div>
+                    <div class="backdrop"></div>
                 </div>
-                <div class="container">
-                    <div class= "member_card matilda">
-                        <h2>Matilda</h2>
-                        <ul>
-                            <li>Roll: Projektledare</li>
+                <div class="memberCard">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Matilda
+                        </h1>
+                        <p class="post overlayText">
+                            VICE ORDFÖRANDE
+                        </p>
+                        <ul class="facts overlayText">
                             <li>Medlem sedan: 2019</li>
                             <li>Bästa personlighetsdrag: Pratar jättemycket</li>
                         </ul>
-                        
-                        <div class="img-container">
-                            <img src="images/Untitled.png" alt="" class="portrait">
-                        </div>
+                        <img class="memberImg" src="/images/members/alex.png"/>
                     </div>
+                     <div class="backdrop"></div>
                 </div>
-                <div class="container">
-                    <div class="member_card johannes">
-                        <h2>Johannes</h2>
-                        <ul>
-                            <li>Roll: Webbansvarig</li>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Marius
+                        </h1>
+                        <p class="post overlayText">
+                            UTBILDNINGSANSVARIG
+                        </p>
+                        <ul class="facts overlayText">
                             <li>Medlem sedan: 2020</li>
-                            <li>Kosthållning: Enbart ägg</li>
+                            <li>Rekord: Kodvets mest defenestrerade medlem</li>
                         </ul>
-                        <div class="img-container">
-                            <img src="images/untitled.png" alt="" class="portrait" height="200">
-                        </div>
+                        <img class="memberImg" src="/images/members/alex.png"/>
                     </div>
+                    <div class="backdrop"></div>
                 </div>
-                <div class="container">
-                    <div class="member_card thea">
-                    <h2>Thea</h2>
-                    <ul>
-                        <li>Roll: Sekreterare</li>
-                        <li>Medlem sedan: 2020</li>
-                        <li>Talang: otroligt opassande ordlekar</li>
-                    </ul>
-                         <div class="img-container">
-                            <img src="images/Untitled.png" alt="" class="portrait">
-                        </div>
-                </div>
-                </div>
-                <div class="container">
-                    <div class="member_card gustaf">
-                    <h2>Gustaf</h2>
-                    <ul>
-                        <li>Roll: Webbansvarig</li>
-                        <li>Medlem sedan: 2020</li>
-                        <li>Hotell: Trivago</li>
-                    </ul>
-                        <div class="img-container">
-                            <img src="images/untitled.png" alt="" class="portrait" height="200">
+                <div class="memberCard ">
+                     <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Thea
+                        </h1>
+                        <p class="post overlayText">
+                            SEKRETERARE
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2020</li>
+                            <li>Talang: Otroligt opassande ordlekar</li>
+                        </ul>
+                            <img class="memberImg" src="/images/members/alex.png"/>
                     </div>
+                    <div class="backdrop"></div>
                 </div>
-                </div>  
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Ida
+                        </h1>
+                        <p class="post overlayText">
+                            PIZZA AND MERCH MANAGER
+                        </p>
+                        <ul class="facts overlayText">
+                                <li>Medlem sedan: 2020</li>
+                                <li>Bästa hotell: Trivago</li>
+                            </ul>
+                            <img class="memberImg" src="/images/members/alex.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Gustaf
+                        </h1>
+                        <p class="post overlayText">
+                            WEBMEISTER
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2020</li>
+                            <li>Bästa hotell: Trivago</li>
+                        </ul>
+                        <img class="memberImg" src="/images/members/Gurra 1.jpg"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Victor
+                        </h1>
+                        <p class="post overlayText">
+                            PIZZA AND MERCH MANAGER
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2021</li>
+                            <li>SKriv något kul här</li>
+                        </ul>
+                        <img class="memberImg" src="/images/members/alex.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Björn
+                        </h1>
+                        <p class="post overlayText">
+                            Spons- och ekonomiansvarig
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2021</li>
+                            <li>SKriv något kul här</li>
+                        </ul>
+                        <img class="memberImg" src="/images/members/alex.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Fanny
+                        </h1>
+                        <p class="post overlayText">
+                            FUN AND EXPERIENCE MANAGER
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2021</li>
+                            <li>Kompetensområden: chips och dipp</li>
+                        </ul>
+                        <img class="memberImg" src="/images/members/alex.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Miguel
+                        </h1>
+                        <p class="post overlayText">
+                            VILKEN POST?
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2022</li>
+                            <li>SKriv något kul här</li>
+                        </ul>
+                        <img class="memberImg" src="/images/members/alex.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
             </div>
-        </div>
         </section>   
         <section id="contact">
         <div class="wrapper">
@@ -201,12 +310,7 @@
                     <a href="webbgruppen.kogvet@gmail.com"><span class="iconify" data-icon="bx:bx-mail-send" ></span></a>
                     <a href="https://discord.gg/mmeG3FpW"><span class="iconify" data-icon="bx:bxl-discord"></span></a>
                 </div>
-                <!-- <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-                    new Crate({
-                    server: '742408774568116234', // KodVet
-                    channel: '742408775071170745' // #general
-                    })
-                </script> -->
+
             </div>
         </section>
     </main>
@@ -218,4 +322,5 @@
     </footer>
 </body>
 <script src = "javascript.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </html>
