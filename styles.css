@@ -264,6 +264,10 @@ section {
   display: flex;
   -webkit-column-gap: 104px;
           column-gap: 104px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -326,7 +330,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   margin: 60px;
-  max-width: 1320px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

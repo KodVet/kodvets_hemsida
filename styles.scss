@@ -201,6 +201,7 @@ section{
 #projects article {
     display: flex;
     column-gap: 104px;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -258,7 +259,9 @@ section{
 .wrapper {
     display: flex;
     margin: 60px;
-    max-width: 1320px;
+    // max-width: 1320px;
+    flex-basis: 50%;
+    // width: 100%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
