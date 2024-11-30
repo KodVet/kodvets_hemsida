@@ -75,6 +75,12 @@ jobs:
       id-token: write
       contents: write
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get branch name
+        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
+
       - name: Download staging artifacts
         uses: actions/download-artifact@v3
         with:
