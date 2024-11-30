@@ -36,10 +36,20 @@ jobs:
         run: |
           pnpm run build
 
-      - name: Upload Artifacts
+      # Upload different artifacts based on branch
+      - name: Upload Production Artifacts
+        if: github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'build/'
+
+      - name: Upload Staging Artifacts
+        if: github.ref != 'refs/heads/master'
+        uses: actions/upload-artifact@v3
+        with:
+          name: staging-build
+          path: build/
+          retention-days: 1
 
   deploy-production:
     if: github.ref == 'refs/heads/master'
@@ -65,18 +75,16 @@ jobs:
       id-token: write
       contents: write
     steps:
-      - name: Get branch name
-        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
-
-      - name: Download artifacts
+      - name: Download staging artifacts
         uses: actions/download-artifact@v3
         with:
-          name: github-pages
+          name: staging-build
+          path: build
 
       - name: Deploy to staging
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: .
+          folder: build
           target-folder: staging/${{ env.BRANCH_NAME }}
