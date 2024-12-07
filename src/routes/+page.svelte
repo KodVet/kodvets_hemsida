@@ -10,7 +10,7 @@
 	<section id="hero">
 		<div class="wrapper">
 			<h2 class="heroSub">VI TAR FRAM</h2>
-			<h1 id="hero-text">Digitala lösningar som förbättrar och förenklar sektionsarbetet</h1>
+			<h1 id="hero-text">TEST</h1>
 			<img src="/images/kogvet.png" width="210" id="kogvetlogga" />
 		</div>
 	</section>
