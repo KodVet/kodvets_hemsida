@@ -100,6 +100,13 @@ jobs:
           name: staging-build
           path: build
 
+      - name: Verify downloaded artifacts
+        run: |
+          echo "=== Downloaded artifacts ==="
+          ls -la build/
+          echo "=== Content of index.html ==="
+          cat build/index.html | head -n 5
+
       - name: Deploy to staging
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -108,8 +115,9 @@ jobs:
           folder: build
           target-folder: staging/${{ env.BRANCH_NAME }}
 
-      - name: Print deployment info
+      - name: Verify gh-pages branch after deployment
         run: |
-          echo "Staged at: https://kodvet.kogvet.se/staging/$BRANCH_NAME"
-          echo "You can verify the deployment by checking the gh-pages branch"
-          echo "Target folder: staging/$BRANCH_NAME"
+          git fetch origin gh-pages
+          git checkout gh-pages
+          echo "=== Content of staging directory ==="
+          ls -la staging/${{ env.BRANCH_NAME }}/
