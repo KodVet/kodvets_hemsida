@@ -32,9 +32,22 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: ${{ github.ref == 'refs/heads/master' && format('/{0}', github.event.repository.name) || format('/{0}/staging/{1}', github.event.repository.name, env.BRANCH_NAME) }}
+          BASE_PATH: ${{ github.ref == 'refs/heads/master' && '' || format('/staging/{0}', env.BRANCH_NAME) }}
         run: |
+          echo "Building with BASE_PATH: $BASE_PATH"
           pnpm run build
+
+      - name: Print URLs
+        run: |
+          if [ "$GITHUB_REF" == "refs/heads/master" ]; then
+            echo "Production URL will be: https://kodvet.kogvet.se"
+          else
+            echo "Staging URL will be: https://kodvet.kogvet.se/staging/$BRANCH_NAME"
+            
+            # Print what was actually built
+            echo "Contents of build directory:"
+            ls -la build/
+          fi
 
       # Upload different artifacts based on branch
       - name: Upload Production Artifacts
@@ -94,3 +107,9 @@ jobs:
           branch: gh-pages
           folder: build
           target-folder: staging/${{ env.BRANCH_NAME }}
+
+      - name: Print deployment info
+        run: |
+          echo "Staged at: https://kodvet.kogvet.se/staging/$BRANCH_NAME"
+          echo "You can verify the deployment by checking the gh-pages branch"
+          echo "Target folder: staging/$BRANCH_NAME"
