@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - '**' # This triggers on all branches
 
 jobs:
   build_site:
@@ -31,23 +30,8 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        env:
-          BASE_PATH: ${{ github.ref == 'refs/heads/master' && '' || format('/staging/{0}', env.BRANCH_NAME) }}
         run: |
-          echo "Building with BASE_PATH: $BASE_PATH"
           pnpm run build
-
-      - name: Print URLs
-        run: |
-          if [ "$GITHUB_REF" == "refs/heads/master" ]; then
-            echo "Production URL will be: https://kodvet.kogvet.se"
-          else
-            echo "Staging URL will be: https://kodvet.kogvet.se/staging/$BRANCH_NAME"
-            
-            # Print what was actually built
-            echo "Contents of build directory:"
-            ls -la build/
-          fi
 
       # Upload different artifacts based on branch
       - name: Upload Production Artifacts
@@ -78,38 +62,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  deploy-staging:
-    if: github.ref != 'refs/heads/master'
-    needs: build_site
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Get branch name
-        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
-
-      - name: Download staging artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: staging-build
-          path: build
-
-      - name: Deploy to staging
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: build
-          target-folder: staging/${{ env.BRANCH_NAME }}
-
-      - name: Print deployment info
-        run: |
-          echo "Staged at: https://kodvet.kogvet.se/staging/$BRANCH_NAME"
-          echo "You can verify the deployment by checking the gh-pages branch"
-          echo "Target folder: staging/$BRANCH_NAME"
