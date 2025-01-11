@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$components/Header.svelte';
+	import { page } from '$app/stores';
 	import '../app.css';
 
 	let { children } = $props();
@@ -16,6 +17,8 @@
 		// 	document.getElementById('header').style.opacity = 1;
 		// }
 	}
+
+	let isVariantRoute = $derived($page.url.pathname.startsWith('/variants/'));
 </script>
 
 <div class="app" onscroll={scrollFunction}>
@@ -25,12 +28,14 @@
 		{@render children()}
 	</main>
 
-	<footer>
-		<span class="footer-row">
-			<span class="copyright">©Kodvet {new Date().getFullYear()}</span>
-			<span> <a href="https://www.kogvet.se">Kogvetsektionens</a> webbutskott</span>
-		</span>
-	</footer>
+	{#if !isVariantRoute}
+		<footer>
+			<span class="footer-row">
+				<span class="copyright">©Kodvet {new Date().getFullYear()}</span>
+				<span> <a href="https://www.kogvet.se">Kogvetsektionens</a> webbutskott</span>
+			</span>
+		</footer>
+	{/if}
 </div>
 
 <style>
