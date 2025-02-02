@@ -1,63 +1,60 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import { page } from '$app/stores';
 
-<header id="header">
-	<nav>
-		<div class="navToggleButton">
-			<span class="bar"></span>
-			<span class="bar"></span>
-			<span class="bar"></span>
-		</div>
-		<ul>
-			<div class="menu left">
-				<li>
-					<a href="#about" class="menu-item"> Om oss </a>
-				</li>
-				<li>
-					<a href="#projects" class="menu-item"> Projekt </a>
-				</li>
+	import VariantsNav from '$components/VariantsNav.svelte';
+
+	let isVariantRoute = $derived($page.url.pathname.startsWith('/variants/'));
+</script>
+
+<header>
+	<VariantsNav />
+	{#if !isVariantRoute}
+		<nav>
+			<div class="navToggleButton">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</div>
-			<li>
-				<a href="#hero">
-					<img src="/images/logo-center.png" alt="Kodvet logo" id="logo" />
-				</a>
-			</li>
-			<div class="menu right">
+			<ul>
+				<div class="menu left">
+					<li>
+						<a href="#about" class="menu-item"> Om oss </a>
+					</li>
+					<li>
+						<a href="#projects" class="menu-item"> Projekt </a>
+					</li>
+				</div>
 				<li>
-					<a href="#members" class="menu-item"> Medlemmar </a>
+					<a href="#hero">
+						<img src="/images/logo-center.png" alt="Kodvet logo" id="logo" />
+					</a>
 				</li>
-				<li>
-					<a href="#contact" class="menu-item"> Kontakt </a>
-				</li>
-			</div>
-		</ul>
-	</nav>
+				<div class="menu right">
+					<li>
+						<a href="#members" class="menu-item"> Medlemmar </a>
+					</li>
+					<li>
+						<a href="#contact" class="menu-item"> Kontakt </a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+	{/if}
 </header>
 
 <style>
 	header {
 		background: #313131;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
 		flex-direction: column;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
 		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
 		font-size: 16px;
-		height: 120px;
 		font-weight: 700;
 		margin: 0;
-		position: -webkit-sticky;
-		position: fixed;
+		position: sticky;
 		width: 100%;
 		top: 0;
-		-webkit-transition: 0.4s;
 		transition: 0.4s;
 		z-index: 100;
 	}
