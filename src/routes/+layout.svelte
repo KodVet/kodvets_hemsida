@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
+	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
 	import Header from '$components/Header.svelte';
-	import { page } from '$app/stores';
 	import '../app.css';
 
 	let { children } = $props();
@@ -18,7 +20,12 @@
 		// }
 	}
 
-	let isVariantRoute = $derived($page.url.pathname.startsWith('/variants/'));
+	let isVariantRoute = $derived(page.url.pathname.startsWith('/variants/'));
+
+	// If it's a 404, redirect to root with error state
+	if (page.status === 404 && browser) {
+		goto('/?error=404');
+	}
 </script>
 
 <div class="app" onscroll={scrollFunction}>

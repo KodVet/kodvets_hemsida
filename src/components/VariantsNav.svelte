@@ -1,11 +1,9 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
-	const variants = [
-		// { id: 'joachim-24-25', name: 'Joachim 24/25' }
-	];
+	const variants = [{ id: 'joachim-24-25', name: 'Joachim 24/25' }];
 
-	let { variant = '/' } = $derived($page.params);
+	let { variant = '/' } = $derived(page.params);
 </script>
 
 {#if variants.length !== 0}
