@@ -2,25 +2,24 @@
 	import { page } from '$app/stores';
 
 	const variants = [
-		{ id: 'joachim-24-25', name: 'Joachim 24/25' }
+		// { id: 'joachim-24-25', name: 'Joachim 24/25' }
 	];
 
 	let { variant = '/' } = $derived($page.params);
 </script>
 
-<nav class="variants-nav">
-	<ul>
-		<a href="/" class:active={variant === '/'}>Nuvarande</a>
-		{#each variants as v}
-			<a
-				class:active={variant === v.id}
-				href="/variants/{v.id}"
-			>
-				{v.name}
-			</a>
-		{/each}
-	</ul>
-</nav>
+{#if variants.length !== 0}
+	<nav class="variants-nav">
+		<ul>
+			<a href="/" class:active={variant === '/'}>Nuvarande</a>
+			{#each variants as v}
+				<a class:active={variant === v.id} href="/variants/{v.id}">
+					{v.name}
+				</a>
+			{/each}
+		</ul>
+	</nav>
+{/if}
 
 <style>
 	.variants-nav {
