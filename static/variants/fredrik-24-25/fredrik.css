@@ -69,7 +69,10 @@ h1, p{
 }
 
 h2{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     font-size: 4rem;
     margin-top: 4%;
     margin-bottom: 0;
