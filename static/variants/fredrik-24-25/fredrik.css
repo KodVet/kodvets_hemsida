@@ -77,3 +77,23 @@ h2{
     margin-top: 4%;
     margin-bottom: 0;
 }
+
+@media (max-width: 1000px) {
+    .herocontainer h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 500px) {
+    .herocontainer h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 80%;
+    }
+}
