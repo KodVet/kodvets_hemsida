@@ -1,31 +1,76 @@
 body{
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #221e1f;
     transition: background-color 0.8s;
     margin: 0;
 }
+
+h1, p{
+    font-family: "Source Code Pro", serif;
+}
+
 .herocontainer{
     position: relative;
     padding: 0%;
     margin: 0%;
     width: 100%;
 }
+
+.herocontainer h1{
+    position: absolute;
+    font-size: 6rem;
+    font-optical-sizing: auto;
+    font-weight: 100%;
+    font-style: normal;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    color: #f3f3f4;
+}
+
 .hero{
     position: relative;
     width:100%;
+    z-index: 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.8s;
+    opacity: 0.7;
+    z-index: 1;
 }
 
 .logocenter{
     position: absolute;
-    top: 20%;
-    left:40%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     height: 30%;
     filter: drop-shadow(0 0 0.5rem #f3f3f4b3);
     transition: filter 450ms;
+    z-index: 2;
 }
 .logocenter:hover{
     filter: drop-shadow(0 0 0.8rem #f3f3f4)
 }
 
+.about{
+    margin-top: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    color: #f3f3f4;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    margin-top: 4%;
+    margin-bottom: 0;
+}

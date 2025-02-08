@@ -3,23 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="fredrik.css">
         <title>Fredriks fantastiska variant</title>
         <script>
             lightmode = false
             function changeimg() {
                lightmode = !lightmode;
-               console.log(lightmode);
                // SET STYLE FOR LIGHTMODE
                if(lightmode){
                 document.body.style.backgroundColor = "#f3f3f4";
-                console.log("light");
+                document.querySelector(".overlay").style.opacity = "0.0";
+                document.querySelector(".about").style.color = "#221e1f";
                } 
                // SET STYLE FOR DARKMODE
                else {
                 document.body.style.backgroundColor = "#221e1f";
-                console.log("dark");
+                document.querySelector(".overlay").style.opacity = "0.7";
+                document.querySelector(".about").style.color = "#f3f3f4";
                };
+               //Switch between images shown
                 var img = document.getElementById('logocenter').src;
                 if (img.indexOf('/variants/fredrik-24-25/kodvet_logo_rund_indigo_bla.png')!=-1) {
                     document.getElementById('logocenter').src  = '/variants/fredrik-24-25/kodvet_logo_rund_vit_med_svart.png';
@@ -34,8 +39,26 @@
         
         <div class="herocontainer">
             <img src="hero.jpg" class="hero" z-index="0">
-            <img src="" alt="">
-            <img id="logocenter" class="logocenter" src="kodvet_logo_rund_vit_med_svart.png" z-index ="2" onclick="changeimg()">
+            <img src="overlay.jpg" class="overlay">
+            <img id="logocenter" class="logocenter" src="kodvet_logo_rund_vit_med_svart.png"  onclick="changeimg()">
+            <h1>Vi är kodVet!</h1>
+        </div>
+        <div class="about">
+            <h2>Om Oss</h2>
+            <p>
+                What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, 
+                and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare 
+                and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with 
+                precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying 
+                that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and 
+                your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you 
+                call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that's just 
+                with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States 
+                Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only 
+                you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held 
+                your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you goddamn idiot. I will shit fury all over you 
+                and you will drown in it. You're fucking dead, kiddo.
+            </p>
         </div>
         
     </body>
