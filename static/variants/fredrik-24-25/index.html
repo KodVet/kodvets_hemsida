@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="fredrik.css">
+        <title>Fredriks fantastiska variant</title>
+        <script>
+            lightmode = false
+            function changeimg() {
+               lightmode = !lightmode;
+               console.log(lightmode);
+               // SET STYLE FOR LIGHTMODE
+               if(lightmode){
+                document.body.style.backgroundColor = "#f3f3f4";
+                console.log("light");
+               } 
+               // SET STYLE FOR DARKMODE
+               else {
+                document.body.style.backgroundColor = "#221e1f";
+                console.log("dark");
+               };
+                var img = document.getElementById('logocenter').src;
+                if (img.indexOf('/variants/fredrik-24-25/kodvet_logo_rund_indigo_bla.png')!=-1) {
+                    document.getElementById('logocenter').src  = '/variants/fredrik-24-25/kodvet_logo_rund_vit_med_svart.png';
+                } else {
+                   document.getElementById('logocenter').src = '/variants/fredrik-24-25/kodvet_logo_rund_indigo_bla.png';
+               };
+               
+            }
+        </script>
+    </head>
+    <body>
+        
+        <div class="herocontainer">
+            <img src="hero.jpg" class="hero" z-index="0">
+            <img src="" alt="">
+            <img id="logocenter" class="logocenter" src="kodvet_logo_rund_vit_med_svart.png" z-index ="2" onclick="changeimg()">
+        </div>
+        
+    </body>
+</html>

@@ -32,7 +32,7 @@
 <style>
 	.variant-frame {
 		width: 100%;
-		height: calc(100vh - 50px);
+		height: 100vh;
 		border: none;
 		margin: 0;
 		padding: 0;
