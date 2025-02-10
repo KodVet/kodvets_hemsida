@@ -104,6 +104,9 @@ h2{
     h2{
         font-size: 2rem;
     }
+    .click{
+        opacity: 0;
+    }
 }
 @media (max-width: 500px) {
     .herocontainer h1{
