@@ -46,6 +46,25 @@ h1, p{
     z-index: 1;
 }
 
+.click{
+    animation: 1.5s infinite alternate idleclick;
+    position: absolute;
+    z-index: 3;
+    width: 1.5%;
+    transform: translate(-50%,-50%);
+    opacity: 0.3;
+    transform: rotate(-40deg);
+}
+
+@keyframes idleclick{
+    from{
+        translate: 57vw -32vw;
+    }
+    to{
+        translate: 58vw -31vw;
+    }
+}
+
 .logocenter{
     position: absolute;
     top: 35%;
