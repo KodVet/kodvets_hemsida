@@ -92,7 +92,7 @@ nav {
     width: 100%; /* Full width of the device */
     height: 100vh; /* Full viewport height */
     background-attachment: scroll;
-    background-image: url('variants/bella-24-25/start.jpg');
+    background-image: url('/variants/bella-24-25/start.jpg');
     display: flex; /* Enables Flexbox */
     justify-content: center; /* Horizontally centers */
     align-items: center; /* Vertically centers */
