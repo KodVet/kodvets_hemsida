@@ -4,7 +4,8 @@
 	const variants = [
 		{ id: 'joachim-24-25', name: 'Joachim 24/25' },
 		{ id: 'fredrik-24-25', name: 'Fredrik 24/25'},
-		{ id: 'bella-24-25', name: 'Bella 24/25'}
+		{ id: 'bella-24-25', name: 'Bella 24/25'}, 
+		{ id: 'ellen-24-25', name: 'Ellen 24/25'}
 	];
 
 	let { variant = '/' } = $derived($page.params);
