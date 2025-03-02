@@ -65,7 +65,7 @@ header {
     width: min(250px, 25vw);
     height: min(250px, 25vw);
     border-radius: 50%;
-    background: center/cover no-repeat url('images/kodvet_logo_rund_indigo_blå.png');
+    background: center/cover no-repeat url('images/kodvet_logo_rund_indigo_bla.png');
     box-shadow: 0 0 25px var(--text-color);
     cursor: pointer;
     position: relative;
