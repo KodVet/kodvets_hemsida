@@ -42,7 +42,7 @@ header {
     height: 100vh; 
     width: 100%; 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%,var(--bg-color)), 
-    url(images/Skärmavbild\ 2025-01-21\ kl.\ 17.24.11.png);
+    url(images/hero_bakgrund.png);
     background-position: center; 
     background-size: cover;
     position: relative;
@@ -597,15 +597,13 @@ input[type="checkbox"] {
 .new_contact-container {
     display: flex;
     align-items: flex-start;
+    max-width: 95%;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .new_contact-card {
-    flex: 1 1 50px;
     display: flex;
     justify-content: center;
-    margin-left: 100px;
     height: 400px;
 }
 
@@ -661,9 +659,12 @@ input[type="checkbox"] {
 
 .new_contact-text {
     flex: 50%;
-    max-width: 300px;
+    max-width: 450px;
     text-align: right;
     color: var(--text-color);
+}
+.new_contact-text p{
+    max-width: 500px;
 }
 
 .new_contact-text h2 {
@@ -683,15 +684,9 @@ input[type="checkbox"] {
 }
 
 .new_contact-text h4:hover {
-    font-size: 65px;
+    font-size: 62px;
 }
 
-.new_contact-text p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    margin-left: 200px;
-}
 
 .new_contact-btn a {
     font-size: 20px;
@@ -824,7 +819,74 @@ footer{
     .sidebar {
         display: flex
     }
+
+    .new_contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new_contact-text {
+        text-align: center;
+        max-width: 400px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
 }
+
+@media (max-width: 1000px) {
+
+    .hero_logga{ 
+        width: 250px;
+        height: 250px;
+    }
+    .text-box h3 {
+        max-width: 90%; /* Säkerställer att texten håller sig inom ramen */
+        margin: 20px auto; /* Centrerar utan att trycka utanför */
+        text-align: center; /* Håller texten snyggt centrerad */
+        white-space: normal; /* Tillåter radbrytning */
+        word-wrap: break-word; /* Bryter långa ord om nödvändigt */
+    }
+
+    .aboutKodvet {
+        display: block;
+        text-align: center;
+        padding: 100px;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .about-kodvet-img {
+        width: 100%;
+    } 
+
+    .center-text {
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin:auto;
+        
+    }
+
+    .kodvet_projekt {
+        height: 400px;  
+        width: 90%;
+    }
+    
+    .box {
+        width: 60%; 
+        height: 50%; 
+    }
+    
+}
+
+
+
+
 
 
 
