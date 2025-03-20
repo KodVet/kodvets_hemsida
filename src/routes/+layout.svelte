@@ -39,6 +39,10 @@
 </div>
 
 <style>
+	:global(*, *:before, *:after) {
+		box-sizing: border-box;
+	}
+
 	a {
 		color: inherit;
 	}
