@@ -1,0 +1,355 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodvet</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">    
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>   
+    <header id='header'>
+        <nav>
+            <div class="navToggleButton">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul>
+                <div class="menu left">
+                    <li>
+                        <a href='#about' class="menu-item">
+                            Om oss
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#projects' class="menu-item">
+                            Projekt   
+                        </a>      
+                    </li>
+                </div>
+                <li>
+                    <a href='#hero'> 
+                        <img src="images/logo-center.png" alt="Kodvet logo" id="logo" >
+                    </a>
+                </li>
+                <div class="menu right">
+                     <li>
+                    <a href='#members' class="menu-item">
+                        Medlemmar
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="menu-item">
+                        Kontakt
+                    </a>
+                </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+        <div class="wrapper">  
+            <h2 class="heroSub">VI TAR FRAM</h2>
+            <h1 id ="hero-text"> Digitala lösningar som förbättrar och förenklar sektionsarbetet</h1>
+            <img src="images/kogvet.png"  width="210" id="kogvetlogga">
+        </div>
+        </section>
+        <section id="about">
+            <div class="wrapper">
+                <div class="about_text">
+                    <h1>Om oss</h1>
+
+                    <p> 
+                        Vi är Kodvet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
+                        Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden som rör Kogvet.
+                    </p> 
+                    
+                    <p>
+                        I samband med att vi gör detta nödvändiga arbete har vi även som mål att lära oss om webbutveckling och interaktionsdesign i ett härligt sällskap
+
+                    </p>
+                </div>
+                <div class="row_of_pictures">
+                    <div class="row_pic">
+                        <span class="iconify" data-icon="eos-icons:application-outlined" data-width="150" data-height="150"></span>
+                        <p>webbutveckling</p>
+                    </div>
+                    <div class="row_pic">
+                        <span class="iconify" data-icon="eos-icons:machine-learning-outlined" data-width="150" data-height="150"></span>
+                        <p>kompetensbyggande</p>
+                    </div>
+                    <div class="row_pic">
+                        <span class="iconify" data-icon="eos-icons:cluster-management" data-width="150" data-height="150"></span>
+                        <p>systemhantering</p>
+                    </div>
+                </div> 
+            </div> 
+        </section>
+            
+        <section id='projects'>
+        <div class="wrapper">
+            <h1>Projekt</h1>
+            <article id="nappn">
+                <div class="wrapper" id="nappn-text">
+                    <h2>Nappn</h2>   
+                    <p>Nappn är en webapp som Kodvet tagit fram för mottagningen. 
+                    På denna app får den nya studenten information om den kåranordnade mottagningen. 
+                    Här finns ett schema över alla mottagningens aktiviteter och en karta över Linköping 
+                    med viktiga platser så den nya studenten hittar rätt.
+                    </p>
+                </div>
+                <img src="images\nappn.png" alt="" height="350px">
+                 
+            </article>
+            <article id="kognivote"> 
+                <div class="wrapper" id="kognivote-text">
+                    <h2>
+                        Kognivote
+                    </h2>
+                    <p> 
+                        Kognivote är ett verktyg för att räkna röster vid sektionsmöten. 
+                        Det är en hemsida varje student kommer åt via mobilen där man kan logga in med sitt student-id 
+                        efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID.
+                    </p>
+                </div>
+                <img src="images\kognivote.png" alt="" height="350px">
+            </article>
+        </div>
+        </section>
+        <section id="members">
+        <div class="wrapper">
+            <h1>
+                Medlemmar
+            </h1>
+            <p id="membertext">
+                Kodvet består av en förtroendevald som är ansvarig för utskottet. Den förtroendevalda rekryterar en kärngrupp av medlemmar.
+                Bland annat ska det alltid finnas en sekreterare i kärngruppen. Nedan kan du lära känna människorna bakom LiUs hetaste webbgrupp!
+            </p>
+
+            <div class="container">
+                <div class="memberCard">
+                    <div class="hoverCard">
+                            <h1 class="name overlayText">
+                                Alexander
+                            </h1>
+                            <p class="post overlayText">
+                                KODGORILLA & CEO
+                            </p>
+            
+                            <ul class="facts overlayText">
+                                <li>Medlem sedan: 2019</li>
+                                <li>Årskurs: 3</li>
+                                <li>Stan för: Roger Pontare</li>
+                            </ul>
+                            <img class="memberImg" src="images/members/alex.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Matilda
+                        </h1>
+                        <p class="post overlayText">
+                            CHEF VISIONÄR & CTO
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2019</li>
+                            <li>Årskurs: 3</li>
+                            <li>Bästa personlighetsdrag: Pratar jättemycket</li>
+                        </ul>
+                        <img class="memberImg" src="images/members/matilda.png"/>
+                    </div>
+                     <div class="backdrop"></div>
+                </div>
+                <div class="memberCard">
+                    <div class="hoverCard">
+                            <h1 class="name overlayText">
+                                Johannes
+                            </h1>
+                            <p class="post overlayText">
+                                HYPEBEAST & KODGOBLIN
+                            </p>
+            
+                            <ul class="facts overlayText">
+                                <li>Medlem sedan: 2020</li>
+                                <li>Årskurs: 2</li>
+                                <li>Kosthållning: Enbart ägg</li>
+                            </ul>
+                            <img class="memberImg" src="images/members/johannes.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Marius
+                        </h1>
+                        <p class="post overlayText">
+                            UTBILDNINGSANSVARIG & UTILITARIST
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2020</li>
+                            <li>Årskurs: 2</li>
+                            <li>Rekord: Kodvets mest defenestrerade medlem</li>
+                        </ul>
+                        <img class="memberImg" src="images/members/marius.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                     <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Thea
+                        </h1>
+                        <p class="post overlayText">
+                            ANNALIST & ANARKIST
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2020</li>
+                            <li>Årskurs: 3</li>
+                            <li>Talang: Otroligt opassande ordlekar</li>
+                        </ul>
+                            <img class="memberImg" src="images/members/thea-2.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Ida
+                        </h1>
+                        <p class="post overlayText">
+                            PIZZA AND MERCH MANAGER
+                        </p>
+                        <ul class="facts overlayText">
+                                <li>Medlem sedan: 2021</li>
+                                <li>Årskurs: 1</li>
+                                <li>Egenskap: Älskar smask</li>
+                            </ul>
+                            <img class="memberImg" src="images/members/ida.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Gustaf
+                        </h1>
+                        <p class="post overlayText">
+                            WEBMEISTER & HACKER
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2020</li>
+                            <li>Årskurs: 2</li>
+                            <li>Hotell: Trivago</li>
+                        </ul>
+                        <img class="memberImg" src="images/members/gustaf.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Victor
+                        </h1>
+                        <p class="post overlayText">
+                            LORD OF THE PHONE RINGS
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2021</li>
+                            <li>Årskurs: 1</li>
+                            <li>Har fler fingrar än genomsnittet</li>
+                        </ul>
+                        <img class="memberImg" src="images/members/victor.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Björn
+                        </h1>
+                        <p class="post overlayText">
+                            UTBILDNINGSANSVARIG & DEONTOLOG 
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2021</li>
+                            <li>Årskurs: 2</li>
+                            <li>Snittar 6 på Stanford Sleepiness Scale</li>
+                        </ul>
+                        <img class="memberImg" src="images/members/bjorn.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Fanny
+                        </h1>
+                        <p class="post overlayText">
+                            FUN AND EXPERIENCE MANAGER
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2021</li>
+                            <li>Årskurs: 2</li>
+                            <li>Kompetensområden: chips och dipp</li>
+                        </ul>
+                        <img class="memberImg" src="images/members/fanny.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+                <div class="memberCard ">
+                    <div class="hoverCard">
+                        <h1 class="name overlayText">
+                            Miguel
+                        </h1>
+                        <p class="post overlayText">
+                            KODJESUS
+                        </p>
+                        <ul class="facts overlayText">
+                            <li>Medlem sedan: 2022</li>
+                            <li>Årskurs: 1</li>
+                            <li>Kodar för våra synder</li>
+                        </ul>
+                        <img class="memberImg" src="images/members/miguel.png"/>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+            </div>
+        </section>   
+        <section id="contact">
+        <div class="wrapper">
+            <h1>Kontakt</h1>
+                <p>Du kan nå oss på <a href=https://www.instagram.com/webbgruppen_kodvet> Instagram</a>,  <a href="https://www.facebook.com/kodvet">Facebook</a> eller vår <a href="mailto:webbgruppen.kogvet@gmail.com"> mail</a>. Gå gärna med i vår <a href="https://discord.gg/mmeG3FpW"> häng-discord</a> för mer sociala sammanhang.</p>
+                <div id="socials">
+                    <a href="https://www.instagram.com/webbgruppen_kodvet/"><span id="Instagram_icon" class="iconify" data-icon="il:instagram"></span>
+                    <a href="https://www.facebook.com/kodvet"><span class="iconify" data-icon="bx:bxl-facebook-circle"></span></a>           
+                    <a href="mailto:webbgruppen.kogvet@gmail.com"><span class="iconify" data-icon="bx:bx-mail-send" ></span></a>
+                    <a href="https://discord.gg/5HgdNfJVRh"><span class="iconify" data-icon="bx:bxl-discord"></span></a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span class="footer-row"> 
+            <span class="copyright">©Kodvet</span>
+            <span> <a href="https://www.kogvet.se">Kogvetsektionens</a> webbutskott</span>
+        </span>
+    </footer>
+</body>
+<script src = "javascript.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</html>
