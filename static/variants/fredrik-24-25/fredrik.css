@@ -54,6 +54,7 @@ h1, p{
     transform: translate(-50%,-50%);
     opacity: 0.3;
     transform: rotate(-40deg);
+    transition: opacity 1s;
 }
 
 @keyframes idleclick{
