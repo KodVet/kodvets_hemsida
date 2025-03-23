@@ -1,0 +1,355 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: black;
+    scroll-behavior: smooth;
+}
+main {
+    background-image: linear-gradient(black, #62078c, #24C3C6);
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top:0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .1rem;
+    z-index: 1;
+}
+
+.off-screen-menu {
+    background-color: #62078c;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3 ease;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+nav {
+    padding: 1rem;
+    display: flex;
+}
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: 2rem;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #24C3C6;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3 ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span{
+    background-color: #24C3C6;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+.bild {
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    width: 100%; /* Full width of the device */
+    height: 100vh; /* Full viewport height */
+    background-attachment: scroll;
+    background-image: url('/variants/bella-24-25/start.jpg');
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /* Vertically centers */
+}
+.hero{
+    display:block;
+    justify-content: center;
+    align-items: center;
+}
+.filter {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(128, 128, 128, 0), black);
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.bild h1 {
+    position:relative; /* Makes h1 positionable within the parent */
+    top: 75%; /* Move down 50% of the parent height */
+    left: 50%; /* Move right 50% of the parent width */
+    transform: translate(-50%, -50%); /* Offset to truly center */
+}
+h1 {
+    margin: 0px;
+    color: whitesmoke;
+    font-size: 80px;
+    text-align: center;
+}
+h2{
+    margin: 0px;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    font-size: 1rem;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #1b0525;
+    text-decoration: none;
+    font-weight: bold;
+}
+span{
+    font-family: 'Courier New', Courier, monospace;
+}
+.filter .logga {
+    display: block;
+}
+.logga {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+.hero h1{
+    color: white;
+    font-size: 20px;
+}
+.projects{
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    width: 100%; /* Full width of the device */
+    min-height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /* Vertically centers */
+    position: relative;
+}
+.about {
+    width: 100%; /* Full width of the device */
+    position: relative;
+    display: flex; /* Enables Flexbox */
+    flex-direction: column;
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /* Vertically centers */
+    position: relative;
+}
+.about_text{
+    width: 70vw;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /* Vertically centers */
+}
+.about_filter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.kodhang{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.pizzahang{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /* Vertically centers */
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.icon{
+    width: 80px;
+    margin: 50px;
+    margin-left: 50px;
+    align-items: center;
+}
+.about h1 .projects h1{
+    position: relative;
+    align-items: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about p{
+    font-size: 1rem;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{
+    display: flex;
+    justify-content: left;
+}
+#pizza{
+    width: 500px;
+    padding: 20px;
+}
+
+.footer-row{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    max-width: 428px;
+    justify-content: space-around;
+    color: grey;
+}
+.contacts{
+    align-items: center;
+    justify-content: center;
+    display:block;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials{
+    width: 50px;
+    align-items: center;
+}
+.rutafoot1{
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.rutafoot2{
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.rutafoot3{
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.loggafoot{
+    width: 120px;
+    align-items: center;
+}
+
+#kognivote{
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 50px;
+    margin-top: 88px;
+}
+#nappn{
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 50px;
+    margin-top: 88px;
+}
+#stuff{
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 50px;
+    margin-top: 88px;
+}
+#afju{
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 50px;
+    margin-top: 88px;
+}
+.wrapper {
+    display: flex;
+    max-width: device-width;
+    flex-basis: 50%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.filter .wrapper{
+    display: flex;
+    margin: 60px;
+    max-width: device-width;
+    flex-basis: 50%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
