@@ -38,6 +38,10 @@
 </div>
 
 <style>
+	:global(:root) {
+		--bg-color: #000;
+	}
+
 	:global(*, *:before, *:after) {
 		box-sizing: border-box;
 	}
