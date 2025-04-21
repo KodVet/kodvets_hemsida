@@ -2,6 +2,7 @@
 	import Header from '$components/Header.svelte';
 	import { page } from '$app/stores';
 	import '../app.css';
+	import VariantsNav from '$components/VariantsNav.svelte';
 
 	let { children } = $props();
 
@@ -33,16 +34,21 @@
 			<span class="footer-row">
 				<span class="copyright">©kodVet {new Date().getFullYear()}</span>
 			</span>
+			<VariantsNav />
 		</footer>
 	{/if}
 </div>
 
 <style>
 	:global(:root) {
-		--bg-color: #000;
+		--bg-color: rgb(12,12,12);
 	}
 
 	:global(*, *:before, *:after) {
 		box-sizing: border-box;
+	}
+
+	.app {
+		background: var(--bg-color)
 	}
 </style>

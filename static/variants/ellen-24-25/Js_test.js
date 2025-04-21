@@ -42,7 +42,7 @@ document.querySelectorAll('.toggle-label').forEach((label) => {
   });
 });
 
-// kontakt ---//
+// ----kontakt ---//
 function flipCard(card) {
   card.classList.toggle("flipped");
 }
@@ -53,11 +53,11 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n); // Rättade namnet till "showSlides"
+  showSlides(slideIndex += n); 
 }
 
 function currentSlides(n) {
-  showSlides(slideIndex = n); // Ändrar bildspelet till rätt index
+  showSlides(slideIndex = n); 
 }
 
 function showSlides(n) {
