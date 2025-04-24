@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Hero from "$components/Hero.svelte";
 	import Omoss from "$components/Omoss.svelte";
+	import Projekt from "$components/Projekt.svelte";
 </script>
 
 <svelte:head>
@@ -17,7 +18,7 @@
 
 <Hero></Hero>
 <Omoss></Omoss>
-
+<Projekt></Projekt>
 
 
 
