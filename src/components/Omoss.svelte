@@ -2,46 +2,50 @@
 	import { onMount } from 'svelte';
 
 	let slideIndex = 1;
+	let pictures = [
+		{
+			imgURL: 'images/bild5.jpg',
+			altText: 'Bild 1'
+		},
+		{
+			imgURL: 'images/bild4.png',
+			altText: 'Bild 2'
+		},
+		{
+			imgURL: 'images/blob6.png',
+			altText: 'Bild 3'
+		}
+	];
 
-	/**
-	 * @param {number} n
-	 */
-	function plusSlides(n) {
-		showSlides((slideIndex += n));
+	function plusSlides() {
+		setSlideIndex(slideIndex + 1);
 	}
-
+	function minusSlides() {
+		setSlideIndex(slideIndex - 1);
+	}
 	/**
 	 * @param {number} n
 	 */
 	function currentSlides(n) {
-		showSlides((slideIndex = n));
+		setSlideIndex(n);
 	}
 
 	/**
 	 * @param {number} n
 	 */
-	function showSlides(n) {
-		let i;
+	function setSlideIndex(n) {
 		let slides = document.getElementsByClassName('mySlides');
-		let dots = document.getElementsByClassName('dot');
 		if (n > slides.length) {
 			slideIndex = 1;
-		}
-		if (n < 1) {
+		} else if (n < 1) {
 			slideIndex = slides.length;
+		} else {
+			slideIndex = n;
 		}
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = 'none';
-		}
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(' active', '');
-		}
-		slides[slideIndex - 1].style.display = 'block';
-		dots[slideIndex - 1].className += ' active';
 	}
 
 	onMount(() => {
-		showSlides(slideIndex);
+		setSlideIndex(slideIndex);
 	});
 </script>
 
@@ -75,21 +79,21 @@
 
 	<div class="about-kodvet-img">
 		<div class="slideshow-container">
-			<div class="mySlides fade">
-				<img src="images/bild5.jpg" alt="Bild 1" />
-			</div>
-			<div class="mySlides fade">
-				<img src="images/bild4.png" alt="Bild 2" />
-			</div>
-			<div class="mySlides fade">
-				<img src="images/blob6.png" alt="Bild 3" />
-			</div>
-			<a class="prev" onclick={(event) => plusSlides(-1)}>&#10094;</a>
-			<a class="next" onclick={(event) => plusSlides(1)}>&#10095;</a>
+			{#each pictures as picture, index}
+				<div class:block={index === slideIndex - 1} class="mySlides fade">
+					<img src={picture.imgURL} alt={picture.altText} />
+				</div>
+			{/each}
+			<a class="prev" onclick={(event) => minusSlides()}>&#10094;</a>
+			<a class="next" onclick={(event) => plusSlides()}>&#10095;</a>
 			<div class="dot-container">
-				<span class="dot" onclick={(event) => currentSlides(1)}></span>
-				<span class="dot" onclick={(event) => currentSlides(2)}></span>
-				<span class="dot" onclick={(event) => currentSlides(3)}></span>
+				{#each pictures as dot, index}
+					<span
+						class:active={index === slideIndex - 1}
+						class="dot"
+						onclick={(event) => currentSlides(index + 1)}
+					></span>
+				{/each}
 			</div>
 		</div>
 	</div>
@@ -235,6 +239,10 @@
 	.fade {
 		animation-name: fade;
 		animation-duration: 1.5s;
+	}
+
+	.block {
+		display: block;
 	}
 
 	@keyframes fade {
