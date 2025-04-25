@@ -7,7 +7,7 @@
 	}
 </script>
 
-<section class="hero_background" id="hem">
+<section class="hero_background" id="hero">
 	<div class="hero_logga" onclick={(event) => changeBackground(event)}></div>
 	<div class="text-box">
 		<h1>Webbgruppen kodVet</h1>
@@ -27,7 +27,6 @@
 		width: 100%;
 		background-image:
 			linear-gradient(to bottom, rgba(12, 12, 12, 0.2) 40%, var(--bg-color)),
-            
 			url(/images/hero_bakgrund.png);
 		background-size: cover;
 		position: relative;

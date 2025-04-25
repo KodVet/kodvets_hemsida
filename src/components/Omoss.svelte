@@ -1,8 +1,7 @@
 <script>
-	import { onMount } from "svelte";
+	import { onMount } from 'svelte';
 
 	let slideIndex = 1;
-
 
 	/**
 	 * @param {number} n
@@ -41,26 +40,39 @@
 		dots[slideIndex - 1].className += ' active';
 	}
 
-    onMount(() => {
-        showSlides(slideIndex);
-
-    })
+	onMount(() => {
+		showSlides(slideIndex);
+	});
 </script>
 
-<div class="aboutKodvet" id="om-oss">
+<div class="aboutKodvet" id="about">
 	<div class="about-text">
 		<h5>Om oss</h5>
 		<p>
-			Vi är kodVet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala lösningar. 
-            Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i cyberrymden som rör 
-            Kogvet. Vi har även gjort projekt åt andra exempelvis studentkåren StuFF.
-        </p>
-        <p>    
-            I samband med att vi 
-            gör detta nödvändiga arbete har vi även som mål att lära oss om webbutveckling och interaktionsdesign 
-            i ett härligt sällskap. Hör av dig om du är intresserad av att medverka på något av våra kodhäng!
+			Vi är kodVet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala
+			lösningar. Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i
+			cyberrymden som rör Kogvet. Vi har även gjort projekt åt andra exempelvis studentkåren StuFF.
 		</p>
+		<p>
+			I samband med att vi gör detta nödvändiga arbete har vi även som mål att lära oss om
+			webbutveckling och interaktionsdesign i ett härligt sällskap. Hör av dig om du är intresserad
+			av att medverka på något av våra kodhäng!
+		</p>
+		<div class="blob" id="blob">
+			<img src="/images/blob10.png" alt="Blob Image" />
+			<div class="iblob">
+				<h3>Joina gänget här!</h3>
+				<div class="socialIcons">
+					<a href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
+					<a href="https://www.instagram.com/webbgruppen_kodvet/"
+						><i class="ri-instagram-line"></i></a
+					>
+					<a href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
+				</div>
+			</div>
+		</div>
 	</div>
+
 	<div class="about-kodvet-img">
 		<div class="slideshow-container">
 			<div class="mySlides fade">
@@ -91,13 +103,12 @@
 		padding: 100px;
 		gap: 10%;
 		margin-left: 120px;
-		margin-top: 10%;
 		scroll-margin-top: 150px;
 	}
 
 	.about-text {
 		text-align: left;
-		margin-top: -10%;
+		margin-top: -5px;
 		width: 80%;
 	}
 
@@ -141,7 +152,6 @@
 		height: 550px;
 		object-fit: cover;
 		border-radius: 10px;
-
 	}
 
 	.prev,
@@ -193,6 +203,31 @@
 		transition: background-color 0.6s ease;
 	}
 
+	.blob {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		z-index: 1;
+	}
+
+	.blob img {
+		width: 100%;
+		height: auto;
+	}
+
+	.blob h3 {
+		background-color: transparent;
+		color: white;
+		font-size: 24px;
+		z-index: 2;
+	}
+
+	.iblob {
+		top: 25%;
+		left: 25%;
+		position: absolute;
+	}
+
 	:global(.active) {
 		background-color: #858282 !important;
 	}
@@ -209,5 +244,30 @@
 		to {
 			opacity: 1;
 		}
+	}
+	.socialIcons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.socialIcons a {
+		text-decoration: none;
+		padding: 10px;
+		background-color: #fff;
+		margin: 10px;
+		border-radius: 50%;
+		font-size: 20px;
+		color: #000;
+	}
+
+	.socialIcons a:hover {
+		background-color: var(--main-color);
+		transition: 0.5s;
+	}
+	.socialIcons a li {
+		font-size: 5rem;
+		color: black;
+		opacity: 0.9;
+		transition: transfrom 0.5s ease;
 	}
 </style>

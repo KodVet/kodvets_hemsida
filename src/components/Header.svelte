@@ -14,7 +14,6 @@
 		{ href: '#hero', label: 'Hem' },
 		{ href: '#about', label: 'Om oss' },
 		{ href: '#projects', label: 'Projekt' },
-		{ href: '#members', label: 'Medlemmar' },
 		{ href: '#contact', label: 'Kontakt' }
 	];
 
@@ -54,7 +53,7 @@
 	}
 </script>
 
-<svelte:window onscroll={handleScroll}></svelte:window>
+<svelte:window onscroll={handleScroll} />
 
 <header bind:this={headerElement}>
 	<div class="header-wrapper" class:visible={isVisible}>
@@ -62,7 +61,7 @@
 			<nav class="main-nav">
 				<div class="nav-container">
 					<div class="logo">
-						<a href=#hero><img src="/images/kodvet_logo_vit_liggande.png" alt=""></a>
+						<a href="#hero"><img src="/images/kodvet_logo_vit_liggande.png" alt="" /></a>
 					</div>
 					<div class="nav-links">
 						{#each navLinks as link}
@@ -107,13 +106,13 @@
 		width: 100%;
 		z-index: 1000;
 	}
-	
+
 	.header-wrapper {
 		width: 100%;
 		transition: transform 0.3s ease;
 		transform: translateY(-100%);
 	}
-	
+
 	.header-wrapper.visible {
 		transform: translateY(0);
 	}
