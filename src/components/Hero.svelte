@@ -2,13 +2,22 @@
 	/**
 	 * @param {MouseEvent & { currentTarget: EventTarget & HTMLDivElement; }} event
 	 */
-	function changeBackground(event) {
+	function flipCard(event) {
 		event.currentTarget.classList.toggle('clicked');
 	}
 </script>
 
 <section class="hero_background" id="hero">
-	<div class="hero_logga" onclick={(event) => changeBackground(event)}></div>
+	<div class="card" onclick={(event) => flipCard(event)}>
+		<div class="card-inner">
+			<div class="card-front">
+				<img src="images/kodvet_logo_rund_indigo_bla.png" alt="Framsida Bild" />
+			</div>
+			<div class="card-back">
+				<img src="images/kogvet.png" alt="Baksida Bild" />
+			</div>
+		</div>
+	</div>
 	<div class="text-box">
 		<h1>Webbgruppen kodVet</h1>
 	</div>
@@ -106,5 +115,51 @@
 
 	:global(.hero_logga.clicked) {
 		background: center/cover no-repeat url('/images/kogvet.jpeg');
+	}
+
+	.card {
+		width: min(250px, 25vw);
+		height: min(250px, 25vw);
+		margin: 1rem auto;
+		perspective: 1000px;
+		cursor: pointer;
+	}
+
+	.card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.6s;
+		transform-style: preserve-3d;
+	}
+	:global(.card.clicked) .card-inner {
+		transform: rotateY(180deg);
+	}
+	.card.flipped .card-inner {
+		transform: rotateY(180deg);
+	}
+
+	.card-front,
+	.card-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.card-back {
+		transform: rotateY(180deg);
+	}
+
+	.card-front img,
+	.card-back img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0.5rem;
 	}
 </style>
