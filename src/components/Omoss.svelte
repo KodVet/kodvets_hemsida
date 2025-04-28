@@ -100,6 +100,15 @@
 </div>
 
 <style>
+	* {
+		padding: 0;
+		margin: 0;
+
+		box-sizing: border-box;
+		list-style: none;
+		text-decoration: none;
+		font-family: 'Source Code Pro', monospace;
+	}
 	.aboutKodvet {
 		display: flex;
 		justify-content: space-between;
@@ -227,7 +236,7 @@
 	}
 
 	.iblob {
-		top: 25%;
+		top: 35%;
 		left: 25%;
 		position: absolute;
 	}
