@@ -1,6 +1,5 @@
 <script>
 	import { store } from '$lib/store.svelte';
-	import { fade } from 'svelte/transition';
 </script>
 
 <footer>
@@ -77,8 +76,8 @@
 		color: #000;
 	}
 
-	.socialIcons a:hover {
-		background-color: var(--main-color);
+	.socialIcons .loggafoot:hover {
+		background-color: grey;
 		transition: 0.5s;
 	}
 	.socialIcons a li {
