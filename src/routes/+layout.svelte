@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Header from '$components/Header.svelte';
-	import { page } from '$app/stores';
-	import '../app.css';
 	import VariantsNav from '$components/VariantsNav.svelte';
 	import { store } from '$lib/store.svelte';
 	import { slide } from 'svelte/transition';
+	import '../app.css';
+	import 'remixicon/fonts/remixicon.css';
 
 	let { children } = $props();
 

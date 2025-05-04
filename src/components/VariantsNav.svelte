@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	const variants = [
 		{ id: 'joachim-24-25', name: 'Joachim 24/25' },
@@ -9,7 +9,7 @@
 		{ id: 'kodvet-21-22', name: 'kodVet 21/22' }
 	];
 
-	let { variant = '/' } = $derived($page.params);
+	let { variant = '/' } = $derived(page.params);
 </script>
 
 {#if variants.length !== 0}
