@@ -53,14 +53,20 @@
 	<div class="about-text">
 		<h5>Om oss</h5>
 		<p>
-			Vi är kodVet, Kogvets webbgrupp! Vi sköter sektionens och alla dess utskotts digitala
-			lösningar. Detta innebär sektionshemsidor, diverse appar för studenter och annat ute i
-			cyberrymden som rör Kogvet. Vi har även gjort projekt åt andra exempelvis studentkåren StuFF.
+			Hallå där! kodVet här – vill du veta hur mycket din hemsida är värd? Skämt åsido! Vi är ett utskott till sektionen för kognitionsvetenskap på LiU och
+			filfaks enda programmeringsutskott!
 		</p>
 		<p>
-			I samband med att vi gör detta nödvändiga arbete har vi även som mål att lära oss om
-			webbutveckling och interaktionsdesign i ett härligt sällskap. Hör av dig om du är intresserad
-			av att medverka på något av våra kodhäng!
+			Vi pysslar exklusivt med webbutveckling i alla dess former. Mest bygger vi hemsidor och applikationer för vår egna sektion men vi jobbar också med andra
+			projekt!
+		</p>
+		<p>
+			kodVets filosofi är learning by doing! Det vi gör ska resultera i något konkret, design eller kod. Därför jobbar vi projektorienterat i olika grupper med
+			klara mål och deadlines.
+		</p>
+		<p>
+			Vårt mål: Att ge koggisar och webbisar möjligheten att bygga riktiga grejer och vässa sina skills inom webbutveckling och projektarbete – basically som en
+			webbyrå på campus!
 		</p>
 		<div class="blob" id="blob">
 			<img src="/images/blob10.png" alt="Blob Image" />
@@ -68,9 +74,7 @@
 				<h3>Joina gänget här!</h3>
 				<div class="socialIcons">
 					<a href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
-					<a href="https://www.instagram.com/webbgruppen_kodvet/"
-						><i class="ri-instagram-line"></i></a
-					>
+					<a href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
 					<a href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
 				</div>
 			</div>
@@ -88,11 +92,7 @@
 			<a class="next" onclick={(event) => plusSlides()}>&#10095;</a>
 			<div class="dot-container">
 				{#each pictures as dot, index}
-					<span
-						class:active={index === slideIndex - 1}
-						class="dot"
-						onclick={(event) => currentSlides(index + 1)}
-					></span>
+					<span class:active={index === slideIndex - 1} class="dot" onclick={(event) => currentSlides(index + 1)}></span>
 				{/each}
 			</div>
 		</div>
