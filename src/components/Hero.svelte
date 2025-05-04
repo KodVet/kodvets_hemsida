@@ -8,7 +8,7 @@
 </script>
 
 <section class="hero_background" id="hero">
-	<div class="card" onclick={(event) => flipCard(event)}>
+	<div title="Klicka på mig!" class="card" onclick={(event) => flipCard(event)}>
 		<div class="card-inner">
 			<div class="card-front">
 				<img src="images/kodvet_logo_rund_indigo_bla.png" alt="Framsida Bild" />
