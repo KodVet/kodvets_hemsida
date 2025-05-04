@@ -3,6 +3,8 @@
 	import { page } from '$app/stores';
 	import '../app.css';
 	import VariantsNav from '$components/VariantsNav.svelte';
+	import { store } from '$lib/store.svelte';
+	import { slide } from 'svelte/transition';
 
 	let { children } = $props();
 
@@ -18,8 +20,6 @@
 		// 	document.getElementById('header').style.opacity = 1;
 		// }
 	}
-
-	let isVariantRoute = $derived($page.url.pathname.startsWith('/variants/'));
 </script>
 
 <div class="app" onscroll={scrollFunction}>
@@ -29,19 +29,21 @@
 		{@render children()}
 	</main>
 
-	{#if !isVariantRoute}
-		<footer>
-			<span class="footer-row">
-				<span class="copyright">©kodVet {new Date().getFullYear()}</span>
-			</span>
-			<VariantsNav />
-		</footer>
-	{/if}
+	<footer>
+		<span class="footer-row">
+			<span class="copyright">©kodVet {new Date().getFullYear()}</span>
+		</span>
+		{#if store.showVariantsNav}
+			<div transition:slide={{ duration: 2000 }}>
+				<VariantsNav />
+			</div>
+		{/if}
+	</footer>
 </div>
 
 <style>
 	:global(:root) {
-		--bg-color: rgb(12,12,12);
+		--bg-color: rgb(12, 12, 12);
 	}
 
 	:global(*, *:before, *:after) {
@@ -49,6 +51,6 @@
 	}
 
 	.app {
-		background: var(--bg-color)
+		background: var(--bg-color);
 	}
 </style>

@@ -1,3 +1,8 @@
+<script>
+	import { store } from '$lib/store.svelte';
+	import { fade } from 'svelte/transition';
+</script>
+
 <footer>
 	<section class="footerContainer">
 		<div class="socialIcons">
@@ -26,6 +31,11 @@
 				<li><a href="#about">Om Oss</a></li>
 				<li><a href="#projects">Projekt</a></li>
 				<li><a href="#contact">Kontakt</a></li>
+				<li>
+					<a class="rainbow" onclick={() => (store.showVariantsNav = !store.showVariantsNav)}
+						>Varianter</a
+					>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -126,5 +136,20 @@
 
 	.svart-logo {
 		margin: 10px;
+	}
+	.rainbow {
+		background: linear-gradient(
+			to right,
+			#ef5350,
+			#f48fb1,
+			#7e57c2,
+			#2196f3,
+			#26c6da,
+			#43a047,
+			#eeff41,
+			#f9a825,
+			#ff5722
+		);
+		cursor: help;
 	}
 </style>

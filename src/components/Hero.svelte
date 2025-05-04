@@ -131,7 +131,7 @@
 		height: min(250px, 25vw);
 		margin: 1rem auto;
 		perspective: 1000px;
-		cursor: pointer;
+		cursor: grab;
 	}
 
 	.card-inner {
