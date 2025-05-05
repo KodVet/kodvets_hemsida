@@ -39,8 +39,7 @@
 		align-items: center;
 		justify-content: center;
 		height: 100vh;
-	}
-	.hero_background {
+		user-select: none;
 		height: 100vh;
 		width: 100%;
 		background-image:

@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import VariantsNav from '$components/VariantsNav.svelte';
+	import { page } from '$app/state';
 	import { scrollY } from 'svelte/reactivity/window';
 
-	let isVariantRoute = $derived($page.url.pathname.startsWith('/variants/'));
+	let isVariantRoute = $derived(page.url.pathname.startsWith('/variants/'));
 	let isVisible = $state(true);
 	let lastScrollY = $state(0);
 	let headerElement: HTMLElement;
