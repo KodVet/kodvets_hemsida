@@ -149,6 +149,8 @@
 			#f9a825,
 			#ff5722
 		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		cursor: help;
 	}
 </style>
