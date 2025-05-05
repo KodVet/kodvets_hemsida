@@ -53,20 +53,20 @@
 	<div class="about-text">
 		<h5>Om oss</h5>
 		<p>
-			Hallå där! kodVet här – vill du veta hur mycket din hemsida är värd? Skämt åsido! Vi är ett utskott till sektionen för kognitionsvetenskap på LiU och
-			filfaks enda programmeringsutskott!
+			Hallå där! kodVet här – vill du veta hur mycket din hemsida är värd? Skämt åsido! Vi är ett
+			utskott till sektionen för kognitionsvetenskap på LiU och filfaks enda programmeringsutskott!
 		</p>
 		<p>
-			Vi pysslar exklusivt med webbutveckling i alla dess former. Mest bygger vi hemsidor och applikationer för vår egna sektion men vi jobbar också med andra
-			projekt!
+			Vi pysslar exklusivt med webbutveckling i alla dess former. Mest bygger vi hemsidor och
+			applikationer för vår egna sektion men vi jobbar också med andra projekt!
 		</p>
 		<p>
-			kodVets filosofi är learning by doing! Det vi gör ska resultera i något konkret, design eller kod. Därför jobbar vi projektorienterat i olika grupper med
-			klara mål och deadlines.
+			kodVets filosofi är learning by doing! Det vi gör ska resultera i något konkret, design eller
+			kod. Därför jobbar vi projektorienterat i olika grupper med klara mål och deadlines.
 		</p>
 		<p>
-			Vårt mål: Att ge koggisar och webbisar möjligheten att bygga riktiga grejer och vässa sina skills inom webbutveckling och projektarbete – basically som en
-			webbyrå på campus!
+			Vårt mål: Att ge koggisar och webbisar möjligheten att bygga riktiga grejer och vässa sina
+			skills inom webbutveckling och projektarbete – basically som en webbyrå på campus!
 		</p>
 		<div class="blob" id="blob">
 			<img src="/images/blob10.png" alt="Blob Image" />
@@ -74,7 +74,9 @@
 				<h3>Joina gänget här!</h3>
 				<div class="socialIcons">
 					<a href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
-					<a href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
+					<a href="https://www.instagram.com/webbgruppen_kodvet/"
+						><i class="ri-instagram-line"></i></a
+					>
 					<a href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
 				</div>
 			</div>
@@ -92,7 +94,11 @@
 			<a class="next" onclick={(event) => plusSlides()}>&#10095;</a>
 			<div class="dot-container">
 				{#each pictures as dot, index}
-					<span class:active={index === slideIndex - 1} class="dot" onclick={(event) => currentSlides(index + 1)}></span>
+					<span
+						class:active={index === slideIndex - 1}
+						class="dot"
+						onclick={(event) => currentSlides(index + 1)}
+					></span>
 				{/each}
 			</div>
 		</div>
@@ -113,16 +119,16 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 100px;
+		padding: 80px;
 		gap: 10%;
-		margin-left: 120px;
+		margin-left: 70px;
 		scroll-margin-top: 150px;
 	}
 
 	.about-text {
 		text-align: left;
 		margin-top: -5px;
-		width: 80%;
+		width: 70%;
 	}
 
 	.about-text h5 {
@@ -135,7 +141,6 @@
 	}
 
 	.about-text p {
-		font-size: 16px;
 		line-height: 1.6;
 		margin-bottom: 20px;
 	}
@@ -218,26 +223,26 @@
 
 	.blob {
 		position: relative;
-		width: 100%;
+		width: 90%;
 		text-align: center;
 		z-index: 1;
 	}
 
 	.blob img {
-		width: 100%;
+		width: 90%;
 		height: auto;
 	}
 
 	.blob h3 {
 		background-color: transparent;
 		color: white;
-		font-size: 24px;
+		font-size: 20px;
 		z-index: 2;
 	}
 
 	.iblob {
-		top: 35%;
-		left: 25%;
+		top: 40%;
+		left: 30%;
 		position: absolute;
 	}
 
@@ -270,16 +275,19 @@
 	.socialIcons a {
 		text-decoration: none;
 		padding: 10px;
-		background-color: #fff;
+		background-color: rgba(255, 255, 255, 0.15);
 		margin: 10px;
 		border-radius: 50%;
 		font-size: 20px;
 		color: #000;
+		outline-color: rgba(255, 255, 255, 0);
 	}
 
 	.socialIcons a:hover {
 		background-color: var(--main-color);
-		transition: 0.5s;
+		outline-style: solid;
+		outline-color: rgba(255, 255, 255, 0.2);
+		transition: 0.3s ease-in-out;
 	}
 	.socialIcons a li {
 		font-size: 5rem;

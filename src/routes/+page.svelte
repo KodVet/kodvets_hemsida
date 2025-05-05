@@ -3,6 +3,7 @@
 	import Omoss from '$components/Omoss.svelte';
 	import Projekt from '$components/Projekt.svelte';
 	import Footer from '$components/Footer.svelte';
+	import Contact from '$components/Contact.svelte';
 </script>
 
 <svelte:head>
@@ -13,6 +14,7 @@
 <Hero></Hero>
 <Omoss></Omoss>
 <Projekt></Projekt>
+<Contact></Contact>
 <Footer></Footer>
 
 <style>
