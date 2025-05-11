@@ -52,31 +52,21 @@
 <div class="aboutKodvet" id="about">
 	<div class="about-text">
 		<h5>Om oss</h5>
+		<p>Hej! Vi är ett utskott till sektionen för kognitionsvetenskap på LiU och filfaks enda programmeringsutskott!</p>
 		<p>
-			Hallå där! kodVet här – vill du veta hur mycket din hemsida är värd? Skämt åsido! Vi är ett
-			utskott till sektionen för kognitionsvetenskap på LiU och filfaks enda programmeringsutskott!
+			Vi är ett härligt gäng som exklusivt håller på med webbprogrammering och gör hemsidor och applikationer. Oavsett om du har kodat massor innan eller bara
+			är intresserad av att lära dig är du välkommen att gå med. Vi lär oss tillsammans och jobbar i projektorienterade grupper där design och kod växer fram.
 		</p>
 		<p>
-			Vi pysslar exklusivt med webbutveckling i alla dess former. Mest bygger vi hemsidor och
-			applikationer för vår egna sektion men vi jobbar också med andra projekt!
-		</p>
-		<p>
-			kodVets filosofi är learning by doing! Det vi gör ska resultera i något konkret, design eller
-			kod. Därför jobbar vi projektorienterat i olika grupper med klara mål och deadlines.
-		</p>
-		<p>
-			Vårt mål: Att ge koggisar och webbisar möjligheten att bygga riktiga grejer och vässa sina
-			skills inom webbutveckling och projektarbete – basically som en webbyrå på campus!
+			Vi vill ge koggisar och webbisar möjligheten att bygga riktiga grejer och vässa sina skills inom webbutveckling och projektarbete – basically som en
+			webbyrå på campus!
 		</p>
 		<div class="blob" id="blob">
-			<img src="/images/blob10.png" alt="Blob Image" />
+			<img src="./images/blob_joina.png" alt="Blob Image" />
 			<div class="iblob">
-				<h3>Joina gänget här!</h3>
 				<div class="socialIcons">
 					<a href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
-					<a href="https://www.instagram.com/webbgruppen_kodvet/"
-						><i class="ri-instagram-line"></i></a
-					>
+					<a href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
 					<a href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
 				</div>
 			</div>
@@ -94,11 +84,7 @@
 			<a class="next" onclick={(event) => plusSlides()}>&#10095;</a>
 			<div class="dot-container">
 				{#each pictures as dot, index}
-					<span
-						class:active={index === slideIndex - 1}
-						class="dot"
-						onclick={(event) => currentSlides(index + 1)}
-					></span>
+					<span class:active={index === slideIndex - 1} class="dot" onclick={(event) => currentSlides(index + 1)}></span>
 				{/each}
 			</div>
 		</div>
@@ -167,7 +153,7 @@
 
 	.mySlides img {
 		width: 100%;
-		height: 550px;
+		height: 450px;
 		object-fit: cover;
 		border-radius: 10px;
 	}
@@ -229,20 +215,13 @@
 	}
 
 	.blob img {
-		width: 90%;
+		width: 92%;
 		height: auto;
 	}
 
-	.blob h3 {
-		background-color: transparent;
-		color: white;
-		font-size: 20px;
-		z-index: 2;
-	}
-
 	.iblob {
-		top: 40%;
-		left: 30%;
+		top: 50%;
+		left: 25%;
 		position: absolute;
 	}
 
@@ -276,7 +255,7 @@
 		text-decoration: none;
 		padding: 10px;
 		background-color: rgba(255, 255, 255, 0.15);
-		margin: 10px;
+		margin: 20px;
 		border-radius: 50%;
 		font-size: 20px;
 		color: #000;

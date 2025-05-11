@@ -1,19 +1,29 @@
 <div class="contactpic">
-	<img id="blob" src="./images/Group_2.png" />
-	<div class="left">
-		<a class="logga" href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
-		<!-- logga ska befinna sig på blob till vänster -->
+	<img id="blob" src="./images/Group_2_1.png" alt="Bakgrundsbild" />
+	<div class="left_div">
+		<!-- Logga placeras över bloben till vänster -->
+		<a class="logga" href="https://discord.gg/5HgdNfJVRh">
+			<i class="ri-discord-line"></i>
+		</a>
 	</div>
-	<div class="right">
-		<!-- texten ska vara ovan knappen  -->
-		<a class="contact-text">Text ska stå här fyll i senare</a>
-		<button class="contact-button">Klicka för mail!</button>
+
+	<div class="right_div">
+		<!-- Text och knapp placeras till höger över bloben -->
+		<div class="contact-text">Text ska stå här fyll i senare</div>
+		<a href="https://www.facebook.com/kodvet" class="new_contact-btn">KONTAKTA OSS</a>
 	</div>
 </div>
 
 <style>
 	.contactpic {
+		display: flex;
 		position: relative;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10%;
+		margin-left: 70px;
+		scroll-margin-top: 150px;
+		z-index: 1;
 	}
 	#blob {
 		display: flex;
@@ -21,54 +31,83 @@
 		width: 65%;
 		z-index: 0;
 	}
-	.contact-button {
+	.left_div,
+	.right_div {
 		position: absolute;
 		z-index: 1;
-		left: 55%;
-		top: 55%;
-		width: 10%;
-		height: 10%;
-		background-color: transparent;
-		color: #ffffff;
+		padding-top: 20%;
+		display: flex;
+	}
+
+	.left_div {
+		top: 0;
+		left: 18%;
+		margin: 20px;
+	}
+
+	.right_div {
+		margin: 50px;
+		top: 20;
+		display: flex;
+		flex-flow: column;
+		width: 30%;
+		right: 15%;
+	}
+
+	.new_contact-btn a {
+		font-size: 40px;
+	}
+
+	.new_contact-btn {
+		position: absolute;
+		z-index: 1;
+		left: 10%;
+		top: 60%;
+		width: 37%;
+		height: 15%;
+		display: inline-block;
+		background-color: #5c1a7d;
+		color: white;
+		padding: 15px 30px;
 		border-radius: 8px;
 		text-decoration: none;
-		font-weight: bold;
 		transition:
 			background-color 0.3s ease,
 			transform 0.3s ease;
 	}
-	.contactbutton a {
-		color: #000;
-	}
 
-	.contact-button:hover {
-		background-color: #6b66a1;
+	.new_contact-btn:hover {
+		background-color: #894da6;
 		transform: translateY(-3px);
 	}
 
 	.logga {
+		position: relative;
 		display: flex;
+		z-index: 1;
+		padding: 15px;
+		left: 160px;
+		top: -50px;
 		align-items: center;
-		justify-content: center;
-	}
-	.logga a {
-		text-decoration: none;
-		padding: 10px;
-		background-color: #fff;
-		margin: 10px;
+		background-color: rgba(255, 255, 255, 0.15);
 		border-radius: 50%;
-		font-size: 20px;
+		font-size: 25px;
 		color: #000;
+		outline-color: rgba(255, 255, 255, 0);
 	}
 
-	.logga a:hover {
+	.logga:hover {
 		background-color: var(--main-color);
-		transition: 0.5s;
+		outline-style: solid;
+		outline-color: rgba(255, 255, 255, 0.2);
+		transition: 0.3s ease-in-out;
 	}
-	.logga a li {
-		font-size: 5rem;
-		color: black;
-		opacity: 0.9;
-		transition: transfrom 0.5s ease;
+	.contact-text {
+		position: absolute;
+		left: -30px;
+		z-index: 1;
+		top: 35%;
+		font-size: 20px;
+		height: 18%;
 	}
 </style>
