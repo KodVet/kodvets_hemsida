@@ -215,13 +215,13 @@
 	}
 
 	.blob img {
-		width: 92%;
+		width: 100%;
 		height: auto;
 	}
 
 	.iblob {
 		top: 50%;
-		left: 25%;
+		left: 20%;
 		position: absolute;
 	}
 
@@ -258,7 +258,7 @@
 		margin: 20px;
 		border-radius: 50%;
 		font-size: 20px;
-		color: #000;
+		color: #ffff;
 		outline-color: rgba(255, 255, 255, 0);
 	}
 

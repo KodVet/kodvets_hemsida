@@ -1,16 +1,17 @@
 <div class="contactpic">
-	<img id="blob" src="./images/Group_2_1.png" alt="Bakgrundsbild" />
+	<!--<img id="blob" src="./images/Group_2_1.png" alt="Bakgrundsbild" />-->
+
 	<div class="left_div">
-		<!-- Logga placeras över bloben till vänster -->
-		<a class="logga" href="https://discord.gg/5HgdNfJVRh">
+		<img src="./images/liten_blob.png" alt="LeftBlob" id="left-blob" />
+		<a class="discordlogga" href="https://discord.gg/5HgdNfJVRh">
 			<i class="ri-discord-line"></i>
 		</a>
 	</div>
 
 	<div class="right_div">
-		<!-- Text och knapp placeras till höger över bloben -->
-		<div class="contact-text">Text ska stå här fyll i senare</div>
-		<a href="https://www.facebook.com/kodvet" class="new_contact-btn">KONTAKTA OSS</a>
+		<img src="./images/stor_blob.png" alt="RightBlob" id="right-blob" />
+		<div class="contact-text"><p>Text ska stå här fyll i senare</p></div>
+		<a href="https://www.facebook.com/kodvet" class="new_contact-btn"><p>KONTAKTA OSS</p></a>
 	</div>
 </div>
 
@@ -21,28 +22,27 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: 10%;
-		margin-left: 70px;
 		scroll-margin-top: 150px;
 		z-index: 1;
 	}
-	#blob {
-		display: flex;
-		margin: auto;
-		width: 65%;
-		z-index: 0;
-	}
+
 	.left_div,
 	.right_div {
-		position: absolute;
+		position: relative;
 		z-index: 1;
-		padding-top: 20%;
 		display: flex;
+	}
+	#left-blob {
+		width: 60%;
+	}
+
+	#right-blob {
+		width: 160%;
 	}
 
 	.left_div {
 		top: 0;
-		left: 18%;
-		margin: 20px;
+		left: 15%;
 	}
 
 	.right_div {
@@ -51,52 +51,55 @@
 		display: flex;
 		flex-flow: column;
 		width: 30%;
-		right: 15%;
-	}
-
-	.new_contact-btn a {
-		font-size: 40px;
+		right: 22.5%;
 	}
 
 	.new_contact-btn {
+		font-size: 100%;
 		position: absolute;
 		z-index: 1;
-		left: 10%;
+		left: 52%;
 		top: 60%;
-		width: 37%;
-		height: 15%;
+		width: 45%;
+		height: 10%;
 		display: inline-block;
-		background-color: #5c1a7d;
+		background-color: rgba(255, 255, 255, 0.15);
 		color: white;
-		padding: 15px 30px;
 		border-radius: 8px;
 		text-decoration: none;
-		transition:
-			background-color 0.3s ease,
-			transform 0.3s ease;
+		background-color: 0.3s ease;
+		transform: 0.3s ease;
+	}
+
+	.new_contact-btn p {
+		text-align: center;
+		vertical-align: middle;
 	}
 
 	.new_contact-btn:hover {
-		background-color: #894da6;
-		transform: translateY(-3px);
+		background-color: var(--main-color);
+		outline-style: solid;
+		outline-color: rgba(255, 255, 255, 0.2);
+		transition: 0.3s ease-in-out;
 	}
 
-	.logga {
-		position: relative;
+	.discordlogga {
+		position: absolute;
 		display: flex;
-		z-index: 1;
+		text-decoration: none;
+		z-index: 3;
 		padding: 15px;
-		left: 160px;
-		top: -50px;
+		right: 52%;
+		top: 55%;
 		align-items: center;
 		background-color: rgba(255, 255, 255, 0.15);
 		border-radius: 50%;
 		font-size: 25px;
-		color: #000;
+		color: #ffff;
 		outline-color: rgba(255, 255, 255, 0);
 	}
 
-	.logga:hover {
+	.discordlogga:hover {
 		background-color: var(--main-color);
 		outline-style: solid;
 		outline-color: rgba(255, 255, 255, 0.2);
@@ -104,7 +107,8 @@
 	}
 	.contact-text {
 		position: absolute;
-		left: -30px;
+		text-align: center;
+		left: 55%;
 		z-index: 1;
 		top: 35%;
 		font-size: 20px;
