@@ -61,16 +61,6 @@
 			Vi vill ge koggisar och webbisar möjligheten att bygga riktiga grejer och vässa sina skills inom webbutveckling och projektarbete – basically som en
 			webbyrå på campus!
 		</p>
-		<div class="blob" id="blob">
-			<img src="./images/blob_joina.png" alt="Blob Image" />
-			<div class="iblob">
-				<div class="socialIcons">
-					<a href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
-					<a href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
-					<a href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<div class="about-kodvet-img">
@@ -90,6 +80,18 @@
 		</div>
 	</div>
 </div>
+<div class="blob_container" id="blob_container">
+	<div class="blob" id="blob">
+		<img src="./images/blob_joina.png" alt="Blob Image" />
+		<div class="iblob">
+			<div class="socialIcons">
+				<a href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
+				<a href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
+				<a href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
 
 <style>
 	* {
@@ -104,7 +106,7 @@
 	.aboutKodvet {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: start;
 		padding: 80px;
 		gap: 10%;
 		margin-left: 70px;
@@ -129,6 +131,7 @@
 	.about-text p {
 		line-height: 1.6;
 		margin-bottom: 20px;
+		font-size: 16px;
 	}
 
 	.about-kodvet-img {
@@ -137,6 +140,7 @@
 		align-items: center;
 		margin-right: 100px;
 		width: 70%;
+		top: 0;
 	}
 
 	.slideshow-container {
@@ -207,9 +211,19 @@
 		transition: background-color 0.6s ease;
 	}
 
+	.blob_container {
+		align-items: center;
+		display: flex;
+		max-width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 8%;
+		justify-content: center;
+	}
+
 	.blob {
 		position: relative;
-		width: 90%;
+		width: 40%;
 		text-align: center;
 		z-index: 1;
 	}
