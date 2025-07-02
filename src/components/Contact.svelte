@@ -21,16 +21,15 @@
 		position: relative;
 		justify-content: space-between;
 		align-items: center;
-		gap: 10%;
-		scroll-margin-top: 150px;
-		z-index: 1;
-	}
 
+		margin: 0 120px;
+	}
+	#blob {
+		width: 100%;
+	}
 	.left_div,
 	.right_div {
-		position: relative;
-		z-index: 1;
-		display: flex;
+		position: absolute;
 	}
 	#left-blob {
 		width: 60%;
@@ -41,27 +40,21 @@
 	}
 
 	.left_div {
-		top: 0;
-		left: 15%;
+		top: 52%;
+		left: 19%;
 	}
 
 	.right_div {
-		margin: 50px;
-		top: 20;
 		display: flex;
 		flex-flow: column;
-		width: 30%;
-		right: 22.5%;
+		align-items: center;
+		gap: 10px;
+		max-width: 35%;
+		left: 50%;
+		font-size: 1.4cqw;
 	}
 
 	.new_contact-btn {
-		font-size: 100%;
-		position: absolute;
-		z-index: 1;
-		left: 52%;
-		top: 60%;
-		width: 45%;
-		height: 10%;
 		display: inline-block;
 		background-color: rgba(255, 255, 255, 0.15);
 		color: white;
@@ -83,20 +76,16 @@
 		transition: 0.3s ease-in-out;
 	}
 
-	.discordlogga {
-		position: absolute;
+	.logga {
 		display: flex;
-		text-decoration: none;
-		z-index: 3;
 		padding: 15px;
-		right: 52%;
-		top: 55%;
 		align-items: center;
 		background-color: rgba(255, 255, 255, 0.15);
 		border-radius: 50%;
 		font-size: 25px;
 		color: #ffff;
 		outline-color: rgba(255, 255, 255, 0);
+		text-decoration: none;
 	}
 
 	.discordlogga:hover {
@@ -105,13 +94,10 @@
 		outline-color: rgba(255, 255, 255, 0.2);
 		transition: 0.3s ease-in-out;
 	}
+
+	.logga > i {
+		font-size: 2cqw;
+	}
 	.contact-text {
-		position: absolute;
-		text-align: center;
-		left: 55%;
-		z-index: 1;
-		top: 35%;
-		font-size: 20px;
-		height: 18%;
 	}
 </style>
