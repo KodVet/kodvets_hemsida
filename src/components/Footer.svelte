@@ -5,24 +5,13 @@
 <footer>
 	<section class="footerContainer">
 		<div class="socialIcons">
-			<a class="loggafoot" href="https://www.facebook.com/kodvet"
-				><i class="ri-facebook-box-fill"></i></a
-			>
-			<a class="loggafoot" href="https://www.instagram.com/webbgruppen_kodvet/"
-				><i class="ri-instagram-line"></i></a
-			>
+			<a class="loggafoot" href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
+			<a class="loggafoot" href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
 			<a href="#hero">
-				<img
-					class="svart-logo"
-					src="images/kodvet_logo_vit_symbol.png"
-					alt="Logotyp"
-					height="80px"
-				/>
+				<img class="svart-logo" src="images/kodvet_logo_vit_symbol.png" alt="Logotyp" height="80px" />
 			</a>
 			<a class="loggafoot" href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
-			<a class="loggafoot" href="mailto:webbgruppen.kogvet@gmail.com"
-				><i class="ri-mail-line"></i></a
-			>
+			<a class="loggafoot" href="mailto:webbgruppen.kogvet@gmail.com"><i class="ri-mail-line"></i></a>
 		</div>
 		<div>
 			<ul class="footerNav">
@@ -31,9 +20,7 @@
 				<li><a href="#projects">Projekt</a></li>
 				<li><a href="#contact">Kontakt</a></li>
 				<li>
-					<a class="rainbow" onclick={() => (store.showVariantsNav = !store.showVariantsNav)}
-						>Varianter</a
-					>
+					<a class="rainbow" onclick={() => (store.showVariantsNav = !store.showVariantsNav)}>Varianter</a>
 				</li>
 			</ul>
 		</div>
@@ -137,20 +124,21 @@
 		margin: 10px;
 	}
 	.rainbow {
-		background: linear-gradient(
-			to right,
-			#ef5350,
-			#f48fb1,
-			#7e57c2,
-			#2196f3,
-			#26c6da,
-			#43a047,
-			#eeff41,
-			#f9a825,
-			#ff5722
-		);
+		background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722, #ef5350);
+		background-size: 200% auto;
 		-webkit-background-clip: text;
+		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		cursor: help;
+		animation: rainbow-animation 3s linear infinite;
+	}
+
+	@keyframes rainbow-animation {
+		0% {
+			background-position: 200% center;
+		}
+		100% {
+			background-position: 0% center;
+		}
 	}
 </style>
