@@ -42,16 +42,14 @@
 		user-select: none;
 		height: 100vh;
 		width: 100%;
-		background-image:
-			linear-gradient(to bottom, rgba(12, 12, 12, 0.2) 40%, var(--bg-color)),
-			url(/images/hero_bakgrund.png);
+		background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.2) 40%, var(--bg-color)), url(/images/kodVet-24-25.jpeg);
 		background-size: cover;
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		background-position: center center;
+		background-position: 90% center;
 	}
 	section {
 		padding: 0px 14%;
