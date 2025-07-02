@@ -1,32 +1,38 @@
-<div class="contactpic">
-	<!--<img id="blob" src="./images/Group_2_1.png" alt="Bakgrundsbild" />-->
+<section>
+	<div class="contactpic">
+		<img id="blob" src="./images/Group_2_1.png" alt="Bakgrundsbild" />
+		<div class="left_div">
+			<!-- Logga placeras över bloben till vänster -->
+			<a class="logga" href="https://discord.gg/5HgdNfJVRh">
+				<i class="ri-discord-line"></i>
+			</a>
+		</div>
 
-	<div class="left_div">
-		<img src="./images/liten_blob.png" alt="LeftBlob" id="left-blob" />
-		<a class="discordlogga" href="https://discord.gg/5HgdNfJVRh">
-			<i class="ri-discord-line"></i>
-		</a>
+		<div class="right_div">
+			<!-- Text och knapp placeras till höger över bloben -->
+			<div class="contact-text">Har du en idé för en app? Hör av dig 😎</div>
+			<a href="https://www.facebook.com/kodvet" class="new_contact-btn">KONTAKTA OSS</a>
+		</div>
 	</div>
-
-	<div class="right_div">
-		<img src="./images/stor_blob.png" alt="RightBlob" id="right-blob" />
-		<div class="contact-text"><p>Text ska stå här fyll i senare</p></div>
-		<a href="https://www.facebook.com/kodvet" class="new_contact-btn"><p>KONTAKTA OSS</p></a>
-	</div>
-</div>
+</section>
 
 <style>
+	section {
+		display: flex;
+		justify-content: center;
+	}
 	.contactpic {
 		display: flex;
 		position: relative;
 		justify-content: space-between;
 		align-items: center;
-
+		max-width: 860px;
 		margin: 0 120px;
 	}
 	#blob {
 		width: 100%;
 	}
+
 	.left_div,
 	.right_div {
 		position: absolute;
@@ -55,9 +61,13 @@
 	}
 
 	.new_contact-btn {
+		margin-top: 20px;
 		display: inline-block;
 		background-color: rgba(255, 255, 255, 0.15);
+		background-color: rgba(255, 255, 255, 0.15);
 		color: white;
+		font-size: 16px;
+		padding: 15px 30px;
 		border-radius: 8px;
 		text-decoration: none;
 		background-color: 0.3s ease;
@@ -74,6 +84,10 @@
 		outline-style: solid;
 		outline-color: rgba(255, 255, 255, 0.2);
 		transition: 0.3s ease-in-out;
+		background-color: var(--main-color);
+		outline-style: solid;
+		outline-color: rgba(255, 255, 255, 0.2);
+		transition: 0.3s ease-in-out;
 	}
 
 	.logga {
@@ -83,7 +97,7 @@
 		background-color: rgba(255, 255, 255, 0.15);
 		border-radius: 50%;
 		font-size: 25px;
-		color: #ffff;
+		color: white;
 		outline-color: rgba(255, 255, 255, 0);
 		text-decoration: none;
 	}
@@ -99,5 +113,6 @@
 		font-size: 2cqw;
 	}
 	.contact-text {
+		font-size: 16px;
 	}
 </style>
