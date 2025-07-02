@@ -19,16 +19,15 @@
 		<div class="kodvet_projekt">
 			<!-- Projekt 1 -->
 			<label class="box" for="projekt-1">
-				<img src="https://kodvet.kogvet.se/images/nappn.png" alt="Nappn" height="350px" />
+				<img src="/images/nappn.kognitivet.se.png" alt="Nappn" height="350px" />
 				<div class="projekt-info">
 					<h4>Nappn</h4>
 					<p>Nappn är en webapp som Kodvet tagit fram för mottagningen</p>
 					<input type="checkbox" id="toggle-1" />
 					<div class="hidden-content">
 						<p>
-							På denna app får den nya studenten information om den kåranordnade mottagningen. Här
-							finns ett schema över alla mottagningens aktiviteter och en karta över Linköping med
-							viktiga platser så den nya studenten hittar rätt.
+							På denna app får den nya studenten information om den kåranordnade mottagningen. Här finns ett schema över alla mottagningens aktiviteter och en
+							karta över Linköping med viktiga platser så den nya studenten hittar rätt.
 						</p>
 					</div>
 					<label class="toggle-label" for="toggle-1">Läs mer</label>
@@ -37,7 +36,7 @@
 
 			<!-- Projekt 2 -->
 			<label class="box" for="projekt-2">
-				<img src="images/kogvetbild2.png" alt="Projekt 2" height="350px" />
+				<img src="/images/kogvet.se.png" alt="Projekt 2" height="350px" />
 				<div class="projekt-info">
 					<h4>Sektionshemsidan för Kogvet</h4>
 					<p>Mer text info om projektet.</p>
@@ -51,15 +50,15 @@
 
 			<!-- Projekt 3 -->
 			<label class="box" for="projekt-3">
-				<img src="https://kodvet.kogvet.se/images/kognivote.png" alt="Kognivote" height="350px" />
+				<img src="/images/kognivote.kodvet.se.png" alt="Kognivote" height="350px" />
 				<div class="projekt-info">
 					<h4>Kognivote</h4>
 					<p>Kognivote är ett verktyg för att räkna röster vid sektionsmöten</p>
 					<input type="checkbox" id="toggle-3" />
 					<div class="hidden-content">
 						<p>
-							Det är en hemsida varje student kommer åt via mobilen där man kan logga in med sitt
-							student-id efter att man fysiskt har checkat in på mötet med sitt studentkorts RFID
+							Det är en hemsida varje student kommer åt via mobilen där man kan logga in med sitt student-id efter att man fysiskt har checkat in på mötet med
+							sitt studentkorts RFID
 						</p>
 					</div>
 					<label class="toggle-label" for="toggle-3">Läs mer</label>
@@ -73,26 +72,18 @@
 				<div class="projekt-info">
 					<h4>Vill du vara med i nästa projekt?</h4>
 					<p>Gå med i gruppen eller sammarbeta med oss?</p>
-					<input type="checkbox" id="toggle-4" />
-					<div class="hidden-content">
-						<p>Läs mer om detta i kontakta oss!</p>
-					</div>
-					<label class="toggle-label" for="toggle-4">Läs mer</label>
 				</div>
 			</label>
 
 			<!-- Projekt 5 -->
 			<label class="box" for="projekt-5">
-				<img src="images/stuffbild3.png" alt="stuff" height="350px" />
+				<img src="/images/stuff.liu.se.png" alt="stuff" height="350px" />
 				<div class="projekt-info">
 					<h4>Stuff Hemsidan</h4>
 					<p>Studentkåren för utbildningsvetenskap och Filosofisk fakultet (StuFF)</p>
 					<input type="checkbox" id="toggle-5" />
 					<div class="hidden-content">
-						<p>
-							(StuFF) is the largest student voice at Linköping University, representing almost
-							20,000 students in Linköping and Norrköping.
-						</p>
+						<p>(StuFF) is the largest student voice at Linköping University, representing almost 20,000 students in Linköping and Norrköping.</p>
 					</div>
 					<label class="toggle-label" for="toggle-5">Läs mer</label>
 				</div>
@@ -161,6 +152,7 @@
 		object-fit: cover;
 		border-radius: 10px;
 		box-shadow: 0 0 25px #ffffff2d;
+		object-position: top;
 	}
 
 	#projekt-1:checked ~ .kodvet_projekt .box:nth-child(1),
