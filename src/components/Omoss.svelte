@@ -80,6 +80,8 @@
 		</div>
 	</div>
 </div>
+
+<!--
 <div class="blob_container" id="blob_container">
 	<div class="blob" id="blob">
 		<img src="./images/blob_joina.png" alt="Blob Image" />
@@ -92,6 +94,7 @@
 		</div>
 	</div>
 </div>
+-->
 
 <style>
 	* {

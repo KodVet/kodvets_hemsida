@@ -39,10 +39,10 @@
 				<img src="/images/kogvet.se.png" alt="Projekt 2" height="350px" />
 				<div class="projekt-info">
 					<h4>Sektionshemsidan för Kogvet</h4>
-					<p>Mer text info om projektet.</p>
+					<p>Just nu arbetar vi med en ny hemsida till sektionen för kognitionsvetenskapsprogrammet.</p>
 					<input type="checkbox" id="toggle-2" />
 					<div class="hidden-content">
-						<p>Här är mer information om Projekt 5.</p>
+						<p>Projektet planeras att vara klart för anvädning hösten 2025.</p>
 					</div>
 					<label class="toggle-label" for="toggle-2">Läs mer</label>
 				</div>
