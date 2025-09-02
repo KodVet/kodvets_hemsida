@@ -26,6 +26,13 @@
 </section>
 
 <style>
+	* {
+		box-sizing: border-box;
+		list-style: none;
+		text-decoration: none;
+		font-family: 'Source Code Pro', monospace;
+		overflow: hidden;
+	}
 	.box-wrapper {
 		display: flex;
 		justify-content: center;
@@ -108,10 +115,62 @@
 	@media (max-width: 600px) {
 		.box-wrapper {
 			flex-direction: column;
-			scroll-margin-top: 150px;
+			scroll-margin-top: 100px;
+			min-height: fit-content;
+			padding: 10px;
 		}
-		.socialIcons {
-			max-width: fit-content;
+
+		.socialIcons a {
+			padding: 10px;
+			margin: 5px;
+			border-radius: 50%;
+			font-size: 20px;
+		}
+		.ruta1 {
+			padding: 10px;
+		}
+		.info h1 {
+			font-size: 14px;
+		}
+		.info p {
+			font-size: 12px;
+		}
+		.ruta2 {
+			width: 100%;
+			height: 200px;
+			background-color: var(--kodvet-blå);
+			border-radius: 25px;
+			padding: 10px;
+			color: black;
+			align-items: center;
+			justify-content: space-between;
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+		}
+
+		.contact-btn {
+			margin: 8px;
+			display: block;
+			background-color: #36f8fc;
+			color: black;
+			font-size: 12px;
+			padding: 15px;
+			border-radius: 10px;
+			text-decoration: none;
+			background-color: 0.3s ease;
+			transform: 0.3s ease;
+			width: max-content;
+		}
+		.kontakt-text h1 {
+			font-size: 14px;
+		}
+		.kontakt-text p1 {
+			font-size: 10px;
+		}
+		.kontakt-text {
+			padding-left: 10px;
+			padding-right: 10px;
 		}
 	}
 </style>

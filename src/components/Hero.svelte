@@ -32,17 +32,17 @@
 		list-style: none;
 		text-decoration: none;
 		font-family: 'Source Code Pro', monospace;
+		overflow: hidden;
 	}
 	.hero_background {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		height: 100vh;
+		height: 99ch;
 		user-select: none;
-		height: 100vh;
 		width: 100%;
-		background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.2) 40%, var(--bg-color)), url(/images/kodVet-24-25.jpeg);
+		background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.2) 40%, var(--bg-color)), url(/images/kodVet-24-25.JPG);
 		background-size: cover;
 		position: relative;
 		display: flex;
@@ -109,23 +109,14 @@
 		font-weight: bold;
 		unicode-bidi: isolate;
 	}
-	@media (max-width: 1000px) {
-		.text-box h3 {
-			max-width: 90%;
-			text-align: center;
-			overflow-wrap: break-word;
-			margin: 20px auto;
-			white-space: normal;
-		}
-	}
 
 	:global(.hero_logga.clicked) {
 		background: center/cover no-repeat url('/images/kogvet.jpeg');
 	}
 
 	.card {
-		width: min(250px, 25vw);
-		height: min(250px, 25vw);
+		width: min(200px, 25vw);
+		height: min(200px, 25vw);
 		margin: 1rem auto;
 		perspective: 1000px;
 		cursor: grab;
@@ -167,5 +158,25 @@
 		height: 100%;
 		object-fit: cover;
 		border-radius: 0.5rem;
+	}
+	@media (max-width: 600px) {
+		.hero_background {
+			height: 35ch;
+			width: 100%;
+			background-position: center;
+		}
+		h1 {
+			font-size: 2px;
+		}
+		.text-box {
+			font-size: 6px;
+		}
+		.card {
+			width: min(100px, 25vw);
+			height: min(100px, 25vw);
+			margin: 1rem auto;
+			perspective: 1000px;
+			cursor: grab;
+		}
 	}
 </style>

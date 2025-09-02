@@ -36,6 +36,7 @@
 		list-style: none;
 		text-decoration: none;
 		font-family: 'Source Code Pro', monospace;
+		overflow: hidden;
 	}
 	footer {
 		flex: 1 1 50px;
@@ -145,6 +146,16 @@
 	@media (max-width: 600px) {
 		.footerContainer {
 			max-width: 100%;
+			padding: 10px;
+		}
+		.socialIcons .loggafoot {
+			text-decoration: none;
+			padding: 10px;
+			background-color: #fff;
+			margin: 5px;
+			border-radius: 50%;
+			font-size: 15px;
+			color: #000;
 		}
 	}
 </style>

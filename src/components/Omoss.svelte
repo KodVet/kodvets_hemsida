@@ -98,6 +98,7 @@
 		list-style: none;
 		text-decoration: none;
 		font-family: 'Source Code Pro', monospace;
+		overflow: hidden;
 	}
 	.aboutKodvet {
 		display: flex;
@@ -133,7 +134,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-right: 100px;
 		width: 70%;
 		top: 0;
 	}
@@ -238,11 +238,19 @@
 			margin: 0px;
 			margin-bottom: 30px;
 		}
-
-		.about-kodvet-img {
-			align-items: center;
-			justify-content: center;
-			margin: 0px;
+		.about-text p {
+			font-size: x-small;
+		}
+		.about-text h5 {
+			font-size: 16px;
+		}
+		.mySlides img {
+			height: 250px;
+		}
+		.dot {
+			height: 8px;
+			width: 8px;
+			margin: 0 2px;
 		}
 	}
 </style>

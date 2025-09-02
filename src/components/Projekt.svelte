@@ -114,6 +114,7 @@
 		list-style: none;
 		text-decoration: none;
 		font-family: 'Source Code Pro', monospace;
+		overflow: hidden;
 	}
 	.projekt {
 		position: center;
@@ -290,5 +291,32 @@
 	}
 	.kodvet_project_wrapper {
 		position: relative;
+	}
+	@media (max-width: 600px) {
+		.box img {
+			height: 200px;
+		}
+		.hidden-content {
+			display: none;
+			font-size: 10px;
+			color: #000000;
+			margin-top: 10px;
+		}
+		.prev,
+		.next {
+			font-size: 20px;
+		}
+		.center-text h1 {
+			font-size: 14px;
+		}
+		.center-text p {
+			font-size: 12px;
+		}
+		.projekt-info p {
+			font-size: 10px;
+		}
+		.projekt-info h4 {
+			font-size: 14px;
+		}
 	}
 </style>
