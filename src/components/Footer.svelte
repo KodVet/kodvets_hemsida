@@ -155,7 +155,6 @@
 			margin: 5px;
 			border-radius: 50%;
 			font-size: 15px;
-			color: #000;
 		}
 	}
 </style>
