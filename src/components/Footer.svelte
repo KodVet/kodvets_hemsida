@@ -141,4 +141,10 @@
 			background-position: 0% center;
 		}
 	}
+
+	@media (max-width: 600px) {
+		.footerContainer {
+			max-width: 100%;
+		}
+	}
 </style>

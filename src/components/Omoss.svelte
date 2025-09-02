@@ -8,12 +8,20 @@
 			altText: 'Bild 1'
 		},
 		{
-			imgURL: 'images/bild4.png',
+			imgURL: 'images/bild6.png',
 			altText: 'Bild 2'
 		},
 		{
-			imgURL: 'images/blob6.png',
+			imgURL: 'images/blob5.png',
 			altText: 'Bild 3'
+		},
+		{
+			imgURL: 'images/blob6.png',
+			altText: 'Bild 4'
+		},
+		{
+			imgURL: 'images/blob6.png',
+			altText: 'Bild 5'
 		}
 	];
 
@@ -81,21 +89,6 @@
 	</div>
 </div>
 
-<!--
-<div class="blob_container" id="blob_container">
-	<div class="blob" id="blob">
-		<img src="./images/blob_joina.png" alt="Blob Image" />
-		<div class="iblob">
-			<div class="socialIcons">
-				<a href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
-				<a href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
-				<a href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
-			</div>
-		</div>
-	</div>
-</div>
--->
-
 <style>
 	* {
 		padding: 0;
@@ -112,7 +105,6 @@
 		align-items: start;
 		padding: 80px;
 		gap: 10%;
-		margin-left: 70px;
 		scroll-margin-top: 150px;
 	}
 
@@ -150,7 +142,7 @@
 		width: 100%;
 		margin-top: 0;
 		border-radius: 10px;
-		overflow: hidden;
+		overflow: visible;
 		position: relative;
 	}
 
@@ -180,14 +172,14 @@
 	}
 
 	.prev {
-		left: 0px;
+		left: -50px;
 		transition:
 			ease 0,
 			1s;
 	}
 
 	.next {
-		right: 0px;
+		right: -50px;
 		transition:
 			ease 0,
 			1s;
@@ -214,36 +206,8 @@
 		transition: background-color 0.6s ease;
 	}
 
-	.blob_container {
-		align-items: center;
-		display: flex;
-		max-width: fit-content;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 8%;
-		justify-content: center;
-	}
-
-	.blob {
-		position: relative;
-		width: 40%;
-		text-align: center;
-		z-index: 1;
-	}
-
-	.blob img {
-		width: 100%;
-		height: auto;
-	}
-
-	.iblob {
-		top: 50%;
-		left: 20%;
-		position: absolute;
-	}
-
 	:global(.active) {
-		background-color: #858282 !important;
+		background-color: rgb(36, 193, 197) !important;
 	}
 
 	.fade {
@@ -263,32 +227,22 @@
 			opacity: 1;
 		}
 	}
-	.socialIcons {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.socialIcons a {
-		text-decoration: none;
-		padding: 10px;
-		background-color: rgba(255, 255, 255, 0.15);
-		margin: 20px;
-		border-radius: 50%;
-		font-size: 20px;
-		color: #ffff;
-		outline-color: rgba(255, 255, 255, 0);
-	}
 
-	.socialIcons a:hover {
-		background-color: var(--main-color);
-		outline-style: solid;
-		outline-color: rgba(255, 255, 255, 0.2);
-		transition: 0.3s ease-in-out;
-	}
-	.socialIcons a li {
-		font-size: 5rem;
-		color: black;
-		opacity: 0.9;
-		transition: transfrom 0.5s ease;
+	@media (max-width: 600px) {
+		.aboutKodvet {
+			flex-direction: column;
+			align-items: center;
+			gap: 10%;
+			padding: 10px;
+			scroll-margin-top: 150px;
+			margin: 0px;
+			margin-bottom: 30px;
+		}
+
+		.about-kodvet-img {
+			align-items: center;
+			justify-content: center;
+			margin: 0px;
+		}
 	}
 </style>

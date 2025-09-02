@@ -42,8 +42,16 @@
 </div>
 
 <style>
+	:root {
+	}
+
 	:global(:root) {
 		--bg-color: rgb(12, 12, 12);
+		--offwhite: rgb(250, 250, 250);
+		--offblac: rgb(25, 25, 25);
+		--kodvet-lila: rgb(65, 6, 97);
+		--kodvet-blå: rgb(36, 193, 197);
+		--kodvet-inbetween: rgb(51, 100, 148);
 	}
 
 	:global(*, *:before, *:after) {

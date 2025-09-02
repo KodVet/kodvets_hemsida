@@ -1,4 +1,17 @@
 <script>
+	let read_mode = 'Läs Mer';
+
+	function toggle_read_mode() {
+		if (read_mode == 'Läs Mer') {
+			read_mode = 'Läs Mindre';
+		} else {
+			read_mode = 'Läs Mer';
+		}
+	}
+
+	function reset_read_mode() {
+		read_mode = 'Läs Mer';
+	}
 </script>
 
 <section class="projekt" id="projects">
@@ -14,7 +27,7 @@
 		<input type="radio" name="projekt-slider" id="projekt-4" />
 		<input type="radio" name="projekt-slider" id="projekt-5" />
 
-		<a class="prev">&#10094;</a>
+		<a onclick={reset_read_mode} class="prev">&#10094;</a>
 		<a class="next">&#10095;</a>
 		<div class="kodvet_projekt">
 			<!-- Projekt 1 -->
@@ -30,7 +43,7 @@
 							karta över Linköping med viktiga platser så den nya studenten hittar rätt.
 						</p>
 					</div>
-					<label class="toggle-label" for="toggle-1">Läs mer</label>
+					<label onclick={toggle_read_mode} class="toggle-label" for="toggle-1">{read_mode}</label>
 				</div>
 			</label>
 
@@ -44,7 +57,7 @@
 					<div class="hidden-content">
 						<p>Projektet planeras att vara klart för anvädning hösten 2025.</p>
 					</div>
-					<label class="toggle-label" for="toggle-2">Läs mer</label>
+					<label onclick={toggle_read_mode} class="toggle-label" for="toggle-2">{read_mode}</label>
 				</div>
 			</label>
 
@@ -61,7 +74,7 @@
 							sitt studentkorts RFID
 						</p>
 					</div>
-					<label class="toggle-label" for="toggle-3">Läs mer</label>
+					<label onclick={toggle_read_mode} class="toggle-label" for="toggle-3">{read_mode}</label>
 				</div>
 			</label>
 
@@ -85,7 +98,7 @@
 					<div class="hidden-content">
 						<p>(StuFF) is the largest student voice at Linköping University, representing almost 20,000 students in Linköping and Norrköping.</p>
 					</div>
-					<label class="toggle-label" for="toggle-5">Läs mer</label>
+					<label onclick={toggle_read_mode} class="toggle-label" for="toggle-5">{read_mode}</label>
 				</div>
 			</label>
 		</div>
