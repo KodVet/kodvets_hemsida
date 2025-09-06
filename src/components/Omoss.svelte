@@ -107,6 +107,7 @@
 		padding: 80px;
 		gap: 10%;
 		scroll-margin-top: 150px;
+		margin-bottom: 50px;
 	}
 
 	.about-text {
@@ -136,6 +137,7 @@
 		align-items: center;
 		width: 70%;
 		top: 0;
+		overflow: visible;
 	}
 
 	.slideshow-container {

@@ -36,7 +36,6 @@
 		list-style: none;
 		text-decoration: none;
 		font-family: 'Source Code Pro', monospace;
-		overflow: hidden;
 	}
 	footer {
 		flex: 1 1 50px;
@@ -80,17 +79,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.footerNav ul {
-		display: flex;
-		gap: 20px;
-		padding: 0;
-		justify-content: center;
-	}
-
-	.footerNav ul li {
-		margin: 0;
 	}
 
 	.footerNav a {
@@ -155,6 +143,13 @@
 			margin: 5px;
 			border-radius: 50%;
 			font-size: 15px;
+		}
+		.footerNav {
+			gap: 2px;
+		}
+
+		.footerNav a {
+			font-size: 10px;
 		}
 	}
 </style>

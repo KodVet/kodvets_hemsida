@@ -7,23 +7,29 @@
 	}
 </script>
 
+<div class="margin"></div>
 <section class="hero_background" id="hero">
-	<div title="Klicka på mig!" class="card" onclick={(event) => flipCard(event)}>
-		<div class="card-inner">
-			<div class="card-front">
-				<img src="images/kodvet_logo_rund_indigo_bla.png" alt="Framsida Bild" />
-			</div>
-			<div class="card-back">
-				<img src="images/kogvet.png" alt="Baksida Bild" />
+	<div class="hero_content">
+		<div title="Klicka på mig!" class="card" onclick={(event) => flipCard(event)}>
+			<div class="card-inner">
+				<div class="card-front">
+					<img src="images/kodvet_logo_rund_indigo_bla.png" alt="Framsida Bild" />
+				</div>
+				<div class="card-back">
+					<img src="images/kogvet.png" alt="Baksida Bild" />
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="text-box">
-		<h1>Webbgruppen kodVet</h1>
+		<div class="text-box">
+			<h1>Webbgruppen kodVet</h1>
+		</div>
 	</div>
 </section>
 
 <style>
+	.margin {
+		height: 65px;
+	}
 	* {
 		padding: 0;
 		margin: 0;
@@ -66,12 +72,18 @@
 		display: block;
 		unicode-bidi: isolate;
 	}
+
+	.hero_content {
+		margin-top: -100px;
+	}
+
 	@media (max-width: 1000px) {
 		.hero_logga {
 			width: 250px;
 			height: 250px;
 		}
 	}
+
 	.hero_logga {
 		width: min(250px, 25vw);
 		height: min(250px, 25vw);
@@ -111,7 +123,7 @@
 	}
 
 	:global(.hero_logga.clicked) {
-		background: center/cover no-repeat url('/images/kogvet.jpeg');
+		background: center/cover no-repeat url('/images/kogvet.png');
 	}
 
 	.card {
@@ -165,9 +177,11 @@
 			width: 100%;
 			background-position: center;
 		}
+
 		h1 {
 			font-size: 2px;
 		}
+
 		.text-box {
 			font-size: 6px;
 		}
@@ -177,6 +191,9 @@
 			margin: 1rem auto;
 			perspective: 1000px;
 			cursor: grab;
+		}
+		.hero_content {
+			margin-top: 0px;
 		}
 	}
 </style>

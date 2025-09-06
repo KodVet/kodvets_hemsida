@@ -67,13 +67,7 @@
 							<a href={link.href} onclick={handleLinkClick}>{link.label}</a>
 						{/each}
 					</div>
-					<button
-						class="mobile-menu-toggle"
-						class:active={isMobileMenuOpen}
-						onclick={toggleMobileMenu}
-						aria-label="Toggle menu"
-						type="button"
-					>
+					<button class="mobile-menu-toggle" class:active={isMobileMenuOpen} onclick={toggleMobileMenu} aria-label="Toggle menu" type="button">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -188,7 +182,7 @@
 		width: 25px;
 		height: 2px;
 		background-color: white;
-		transition: all 0.3s ease;
+		transition: all 0.7s ease;
 		display: block;
 	}
 
@@ -209,9 +203,9 @@
 	.close-button {
 		position: absolute;
 		top: 20px;
-		right: 20px;
+		right: 30px;
 		width: 40px;
-		height: 40px;
+		height: 30px;
 		background: transparent;
 		border: none;
 		cursor: pointer;
@@ -225,7 +219,7 @@
 		width: 30px;
 		height: 2px;
 		background-color: white;
-		transition: all 0.3s ease;
+		transition: all 0.7s ease;
 	}
 
 	.close-button span:first-child {
@@ -254,8 +248,8 @@
 		justify-content: center;
 		align-items: center;
 		transition:
-			opacity 0.3s ease,
-			visibility 0.3s ease;
+			opacity 0.7s ease,
+			visibility 0.7s ease;
 		opacity: 0;
 		visibility: hidden;
 		z-index: 999;

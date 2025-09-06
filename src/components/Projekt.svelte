@@ -141,12 +141,11 @@
 	/*----- Kodvet Projekt -----*/
 	.kodvet_projekt {
 		margin-left: 10%;
-		margin-bottom: 40%;
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 400px;
+		height: 750px;
 	}
 
 	.box {
@@ -221,6 +220,10 @@
 		transition: opacity 0.4s ease;
 	}
 
+	.projekt-info h4 {
+		margin-bottom: 3%;
+	}
+
 	#projekt-1:checked ~ .kodvet_projekt .box:nth-child(1) .projekt-info,
 	#projekt-2:checked ~ .kodvet_projekt .box:nth-child(2) .projekt-info,
 	#projekt-3:checked ~ .kodvet_projekt .box:nth-child(3) .projekt-info,
@@ -289,6 +292,7 @@
 	.next:hover {
 		color: #fff;
 	}
+
 	.kodvet_project_wrapper {
 		position: relative;
 	}
@@ -296,6 +300,15 @@
 		.box img {
 			height: 200px;
 		}
+		.kodvet_projekt {
+			margin-left: 10%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 450px;
+		}
+
 		.hidden-content {
 			display: none;
 			font-size: 10px;
@@ -305,7 +318,15 @@
 		.prev,
 		.next {
 			font-size: 20px;
+			margin-top: -50px;
 		}
+		.prev {
+			left: 20px;
+		}
+		.next {
+			right: 20px;
+		}
+
 		.center-text h1 {
 			font-size: 14px;
 		}
