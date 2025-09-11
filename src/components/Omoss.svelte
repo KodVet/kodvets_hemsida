@@ -4,23 +4,23 @@
 	let slideIndex = 1;
 	let pictures = [
 		{
-			imgURL: 'images/bild5.jpg',
+			imgURL: 'images/styrelsedagen.jpg',
 			altText: 'Bild 1'
 		},
 		{
-			imgURL: 'images/bild6.png',
+			imgURL: 'images/villevalla.jpg',
 			altText: 'Bild 2'
 		},
 		{
-			imgURL: 'images/blob5.png',
+			imgURL: 'images/ludde.jpg',
 			altText: 'Bild 3'
 		},
 		{
-			imgURL: 'images/blob6.png',
+			imgURL: 'images/bellaalvakod.jpg',
 			altText: 'Bild 4'
 		},
 		{
-			imgURL: 'images/blob6.png',
+			imgURL: 'images/bodaborg.jpg',
 			altText: 'Bild 5'
 		}
 	];

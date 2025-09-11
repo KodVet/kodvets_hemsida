@@ -16,8 +16,8 @@
 
 <section class="projekt" id="projects">
 	<div class="center-text">
-		<h1>KodVet Projekt Information</h1>
-		<p>Här skriver vi info om KodVet projekt</p>
+		<h1>KodVet Projekt</h1>
+		<p>Här kan ni se och läsa om våra akutella eller färdiga projekt</p>
 	</div>
 
 	<div class="kodvet_project_wrapper">
