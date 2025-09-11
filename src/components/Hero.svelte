@@ -16,7 +16,7 @@
 					<img src="images/kodvet_logo_rund_indigo_bla.png" alt="Framsida Bild" />
 				</div>
 				<div class="card-back">
-					<img src="images/kogvet.png" alt="Baksida Bild" />
+					<img src="images/sektionen.png" alt="Baksida Bild" />
 				</div>
 			</div>
 		</div>
@@ -77,24 +77,6 @@
 		margin-top: -100px;
 	}
 
-	@media (max-width: 1000px) {
-		.hero_logga {
-			width: 250px;
-			height: 250px;
-		}
-	}
-
-	.hero_logga {
-		width: min(250px, 25vw);
-		height: min(250px, 25vw);
-		box-shadow: 0 0 25px var(--text-color);
-		cursor: pointer;
-		position: relative;
-		border-radius: 50%;
-		background: url(/images/kodvet_logo_rund_indigo_bla.png) center center / cover no-repeat;
-		overflow: hidden;
-		transition: 5s;
-	}
 	div {
 		display: block;
 		unicode-bidi: isolate;
@@ -123,7 +105,7 @@
 	}
 
 	:global(.hero_logga.clicked) {
-		background: center/cover no-repeat url('/images/kogvet.png');
+		background: center/cover no-repeat url('/images/sektionen.png');
 	}
 
 	.card {
@@ -142,9 +124,6 @@
 		transform-style: preserve-3d;
 	}
 	:global(.card.clicked) .card-inner {
-		transform: rotateY(180deg);
-	}
-	.card.flipped .card-inner {
 		transform: rotateY(180deg);
 	}
 
