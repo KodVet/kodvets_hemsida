@@ -96,7 +96,10 @@
 					<p>Studentkåren för utbildningsvetenskap och Filosofisk fakultet (StuFF)</p>
 					<input type="checkbox" id="toggle-5" />
 					<div class="hidden-content">
-						<p>(StuFF) is the largest student voice at Linköping University, representing almost 20,000 students in Linköping and Norrköping.</p>
+						<p>
+							Studentkåren för utbildningsvetenskap och Filosofisk fakultet (StuFF) är den största studentrösten vid Linköpings universitet och företräder
+							nästan 20 000 studenter i Linköping och Norrköping.
+						</p>
 					</div>
 					<label onclick={toggle_read_mode} class="toggle-label" for="toggle-5">{read_mode}</label>
 				</div>

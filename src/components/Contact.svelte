@@ -18,7 +18,7 @@
 		<div class="ruta2">
 			<div class="kontakt-text">
 				<h1>HAR DU ETT PROJEKT?</h1>
-				<p1>Har din förening/företag ett projekt som ni tror att vi kan hjälpa er med? Skriv gärna till oss på mail</p1>
+				<p>Har din förening/företag ett projekt som ni tror att vi kan hjälpa er med? Skriv gärna till oss på mail</p>
 			</div>
 			<a href="mailto:webbgruppen.kogvet@gmail.com" class="contact-btn">KONTAKTA OSS</a>
 		</div>
@@ -31,166 +31,243 @@
 		list-style: none;
 		text-decoration: none;
 		font-family: 'Source Code Pro', monospace;
-		overflow: hidden;
 	}
-	.box-wrapper {
-		display: flex;
-		justify-content: center;
-		background-color: var(--kodvet-lila);
-		border-radius: 25px;
-		width: 80%;
-		height: 400px;
-		padding: 50px;
-		margin-bottom: 50px;
-	}
+
 	section {
 		display: flex;
 		justify-content: center;
+		width: 100%;
+		padding: 0 20px;
 	}
+
+	.box-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		background-color: var(--kodvet-lila, #7b68ee);
+		border-radius: 25px;
+		width: 100%;
+		max-width: 1200px;
+		min-height: 400px;
+		padding: 50px;
+		margin-bottom: 50px;
+		gap: 30px;
+	}
+
 	.ruta1 {
+		flex: 1;
+		display: flex;
 		align-items: center;
 		padding: 10px;
+		min-width: 0; /* Prevents flex item from overflowing */
 	}
+
 	.ruta2 {
-		width: 150%;
-		height: 300px;
-		background-color: var(--kodvet-blå);
+		flex: 1;
+		min-height: 300px;
+		background-color: var(--kodvet-blå, #4169e1);
 		border-radius: 25px;
-		padding: 20px;
+		padding: 30px;
 		color: black;
-		align-items: center;
-		justify-content: space-between;
 		display: flex;
 		flex-direction: column;
-		text-align: left;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		min-width: 0; /* Prevents flex item from overflowing */
 	}
+
 	.kontakt-text {
-		padding-left: 20px;
-		padding-right: 20px;
+		width: 100%;
+		padding: 0 20px;
 	}
 
 	.kontakt-text h1 {
-		font-size: 22px;
+		font-size: clamp(16px, 3vw, 22px);
 		font-weight: 600;
-		color: var(--text-color);
+		color: var(--text-color, #333);
 		text-transform: uppercase;
-		letter-spacing: 6px;
+		letter-spacing: 3px;
 		margin-bottom: 20px;
+		word-wrap: break-word;
+	}
+
+	.kontakt-text p {
+		font-size: clamp(14px, 2vw, 16px);
+		line-height: 1.5;
+		color: var(--text-color, #333);
 	}
 
 	.info {
-		flex: 1;
-		padding-right: 20px;
+		width: 100%;
 	}
 
 	.info h1 {
-		font-size: 22px;
+		font-size: clamp(16px, 3vw, 22px);
 		font-weight: 600;
-		color: var(--text-color);
+		color: var(--text-color, #fff);
 		text-transform: uppercase;
-		letter-spacing: 6px;
+		letter-spacing: 3px;
 		margin-bottom: 20px;
+		word-wrap: break-word;
+	}
+
+	.info p {
+		font-size: clamp(14px, 2vw, 16px);
+		line-height: 1.6;
+		color: var(--text-color, #fff);
+		margin-bottom: 30px;
 	}
 
 	.contact-btn {
-		margin: 20px;
-		display: block;
+		display: inline-block;
 		background-color: #36f8fc;
 		color: black;
-		font-size: 20px;
-		padding: 15px;
+		font-size: clamp(14px, 2.5vw, 20px);
+		padding: 15px 25px;
 		border-radius: 10px;
 		text-decoration: none;
-		background-color: 0.3s ease;
-		transform: 0.3s ease;
-		width: max-content;
+		transition: all 0.3s ease;
+		white-space: nowrap;
+		margin-top: 20px;
 	}
-	.contact-btn:hover {
-		background-color: #1b8f91;
-		outline-style: solid;
-		outline-color: rgba(255, 255, 255, 0.2);
-		transition: 0.3s ease-in-out;
-	}
+
 	.socialIcons {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		gap: 15px;
+		flex-wrap: wrap;
 	}
+
 	.socialIcons a {
 		text-decoration: none;
-		padding: 15px;
+		padding: 12px;
 		background-color: rgba(255, 255, 255, 0.15);
-		margin: 20px;
 		border-radius: 50%;
-		font-size: 40px;
-		color: #ffff;
-		outline-color: rgba(255, 255, 255, 0);
+		font-size: clamp(24px, 4vw, 40px);
+		color: #fff;
+		transition: all 0.15s ease-in-out;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.socialIcons a:hover {
-		background-color: var(--main-color);
-		outline-style: solid;
-		outline-color: rgba(255, 255, 255, 0.2);
-		transition: 0.3s ease-in-out;
+		transform: scale(1.1);
 	}
-	@media (max-width: 600px) {
+
+	/* Tablet breakpoint */
+	@media (max-width: 968px) {
 		.box-wrapper {
-			flex-direction: column;
-			scroll-margin-top: 100px;
-			min-height: fit-content;
-			padding: 20px;
+			padding: 40px;
+			gap: 25px;
+		}
+
+		.kontakt-text h1,
+		.info h1 {
+			letter-spacing: 2px;
 		}
 
 		.socialIcons a {
 			padding: 10px;
-			margin: 5px;
-			border-radius: 50%;
-			font-size: 20px;
+		}
+	}
+
+	/* Large mobile / small tablet */
+	@media (max-width: 768px) {
+		.box-wrapper {
+			flex-direction: column;
+			padding: 30px;
+			min-height: auto;
+			gap: 20px;
 		}
 
-		.info h1 {
-			font-size: 14px;
-		}
-		.info p {
-			font-size: 12px;
+		.ruta1 {
+			padding: 0;
 		}
 
 		.ruta2 {
 			width: 100%;
-			height: 200px;
-			background-color: var(--kodvet-blå);
-			border-radius: 25px;
-			padding: 10px;
-			color: black;
-			align-items: center;
-			justify-content: space-between;
-			display: flex;
-			flex-direction: column;
-			text-align: left;
+			min-height: 250px;
+			padding: 25px;
 		}
 
 		.contact-btn {
-			margin: 8px;
-			display: block;
-			background-color: #36f8fc;
-			color: black;
-			font-size: 12px;
-			padding: 15px;
-			border-radius: 10px;
-			text-decoration: none;
-			background-color: 0.3s ease;
-			transform: 0.3s ease;
-			width: max-content;
+			padding: 12px 20px;
 		}
-		.kontakt-text h1 {
+
+		.socialIcons {
+			margin-top: 20px;
+		}
+	}
+
+	/* Mobile breakpoint */
+	@media (max-width: 480px) {
+		section {
+			padding: 0 10px;
+		}
+
+		.box-wrapper {
+			padding: 20px;
+			border-radius: 20px;
+		}
+
+		.ruta2 {
+			min-height: 200px;
+			padding: 20px;
+			border-radius: 20px;
+		}
+
+		.kontakt-text {
+			padding: 0 10px;
+		}
+
+		.kontakt-text h1,
+		.info h1 {
+			letter-spacing: 1px;
+			margin-bottom: 15px;
+		}
+
+		.info p,
+		.kontakt-text p {
+			margin-bottom: 20px;
+		}
+
+		.contact-btn {
+			padding: 10px 15px;
+			margin-top: 15px;
+		}
+
+		.socialIcons {
+			gap: 10px;
+			margin-top: 15px;
+		}
+
+		.socialIcons a {
+			padding: 8px;
+		}
+	}
+
+	/* Very small mobile */
+	@media (max-width: 360px) {
+		.box-wrapper {
+			padding: 15px;
+		}
+
+		.ruta2 {
+			padding: 15px;
+			min-height: 180px;
+		}
+
+		.kontakt-text h1,
+		.info h1 {
 			font-size: 14px;
 		}
-		.kontakt-text p1 {
-			font-size: 8px;
-		}
-		.kontakt-text {
-			padding-left: 10px;
-			padding-right: 10px;
+
+		.contact-btn {
+			font-size: 12px;
+			padding: 8px 12px;
 		}
 	}
 </style>

@@ -38,7 +38,6 @@
 		list-style: none;
 		text-decoration: none;
 		font-family: 'Source Code Pro', monospace;
-		overflow: hidden;
 	}
 	.hero_background {
 		display: flex;
@@ -149,6 +148,11 @@
 		height: 100%;
 		object-fit: cover;
 		border-radius: 0.5rem;
+	}
+
+	.card-back img {
+		width: 103%;
+		height: 103%;
 	}
 	@media (max-width: 600px) {
 		.hero_background {

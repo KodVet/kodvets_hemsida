@@ -5,6 +5,7 @@
 	import { slide } from 'svelte/transition';
 	import '../app.css';
 	import 'remixicon/fonts/remixicon.css';
+	import Footer from '$components/Footer.svelte';
 
 	let { children } = $props();
 
@@ -29,16 +30,7 @@
 		{@render children()}
 	</main>
 
-	<footer>
-		<span class="footer-row">
-			<span class="copyright">©kodVet {new Date().getFullYear()}</span>
-		</span>
-		{#if store.showVariantsNav}
-			<div transition:slide={{ duration: 2000 }}>
-				<VariantsNav />
-			</div>
-		{/if}
-	</footer>
+	<Footer></Footer>
 </div>
 
 <style>

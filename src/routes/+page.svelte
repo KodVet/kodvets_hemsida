@@ -15,7 +15,6 @@
 <Omoss></Omoss>
 <Projekt></Projekt>
 <Contact></Contact>
-<Footer></Footer>
 
 <style>
 </style>

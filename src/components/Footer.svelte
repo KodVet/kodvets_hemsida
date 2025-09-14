@@ -1,30 +1,38 @@
 <script>
 	import { store } from '$lib/store.svelte';
+	import { slide } from 'svelte/transition';
+	import VariantsNav from './VariantsNav.svelte';
 </script>
 
 <footer>
-	<section class="footerContainer">
-		<div class="socialIcons">
-			<a class="loggafoot" href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
-			<a class="loggafoot" href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
-			<a href="#hero">
-				<img class="svart-logo" src="images/kodvet_logo_vit_symbol.png" alt="Logotyp" height="80px" />
-			</a>
-			<a class="loggafoot" href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
-			<a class="loggafoot" href="mailto:webbgruppen.kogvet@gmail.com"><i class="ri-mail-line"></i></a>
+	<div class="socialIcons">
+		<a class="loggafoot" href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
+		<a class="loggafoot" href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
+		<a href="#hero">
+			<img class="svart-logo" src="images/kodvet_logo_vit_symbol.png" alt="Logotyp" height="80px" />
+		</a>
+		<a class="loggafoot" href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
+		<a class="loggafoot" href="mailto:webbgruppen.kogvet@gmail.com"><i class="ri-mail-line"></i></a>
+	</div>
+	<div>
+		<ul class="footerNav">
+			<li><a href="#hero">Hem</a></li>
+			<li><a href="#about">Om Oss</a></li>
+			<li><a href="#projects">Projekt</a></li>
+			<li><a href="#contact">Kontakt</a></li>
+			<li>
+				<a class="rainbow" onclick={() => (store.showVariantsNav = !store.showVariantsNav)}>Varianter</a>
+			</li>
+		</ul>
+	</div>
+	<span class="footer-row">
+		<span class="copyright">©kodVet {new Date().getFullYear()}</span>
+	</span>
+	{#if store.showVariantsNav}
+		<div transition:slide={{ duration: 2000 }}>
+			<VariantsNav />
 		</div>
-		<div>
-			<ul class="footerNav">
-				<li><a href="#hero">Hem</a></li>
-				<li><a href="#about">Om Oss</a></li>
-				<li><a href="#projects">Projekt</a></li>
-				<li><a href="#contact">Kontakt</a></li>
-				<li>
-					<a class="rainbow" onclick={() => (store.showVariantsNav = !store.showVariantsNav)}>Varianter</a>
-				</li>
-			</ul>
-		</div>
-	</section>
+	{/if}
 </footer>
 
 <style>
@@ -39,14 +47,17 @@
 	}
 	footer {
 		flex: 1 1 50px;
-	}
-	.footerContainer {
+		opacity: 0.7;
+		display: flex;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
 		padding: 20px;
+		transition:
+			opacity 0.5s ease,
+			transform 0.3s ease;
 	}
 	.socialIcons {
 		display: flex;
@@ -89,10 +100,6 @@
 		font-size: 1rem;
 		font-family: var(--p-font);
 		margin: -20px 15px;
-		opacity: 0.7;
-		transition:
-			opacity 0.5s ease,
-			transform 0.3s ease;
 	}
 
 	.footerNav a:hover {
@@ -132,7 +139,7 @@
 	}
 
 	@media (max-width: 600px) {
-		.footerContainer {
+		footer {
 			max-width: 100%;
 			padding: 10px;
 		}
