@@ -9,7 +9,7 @@
 		<a class="loggafoot" href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
 		<a class="loggafoot" href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
 		<a href="#hero">
-			<img class="svart-logo" src="images/kodvet_logo_vit_symbol.png" alt="Logotyp" height="80px" />
+			<img class="svart-logo" src="/images/kodvet_logo_vit_symbol.png" alt="Logotyp" height="80px" />
 		</a>
 		<a class="loggafoot" href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
 		<a class="loggafoot" href="mailto:webbgruppen.kogvet@gmail.com"><i class="ri-mail-line"></i></a>
