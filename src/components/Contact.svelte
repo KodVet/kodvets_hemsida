@@ -36,10 +36,11 @@
 	.box-wrapper {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		background-color: var(--kodvet-lila);
 		border-radius: 25px;
 		width: 80%;
-		height: 400px;
+		height: 500px;
 		padding: 50px;
 		margin-bottom: 50px;
 	}
@@ -53,7 +54,6 @@
 	}
 	.ruta2 {
 		width: 150%;
-		height: 300px;
 		background-color: var(--kodvet-blå);
 		border-radius: 25px;
 		padding: 20px;
@@ -157,7 +157,6 @@
 
 		.ruta2 {
 			width: 100%;
-			height: 200px;
 			background-color: var(--kodvet-blå);
 			border-radius: 25px;
 			padding: 10px;
