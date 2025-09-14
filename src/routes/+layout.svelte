@@ -1,7 +1,11 @@
 <script lang="ts">
 	import Header from '$components/Header.svelte';
-	import { page } from '$app/stores';
+	import VariantsNav from '$components/VariantsNav.svelte';
+	import { store } from '$lib/store.svelte';
+	import { slide } from 'svelte/transition';
 	import '../app.css';
+	import 'remixicon/fonts/remixicon.css';
+	import Footer from '$components/Footer.svelte';
 
 	let { children } = $props();
 
@@ -17,8 +21,6 @@
 		// 	document.getElementById('header').style.opacity = 1;
 		// }
 	}
-
-	let isVariantRoute = $derived($page.url.pathname.startsWith('/variants/'));
 </script>
 
 <div class="app" onscroll={scrollFunction}>
@@ -28,48 +30,27 @@
 		{@render children()}
 	</main>
 
-	{#if !isVariantRoute}
-		<footer>
-			<span class="footer-row">
-				<span class="copyright">©Kodvet {new Date().getFullYear()}</span>
-				<span> <a href="https://www.kogvet.se">Kogvetsektionens</a> webbutskott</span>
-			</span>
-		</footer>
-	{/if}
+	<Footer></Footer>
 </div>
 
 <style>
+	:root {
+	}
+
+	:global(:root) {
+		--bg-color: rgb(12, 12, 12);
+		--offwhite: rgb(250, 250, 250);
+		--offblac: rgb(25, 25, 25);
+		--kodvet-lila: rgb(65, 6, 97);
+		--kodvet-blå: rgb(36, 193, 197);
+		--kodvet-inbetween: rgb(51, 100, 148);
+	}
+
 	:global(*, *:before, *:after) {
 		box-sizing: border-box;
 	}
 
-	a {
-		color: inherit;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	footer {
-		background-color: #313131;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: left;
-		-ms-flex-pack: left;
-		justify-content: left;
-	}
-
-	.footer-row {
-		padding: 10px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		width: 100%;
-		max-width: 428px;
-		-ms-flex-pack: distribute;
-		justify-content: space-around;
-		color: grey;
+	.app {
+		background: var(--bg-color);
 	}
 </style>
