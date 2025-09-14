@@ -41,7 +41,8 @@
 	}
 
 	.box-wrapper {
-		display: flex;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
 		justify-content: center;
 		align-items: stretch;
 		background-color: var(--kodvet-lila, #7b68ee);
@@ -177,7 +178,7 @@
 	/* Large mobile / small tablet */
 	@media (max-width: 768px) {
 		.box-wrapper {
-			flex-direction: column;
+			grid-template-columns: auto;
 			padding: 30px;
 			min-height: auto;
 			gap: 20px;
