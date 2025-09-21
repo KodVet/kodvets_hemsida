@@ -132,6 +132,9 @@
 		white-space: nowrap;
 		margin-top: 20px;
 	}
+	.contact-btn:hover {
+		transform: scale(1.1);
+	}
 
 	.socialIcons {
 		display: flex;
