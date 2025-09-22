@@ -265,7 +265,7 @@
 	.next {
 		cursor: pointer;
 		position: absolute;
-		top: 45%;
+		top: 35%;
 		transform: translateY(-50%);
 		padding: 10px;
 		color: #d0c9c9;
@@ -300,16 +300,28 @@
 		position: relative;
 	}
 	@media (max-width: 600px) {
-		.box img {
-			height: 200px;
-		}
 		.kodvet_projekt {
-			margin-left: 10%;
 			position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 450px;
+			height: 700px;
+			margin-left: 0;
+		}
+
+		.center-text {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.box img {
+			margin-left: 0;
+			height: 400px;
+			width: 100%;
+		}
+
+		.projekt-info {
+			width: 100%;
 		}
 
 		.hidden-content {
@@ -320,24 +332,24 @@
 		}
 		.prev,
 		.next {
-			font-size: 20px;
-			margin-top: -50px;
+			font-size: 35px;
+			margin-top: 0px;
 		}
 		.prev {
-			left: 20px;
+			left: 30px;
 		}
 		.next {
-			right: 20px;
+			right: 30px;
 		}
 
 		.center-text h1 {
-			font-size: 14px;
+			font-size: 16px;
 		}
 		.center-text p {
-			font-size: 12px;
+			font-size: 14px;
 		}
 		.projekt-info p {
-			font-size: 10px;
+			font-size: 14px;
 		}
 		.projekt-info h4 {
 			font-size: 14px;

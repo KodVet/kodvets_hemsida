@@ -215,6 +215,8 @@
 		.box-wrapper {
 			padding: 20px;
 			border-radius: 20px;
+			margin-left: 30px;
+			margin-right: 30px;
 		}
 
 		.ruta2 {

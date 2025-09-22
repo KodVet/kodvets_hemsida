@@ -161,12 +161,9 @@
 			background-position: center;
 		}
 
-		h1 {
-			font-size: 2px;
-		}
-
-		.text-box {
-			font-size: 6px;
+		.text-box h1 {
+			font-size: 15px;
+			margin-top: 30%;
 		}
 		.card {
 			width: min(100px, 25vw);

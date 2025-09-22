@@ -238,14 +238,15 @@
 			padding: 10px;
 			scroll-margin-top: 150px;
 			margin: 0px;
-			margin-bottom: 30px;
+			margin-bottom: 100px;
 		}
 		.about-text p {
-			font-size: x-small;
+			font-size: 14px;
 		}
 		.about-text h5 {
 			font-size: 16px;
 		}
+
 		.mySlides img {
 			height: 250px;
 		}
