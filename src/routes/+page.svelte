@@ -7,16 +7,6 @@
 
 <svelte:head>
 	<title>kodVet</title>
-	<!-- Standard favicon -->
-	<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon.png" />
-
-	<!-- Optional for Apple devices -->
-	<link rel="apple-touch-icon" href="/static/favicon.png" />
-
-	<!-- Optional: web app manifest -->
-	<link rel="manifest" href="/site.webmanifest" />
-
 	<meta property="og:title" content="Filfaks enda programmeringsutskott" />
 	<meta property="og:site_name" content="kodVet" />
 	<meta property="og:locale" content="sv" />
