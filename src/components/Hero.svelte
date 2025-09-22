@@ -33,7 +33,6 @@
 	* {
 		padding: 0;
 		margin: 0;
-
 		box-sizing: border-box;
 		list-style: none;
 		text-decoration: none;
@@ -47,7 +46,7 @@
 		height: 99ch;
 		user-select: none;
 		width: 100%;
-		background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.2) 40%, var(--bg-color)), url(/images/kodVet-24-25.JPG);
+		background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.2) 65%, var(--bg-color)), url(/images/kodVet-24-25.JPG);
 		background-size: cover;
 		position: relative;
 		display: flex;
