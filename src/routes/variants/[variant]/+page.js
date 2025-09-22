@@ -6,6 +6,7 @@ export function entries() {
 		{ variant: 'fredrik-24-25' },
 		{ variant: 'bella-24-25' },
 		{ variant: 'ellen-24-25' },
+		{ variant: 'alva-25-26' },
 		{ variant: 'kodvet-21-22' }
 	];
 }

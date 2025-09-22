@@ -2,6 +2,7 @@
 	import { page } from '$app/state';
 
 	const variants = [
+		{ id: 'alva-25-26', name: 'Alvas fina hemsida 25/26' },
 		{ id: 'joachim-24-25', name: 'Joachim 24/25' },
 		{ id: 'fredrik-24-25', name: 'Fredrik 24/25' },
 		{ id: 'bella-24-25', name: 'Bella 24/25' },
