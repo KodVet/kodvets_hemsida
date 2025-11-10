@@ -80,7 +80,7 @@ body, html {
 main {
     background: linear-gradient(#420360, #336293, #24C3C6, #31d3bd);
     background-size: cover;
-    height: 100vh;
+    height: fit-content;
 }
 
 
@@ -125,4 +125,32 @@ main {
     width: 20%;
     height: auto;
     float: right;
+}
+
+/* Blob:arnas historia */
+
+.blobar_txt {
+    color: white;
+    font-size: large;
+    justify-content: left;
+    margin-left: 140px;
+}
+
+.flex_blob {
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+}
+
+.first_blob img {
+    width: 100%;
+    padding: 10px;
+}
+.sec_blob img {
+    width: 100%;
+    padding: 10px;
+}
+.mini_blob img {
+    width: 100%;
+    padding: 10px;
 }
