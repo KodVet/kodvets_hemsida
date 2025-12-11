@@ -10,7 +10,7 @@
 
 				<div class="socialIcons">
 					<a href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
-					<a href="https://www.instagram.com/webbgruppen_kodvet/"><i class="ri-instagram-line"></i></a>
+					<a href="https://www.instagram.com/kodvet_liu"><i class="ri-instagram-line"></i></a>
 					<a href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
 				</div>
 			</div>
@@ -20,7 +20,7 @@
 				<h1>HAR DU ETT PROJEKT?</h1>
 				<p>Har din förening/företag ett projekt som ni tror att vi kan hjälpa er med? Skriv gärna till oss på mail</p>
 			</div>
-			<a href="mailto:webbgruppen.kogvet@gmail.com" class="contact-btn">KONTAKTA OSS</a>
+			<a href="mailto:contact@kodvet.se" class="contact-btn">KONTAKTA OSS</a>
 		</div>
 	</div>
 </section>

@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<div class="text-box">
-			<h1>Webbgruppen kodVet</h1>
+			<h1>kodVet</h1>
 		</div>
 	</div>
 </section>
