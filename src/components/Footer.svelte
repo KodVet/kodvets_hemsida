@@ -12,7 +12,7 @@
 			<img class="svart-logo" src="/images/kodvet_logo_vit_symbol.png" alt="Logotyp" height="80px" />
 		</a>
 		<a class="loggafoot" href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
-		<a class="loggafoot" href="mailto:contact@kodvet.se"><i class="ri-mail-line"></i></a>
+		<a class="loggafoot" href="mailto:kontakt@kodvet.se"><i class="ri-mail-line"></i></a>
 	</div>
 	<div>
 		<ul class="footerNav">

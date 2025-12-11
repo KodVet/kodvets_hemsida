@@ -20,7 +20,7 @@
 				<h1>HAR DU ETT PROJEKT?</h1>
 				<p>Har din förening/företag ett projekt som ni tror att vi kan hjälpa er med? Skriv gärna till oss på mail</p>
 			</div>
-			<a href="mailto:contact@kodvet.se" class="contact-btn">KONTAKTA OSS</a>
+			<a href="mailto:kontakt@kodvet.se" class="contact-btn">KONTAKTA OSS</a>
 		</div>
 	</div>
 </section>
