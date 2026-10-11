@@ -104,9 +104,6 @@ function renderProjectMarkdown(project: Project): string {
 	<meta property="og:url" content="https://kodvet.kogvet.se" />
 	<meta property="og:image" content="/images/kodvet_logo_rund_indigo_bla.png" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"/>
 </svelte:head>
 
 <div class="page">
