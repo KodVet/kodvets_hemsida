@@ -9,11 +9,15 @@
 	let isMobileMenuOpen = $state(false);
 	let isLinkClick = $state(false);
 
+	const homeNavLinks = [
+		{ href: '/#hero', label: 'Hem' },
+		{ href: '/#about', label: 'Om oss' },
+		{ href: '/#projects', label: 'Projekt' },
+		{ href: '/#contact', label: 'Kontakt' }
+	];
+
 	const navLinks = [
-		{ href: '#hero', label: 'Hem' },
-		{ href: '#about', label: 'Om oss' },
-		{ href: '#projects', label: 'Projekt' },
-		{ href: '#contact', label: 'Kontakt' }
+		{ href: 'projektguiden', label: 'Projektguiden' }
 	];
 
 	function handleScroll() {
@@ -63,10 +67,15 @@
 						<a href="#hero"><img src="/images/kodvet_logo_vit_liggande.png" alt="" /></a>
 					</div>
 					<div class="nav-links">
+						{#each homeNavLinks as link}
+							<a href={link.href} onclick={handleLinkClick}>{link.label}</a>
+						{/each}
+						<span class="nav-divider"></span>
 						{#each navLinks as link}
 							<a href={link.href} onclick={handleLinkClick}>{link.label}</a>
 						{/each}
 					</div>
+
 					<button class="mobile-menu-toggle" class:active={isMobileMenuOpen} onclick={toggleMobileMenu} aria-label="Toggle menu" type="button">
 						<span></span>
 						<span></span>
@@ -81,6 +90,10 @@
 						<span></span>
 					</button>
 					<div class="mobile-menu-links">
+						{#each homeNavLinks as link}
+							<a href={link.href} onclick={handleLinkClick}>{link.label}</a>
+						{/each}
+					<span class="mobile-nav-divider"></span>
 						{#each navLinks as link}
 							<a href={link.href} onclick={handleLinkClick}>{link.label}</a>
 						{/each}
@@ -165,6 +178,18 @@
 
 	.nav-links a:hover::after {
 		width: 100%;
+	}
+
+	.nav-divider {
+	  width: 1px;
+	  height: 23px;
+	  background: white;
+	}
+
+	.mobile-nav-divider {
+	  width: 23px;
+	  height: 1px;
+	  background: white;
 	}
 
 	/* Mobile menu toggle button */
