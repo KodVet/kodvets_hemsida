@@ -8,7 +8,7 @@
 	<div class="socialIcons">
 		<a class="loggafoot" href="https://www.facebook.com/kodvet"><i class="ri-facebook-box-fill"></i></a>
 		<a class="loggafoot" href="https://www.instagram.com/kodvet_liu/"><i class="ri-instagram-line"></i></a>
-		<a href="#hero">
+		<a href="/#hero">
 			<img class="svart-logo" src="/images/kodvet_logo_vit_symbol.png" alt="Logotyp" height="80px" />
 		</a>
 		<a class="loggafoot" href="https://discord.gg/5HgdNfJVRh"><i class="ri-discord-line"></i></a>
@@ -16,10 +16,10 @@
 	</div>
 	<div>
 		<ul class="footerNav">
-			<li><a href="#hero">Hem</a></li>
-			<li><a href="#about">Om Oss</a></li>
-			<li><a href="#projects">Projekt</a></li>
-			<li><a href="#contact">Kontakt</a></li>
+			<li><a href="/#hero">Hem</a></li>
+			<li><a href="/#about">Om Oss</a></li>
+			<li><a href="/#projects">Projekt</a></li>
+			<li><a href="/#contact">Kontakt</a></li>
 			<li>
 				<a class="rainbow" onclick={() => (store.showVariantsNav = !store.showVariantsNav)}>Varianter</a>
 			</li>

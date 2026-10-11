@@ -64,7 +64,7 @@
 			<nav class="main-nav">
 				<div class="nav-container">
 					<div class="logo">
-						<a href="#hero"><img src="/images/kodvet_logo_vit_liggande.png" alt="" /></a>
+						<a href="/#hero"><img src="/images/kodvet_logo_vit_liggande.png" alt="" /></a>
 					</div>
 					<div class="nav-links">
 						{#each homeNavLinks as link}
