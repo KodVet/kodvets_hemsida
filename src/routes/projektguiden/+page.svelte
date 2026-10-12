@@ -172,14 +172,9 @@ function renderProjectMarkdown(project: Project): string {
 	--accent-soft: rgba(22, 166, 84, 0.14);
 	--shadow: rgba(4, 12, 8, 0.55);
 
-	font-family: Verdana, sans-serif;
 	color: #D4D4D4;
 	padding: 80px;
 	padding-top: 0px;
-}
-
-h1, h2, h3, h4 {
-	font-family: "Source Code Pro", monospace;
 }
 
 .margin {
@@ -271,4 +266,3 @@ hr {
 }
 
 </style>
-

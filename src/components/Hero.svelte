@@ -36,7 +36,6 @@
 		box-sizing: border-box;
 		list-style: none;
 		text-decoration: none;
-		font-family: 'Source Code Pro', monospace;
 	}
 	.hero_background {
 		display: flex;
@@ -60,7 +59,6 @@
 	}
 	* {
 		box-sizing: border-box;
-		font-family: 'Source Code Pro', monospace;
 		padding: 0px;
 		margin: 0px;
 		list-style: none;

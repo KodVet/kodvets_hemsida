@@ -86,7 +86,7 @@
 	margin-top: 8px;
 }
 .tag {
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-mono);
 	font-size: 0.75rem;
 	padding: 3px 10px;
 	border-radius: 999px;
@@ -179,7 +179,6 @@
 	flex-wrap: wrap;
 	gap: 16px;
 	margin: 14px 0;
-	font-family: 'Source Code Pro', monospace;
 	font-size: 0.85rem;
 	color: var(--text-muted);
 }
@@ -189,14 +188,16 @@
 
 .markdown {
 	margin-top: 18px;
-	font-family: 'Source Code Pro', monospace;
-	font-size: 0.95rem;
+	font-size: 1.15rem;
 	line-height: 1.6;
 	color: var(--text);
 }
 .markdown :global(h1),
 .markdown :global(h2),
-.markdown :global(h3) {
+.markdown :global(h3),
+.markdown :global(h4),
+.markdown :global(h5),
+.markdown :global(h6) {
 	color: var(--text);
 }
 .markdown :global(a) {

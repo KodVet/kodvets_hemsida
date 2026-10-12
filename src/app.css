@@ -1,6 +1,28 @@
+:root {
+	--font-sans: Verdana, sans-serif;
+	--font-mono: "Source Code Pro", monospace;
+}
+
 html {
 	scroll-behavior: smooth;
-	font-family: "Source Code Pro", monospace;
+	font-family: var(--font-sans); /* default font for content (like paragraphs), sans-serif */
+}
+
+/* We make an exception for things like headers and use a monospace font for stylistic reasons */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-mono);
+}
+
+code,
+pre,
+kbd,
+samp {
+	font-family: var(--font-mono);
 }
 
 body {

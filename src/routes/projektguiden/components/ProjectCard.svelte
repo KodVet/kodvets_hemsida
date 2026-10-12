@@ -94,7 +94,7 @@
 	margin-top: 8px;
 }
 .tag {
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-mono);
 	font-size: 0.75rem;
 	padding: 3px 10px;
 	border-radius: 999px;

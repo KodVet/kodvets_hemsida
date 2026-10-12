@@ -43,9 +43,9 @@
 		box-sizing: border-box;
 		list-style: none;
 		text-decoration: none;
-		font-family: 'Source Code Pro', monospace;
 	}
 	footer {
+		font-family: var(--font-mono);
 		flex: 1 1 50px;
 		opacity: 0.7;
 		display: flex;
@@ -98,7 +98,6 @@
 		color: white;
 		text-decoration: none;
 		font-size: 1rem;
-		font-family: var(--p-font);
 		margin: -20px 15px;
 	}
 
