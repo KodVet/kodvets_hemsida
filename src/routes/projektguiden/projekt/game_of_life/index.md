@@ -3,7 +3,7 @@ title: "Game Of Life"
 tags:
   - Koggigt
   - Python
-difficulty: 2
+difficulty: 3
 ---
 # Beskrivning
 

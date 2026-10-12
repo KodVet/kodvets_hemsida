@@ -2,7 +2,7 @@
 title: "Tamagotchi - Cody edition"
 tags:
   - python
-difficulty: 1
+difficulty: 2
 estimated_time: "3–8 hours"
 ---
 # Beskrivning

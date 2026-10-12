@@ -115,7 +115,7 @@ function renderProjectMarkdown(project: Project): string {
 	<div id="guideDesc">
 		<div id="guideDescLeft">
 			<h2>Kom igång!</h2>
-			<p>Vill du lära dig mer programmering utöver vad du får lära dig på labbuppgifter i plugget? Det bästa sättet att lära sig är genom större projekt du själv tycker är kul! Därför har vi gjord en lista med olika ideér & relevanta resurser. Du kommer behöva söka upp många saker själv, men det är en viktig del av programmering!</p>
+			<p>Vill du lära dig mer programmering utöver vad du får lära dig på labbuppgifter i plugget? Det bästa sättet att lära sig är genom större projekt du själv tycker är kul! Därför har vi gjort en lista med olika ideér & relevanta resurser. Du kommer behöva söka upp många saker själv, men det är en viktig del av programmering!</p>
 		</div>
 		<div id="guideDescMiddle">
 			<img width=200 src="images/cody_kaffe.png" alt="Cody med en kaffekopp">
