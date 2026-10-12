@@ -6,4 +6,5 @@ export type Project = {
 	description: string;
 	coverImg: string | null;
 	attachments: { name: string; url: string }[];
+	hidden: bool;
 };

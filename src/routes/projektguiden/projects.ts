@@ -53,7 +53,8 @@ export function createProjects(
 			difficulty: data.difficulty,
 			description: content,
 			coverImg: coverImg,
-			attachments: attachments
+			attachments: attachments,
+			hidden: data.hidden ?? false
 		};
 	});
 }

@@ -131,7 +131,7 @@ function renderProjectMarkdown(project: Project): string {
 	<h2 class="sectionHeader">Nivå 1</h2><hr>
 	<div class="projectsContainer">
 		{#each projects as project (project.slug)}
-			{#if project.difficulty == "1"}
+			{#if project.difficulty == "1" && !project.hidden}
 				<ProjectCard project={project} {openProject}/>
 			{/if}
 		{/each}
@@ -139,7 +139,7 @@ function renderProjectMarkdown(project: Project): string {
 	<h2 class="sectionHeader">Nivå 2</h2><hr>
 	<div class="projectsContainer">
 		{#each projects as project (project.slug)}
-			{#if project.difficulty == "2"}
+			{#if project.difficulty == "2" && !project.hidden}
 				<ProjectCard project={project} {openProject}/>
 			{/if}
 		{/each}
@@ -147,7 +147,7 @@ function renderProjectMarkdown(project: Project): string {
 	<h2 class="sectionHeader">Nivå 3</h2><hr>
 	<div class="projectsContainer">
 		{#each projects as project (project.slug)}
-			{#if project.difficulty == "3"}
+			{#if project.difficulty == "3" && !project.hidden}
 				<ProjectCard project={project} {openProject}/>
 			{/if}
 		{/each}

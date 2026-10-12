@@ -3,6 +3,7 @@ title: "Guide till Git "
 tags:
   - verktyg
 difficulty: 1
+hidden: false
 ---
 Git är ett verktyg som hjälper till i bland annat versionshantering. När man jobbar i projekt tillsammans är det ett användbart verktyg för att spåra ändringar, undvika att man skriver över varandras ändringar, 
 
