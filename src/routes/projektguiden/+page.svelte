@@ -177,6 +177,10 @@ function renderProjectMarkdown(project: Project): string {
 	padding-top: 0px;
 }
 
+:global(a) {
+	color: var(--accent-strong);
+}
+
 .margin {
 	height: 65px;
 }

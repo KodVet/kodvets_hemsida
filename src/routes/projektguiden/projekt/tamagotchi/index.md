@@ -31,7 +31,7 @@ Gränsnittet kan skapas på flera sätt.
 <img src="./files/example.png" alt="example output" width="200"/>
 <!-- ![image info](./files/example.png) -->
 
-Det finns också en möjlighet att utöka med t.ex.:
-- Meddelanden som Cody säger om han t.ex. blir för hungrig eller trött.
+## Möjligheter till utökning:
+- Meddelanden som Cody säger om den t.ex. blir för hungrig eller trött.
 - Möjligheten för Cody att dö ifall du inte matar honom.
 - lägg till ett av de tidigare projekten, t.ex. sten sax påse så att du kan spela det med Cody.
