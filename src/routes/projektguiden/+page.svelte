@@ -1,8 +1,6 @@
 <!-- Todo: -->
-<!-- "hidden" attribute on projects. -->
 <!-- placeholder image on projects that do not have a coverimg. -->
-<!-- fix font on main page and in modal content -->
-<!-- fix footer href for nav being broken -->
+<!-- fix general errors/warnings when building-->
 <script lang="ts">
 import { marked } from 'marked';
 import { goto } from '$app/navigation';
@@ -29,8 +27,13 @@ const projects = createProjects(markdownFiles, projectFiles);
 
 
  
-let activeSlug = $derived(page.url.searchParams.get('project'));
+let activeSlug = $state<string | null>(null);
 let activeProject = $derived(projects.find((p) => p.slug === activeSlug) ?? null);
+
+// wrapped in effect to allow pre-render of website
+$effect(() => {
+	activeSlug = page.url.searchParams.get('project');
+});
 
 // make the background page unscrollable when modal is active
 $effect(() => {
