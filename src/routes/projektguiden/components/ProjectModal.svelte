@@ -112,7 +112,7 @@
 	align-items: center;
 	justify-content: center;
 	padding: 24px;
-	z-index: 100;
+	z-index: 1100;
 	animation: overlayIn 0.18s ease-out;
 }
 
@@ -158,11 +158,18 @@
 	line-height: 1;
 	cursor: pointer;
 	z-index: 1;
+	transition:
+		color 0.18s ease,
+		border-color 0.18s ease,
+		box-shadow 0.18s ease,
+		transform 0.18s ease;
 }
 .modalClose:hover,
 .modalClose:focus-visible {
-	border-color: var(--accent);
+	border-color: var(--accent-strong);
 	color: var(--accent-strong);
+	box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent-strong) 32%, transparent);
+	transform: scale(1.06);
 }
 
 .modalImage {
