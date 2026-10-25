@@ -10,6 +10,13 @@
 		closeProject: () => void;
 		renderProjectMarkdown: (projet: Project) => string;
 	} = $props();
+
+	let modalPanel: HTMLDivElement;
+
+	function scrollModal(event: WheelEvent) {
+		event.preventDefault();
+		modalPanel.scrollTop += event.deltaY;
+	}
 </script>
 
 
@@ -18,11 +25,13 @@
   		class="modalBackdrop"
   		type="button"
   		aria-label="Stäng projekt"
+		onwheel={scrollModal}
   		onclick={closeProject}
   	></button>
 
 	<div
 		class="modalPanel"
+		bind:this={modalPanel}
 		role="dialog"
 		aria-modal="true"
 		aria-labelledby="modalTitle"
