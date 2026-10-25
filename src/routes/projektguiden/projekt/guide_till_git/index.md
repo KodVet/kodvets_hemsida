@@ -14,3 +14,11 @@ Om ett git-repo använder sig av t.ex. Github eller Gitlab så kan man dessutom 
 - Detta kan vara en mycket bra guide för nybörjare: https://www.w3schools.com/git/git_intro.asp
 - Denna labb från en kurs: https://www.ida.liu.se/~TDP024/labs/git-lab1.shtml
 - Första halvan i denna presentation kan också vara användbara: https://www.ida.liu.se/~TDP001/2026/material/lectures/6.pdf
+
+## Pröva
+Om du vill pröva den kunskap du lärt dit ovan kan du också få lägga till ett litet meddelande nedan genom att hämta källkoden från git-repot länkat ovan och sedan öppna en pull request på github.
+
+För att se till att de hamnar på en ny rad måste du ha en blankrad emellan dem, annars hamnar de på samma rad.
+
+#### Meddelanden
+Hej jag heter Jakob och är med i kodVet :D
